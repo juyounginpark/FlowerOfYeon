@@ -35,3 +35,7 @@ Pages 게시 사이트 제한은 1GB, 배포 제한은 10분, 월 대역폭 소�
 공식 근거: https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits
 
 공식 Actions 구성: https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages
+
+Actions 아티팩트 저장은 무료 계정에서 Packages와 공유하는 500MB 허용량 및 시간당 누적 사용량의 영향을 받는다. 현재 게시 파일은 약 461MB여서 여러 배포 아티팩트를 장기간 보관하면 위험하다. 1일 보관을 사용하고 증빙은 작게 유지한다. 계정의 다른 저장소·패키지 사용량과 기존 결제 설정은 이 작업에서 변경하지 않았으므로, 계정 Billing의 Actions/Packages 예산을 0으로 제한하고 유료 사용 차단을 확인하는 것이 필요하다. 무료 한도 도달 시 과금으로 이어서 운영하지 않는다.
+
+저장 사용량 근거: https://docs.github.com/en/billing/concepts/product-billing/github-actions
