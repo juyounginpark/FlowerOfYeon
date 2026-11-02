@@ -13,6 +13,7 @@ var checkpoint_ms := 0
 var snapshot_tick := 0
 var level_pending := false
 var session_announced := false
+var recovering := false
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -30,7 +31,7 @@ func _notification(what: int) -> void:
 		last_tick = Time.get_ticks_msec()
 
 func _playing() -> bool:
-	if not session_open or not attempt_open or not focused or get_tree().paused:
+	if not session_open or not attempt_open or recovering or not focused or get_tree().paused:
 		return false
 	if not is_instance_valid(world) or not world.is_inside_tree() or not world.can_process():
 		return false
@@ -50,6 +51,12 @@ func _sample() -> void:
 	last_tick = now
 
 func _process(_delta: float) -> void:
+	if recovering and is_instance_valid(world) and is_instance_valid(world.player):
+		# Same recovery boundary as WorldPilgrim's existing fell signal. Some story
+		# phases deliberately postpone respawn, so one falling episode can signal repeatedly.
+		var actor = world.player
+		if is_instance_valid(actor.route) and actor.position.y >= actor.route.point(actor.station).y - 1.25:
+			recovering = false
 	_sample()
 	if _playing() and level_pending:
 		if not session_announced:
@@ -73,6 +80,7 @@ func begin_level(owner_world: Node, number: int) -> void:
 	level_ms = 0
 	attempt_open = true
 	level_pending = true
+	recovering = false
 	if not session_open:
 		session_open = true
 		total_ms = 0
@@ -90,13 +98,15 @@ func complete_level() -> void:
 func fail_level(reason: String, retry := true) -> void:
 	if not OS.has_feature("web"): return
 	_sample()
-	if not attempt_open: return
+	if not attempt_open or recovering or level_pending: return
+	if reason == "fall" and not _playing(): return
 	attempt_open = false
 	_event("level_fail", {"level_number": level, "duration_seconds": level_ms / 1000.0, "failure_type": reason})
 	# Existing fall recovery keeps the same stage and cut state; begin a new attempt only.
 	level_ms = 0
 	attempt_open = retry
 	level_pending = retry
+	recovering = retry
 
 func _checkpoint() -> void:
 	_event("playtime_checkpoint", {"play_seconds": total_ms / 1000.0,

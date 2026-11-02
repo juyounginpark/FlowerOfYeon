@@ -1,6 +1,6 @@
 {
-  "release": "b3f65d1cf87cd31f",
-  "site_bytes": 460949008,
+  "release": "41f19edfe9fb8c51",
+  "site_bytes": 460949248,
   "assets": [
     {
       "name": "analytics.js",
@@ -40,9 +40,9 @@
     },
     {
       "name": "index.pck",
-      "bytes": 419039584,
-      "gzip_estimate_bytes": 415711709,
-      "sha256": "f0b4d8f00c9e06fc48374cb7f35afd23611e9d68ebd4d18962a76697ce2b2ae6"
+      "bytes": 419039824,
+      "gzip_estimate_bytes": 415711898,
+      "sha256": "72beed19aec9b34aa4f5bfd8a9cdaf7d64a0fea8eb8468a09fc994f2faaf5c71"
     },
     {
       "name": "index.png",
@@ -57,7 +57,7 @@
       "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
     }
   ],
-  "estimated_gzip_bytes": 427988650,
+  "estimated_gzip_bytes": 427988839,
   "actual_browser_transfer_bytes": null,
   "runtime_verified": false
 }
