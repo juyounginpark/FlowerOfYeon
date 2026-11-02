@@ -213,7 +213,11 @@ func _page(frame:Image,ticket:int) -> Texture2D:
 	var paper:=BOOK.get_image()
 	var worker:=Thread.new()
 	var compose:=preload("res://scripts/grid_stage/book_page_image.gd").compose.bind(frame,paper)
-	var error:=worker.start(compose)
+	# Single-thread Web templates cannot run this worker. Thread.start() can still
+	# report OK while is_alive() never clears, leaving capture_old permanently blank.
+	var error:=ERR_UNAVAILABLE
+	if not OS.has_feature("web"):
+		error=worker.start(compose)
 	var page:Image
 	if error==OK:
 		page_workers.append(worker)
@@ -222,7 +226,8 @@ func _page(frame:Image,ticket:int) -> Texture2D:
 		page=worker.wait_to_finish()
 		page_workers.erase(worker)
 	else:
-		push_warning("Book page worker unavailable: %s"%error_string(error))
+		if not OS.has_feature("web"):
+			push_warning("Book page worker unavailable: %s"%error_string(error))
 		page=compose.call()
 	# Restart or Back may invalidate the capture while the worker is running.
 	if ticket!=generation or state=="idle":return null
