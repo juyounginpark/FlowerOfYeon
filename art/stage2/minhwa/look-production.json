@@ -1,0 +1,6 @@
+{
+  "asset": "fairy_look.png",
+  "frames": 5,
+  "prompt": "Transparent PNG game sprite sheet, exactly FIVE frames arranged in ONE horizontal row of FIVE equal cells, wide landscape. Same adult Korean woman in plain opaque ivory bathing gown, black bun and dark ribbon, chest deep in a small pale jade water ellipse. Simple Joseon ink painting with sparse thin contours and muted washes. Five looking-around poses in order: back view, looks left, looks further left, looks right, returns to back. Body and waterline stationary, same head height and body center in each cell. Each entire figure and ripple stays within inner 65 percent of cell, broad completely transparent gutters. No text or grid. Modest clothed figure, no ornaments.",
+  "validation": "CPU parsing and static review only."
+}

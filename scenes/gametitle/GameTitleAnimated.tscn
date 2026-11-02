@@ -1,0 +1,432 @@
+[gd_scene format=3 uid="uid://cxoi7q3wqbwx3"]
+
+[ext_resource type="Script" uid="uid://bouxacvutwp5w" path="res://scripts/gametitle/cloud_drift.gd" id="cloud"]
+[ext_resource type="Script" uid="uid://dwp8mwvoh66v8" path="res://scripts/gametitle/credits.gd" id="credits"]
+[ext_resource type="Texture2D" uid="uid://dhstnfa5k2iav" path="res://art/gametitle/credit.png" id="credit_image"]
+[ext_resource type="Script" uid="uid://gv35hypo5o26" path="res://scripts/gametitle/lotus_hover.gd" id="hover"]
+[ext_resource type="Script" uid="uid://brfdqruokgvy4" path="res://scripts/gametitle/title_layout.gd" id="layout"]
+[ext_resource type="Shader" path="res://scripts/gametitle/lotus_outline.gdshader" id="outline"]
+[ext_resource type="Script" uid="uid://dn22ecrm3a8my" path="res://scripts/gametitle/ripple.gd" id="ripple"]
+[ext_resource type="Script" uid="uid://jwgpwlbd6xu1" path="res://scripts/gametitle/lotus_start.gd" id="start"]
+[ext_resource type="Texture2D" uid="uid://d00nqiakvha5k" path="res://art/gametitle/cloud_left.png" id="t0"]
+[ext_resource type="Texture2D" uid="uid://b2umvnorfip4y" path="res://art/gametitle/cloud_right.png" id="t1"]
+[ext_resource type="Texture2D" uid="uid://chtrb3ej8lqoq" path="res://art/gametitle/cloud_small.png" id="t2"]
+[ext_resource type="Texture2D" uid="uid://bkt8myu7ipql5" path="res://art/gametitle/lotus-2.png" id="t3"]
+[ext_resource type="Texture2D" uid="uid://bdfe12ppcg6sr" path="res://art/gametitle/ripple_ring.png" id="t4"]
+[ext_resource type="Texture2D" uid="uid://desfmbbclu1rr" path="res://art/gametitle/title_logo.png" id="t5"]
+[ext_resource type="Texture2D" uid="uid://bw2yn8jcoiiad" path="res://art/gametitle/단순화된 수련 반사 스프라이트.png" id="t6"]
+[ext_resource type="Texture2D" uid="uid://b22fc14f3n7aa" path="res://art/gametitle/title-2.png" id="t7"]
+
+[sub_resource type="ShaderMaterial" id="LotusOutline"]
+shader = ExtResource("outline")
+shader_parameter/hover_amount = 0.0
+shader_parameter/width_texels = 8.73
+
+[sub_resource type="Animation" id="Breath"]
+resource_name = "LotusBreath"
+length = 8.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:lift_phase")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8, 1.2, 1.6, 8),
+"transitions": PackedFloat32Array(1, -2, -2, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 1.0, 0.0, 0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Composition/Ripple1:expansion")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.6, 5.6, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 1.0, 1.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Composition/Ripple1:visibility_weight")
+tracks/2/interp = 1
+tracks/2/loop_wrap = false
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.6, 1.8, 5.6, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 1.0, 0.0, 0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Composition/Ripple2:expansion")
+tracks/3/interp = 1
+tracks/3/loop_wrap = false
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 2, 6, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 1.0, 1.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Composition/Ripple2:visibility_weight")
+tracks/4/interp = 1
+tracks/4/loop_wrap = false
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 2, 2.2, 6, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 1.0, 0.0, 0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Composition/Ripple3:expansion")
+tracks/5/interp = 1
+tracks/5/loop_wrap = false
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 2.4, 6.4, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 1.0, 1.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Composition/Ripple3:visibility_weight")
+tracks/6/interp = 1
+tracks/6/loop_wrap = false
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 2.4, 2.6, 6.4, 8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 0.0, 1.0, 0.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Reset"]
+resource_name = "RESET"
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:lift_phase")
+tracks/0/interp = 1
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Composition/Ripple1:expansion")
+tracks/1/interp = 1
+tracks/1/loop_wrap = false
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Composition/Ripple1:visibility_weight")
+tracks/2/interp = 1
+tracks/2/loop_wrap = false
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Composition/Ripple2:expansion")
+tracks/3/interp = 1
+tracks/3/loop_wrap = false
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Composition/Ripple2:visibility_weight")
+tracks/4/interp = 1
+tracks/4/loop_wrap = false
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Composition/Ripple3:expansion")
+tracks/5/interp = 1
+tracks/5/loop_wrap = false
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Composition/Ripple3:visibility_weight")
+tracks/6/interp = 1
+tracks/6/loop_wrap = false
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="Library"]
+_data = {
+&"LotusBreath": SubResource("Breath"),
+&"RESET": SubResource("Reset")
+}
+
+[node name="GameTitleAnimated" type="Control" unique_id=573798502]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("layout")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1767061377]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("t7")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Composition" type="Control" parent="." unique_id=1980080007]
+clip_contents = true
+anchors_preset = 0
+offset_left = 64.435486
+offset_right = 1650.4355
+offset_bottom = 992.0
+scale = Vector2(0.7258065, 0.7258065)
+mouse_filter = 2
+
+[node name="CloudLeft" type="Node2D" parent="Composition" unique_id=1767931405]
+position = Vector2(250, 455)
+script = ExtResource("cloud")
+base_position = Vector2(250, 455)
+
+[node name="Artwork" type="Sprite2D" parent="Composition/CloudLeft" unique_id=1942012332]
+modulate = Color(1, 1, 1, 0.45)
+scale = Vector2(0.21385401, 0.21385401)
+texture = ExtResource("t0")
+offset = Vector2(8, -3.5)
+
+[node name="CloudRight" type="Node2D" parent="Composition" unique_id=1542424964]
+position = Vector2(1320.132, 470)
+script = ExtResource("cloud")
+base_position = Vector2(1310, 470)
+amplitude_px = 15.0
+period_seconds = 29.0
+initial_phase = 2.4
+
+[node name="Artwork" type="Sprite2D" parent="Composition/CloudRight" unique_id=1798639272]
+modulate = Color(1, 1, 1, 0.4)
+scale = Vector2(0.21367522, 0.21367522)
+texture = ExtResource("t1")
+offset = Vector2(-17, 7.5)
+
+[node name="CloudSmall" type="Node2D" parent="Composition" unique_id=1187968471]
+position = Vector2(379.54108, 300)
+script = ExtResource("cloud")
+base_position = Vector2(390, 300)
+amplitude_px = 12.0
+period_seconds = 20.0
+initial_phase = 4.2
+
+[node name="Artwork" type="Sprite2D" parent="Composition/CloudSmall" unique_id=378486804]
+modulate = Color(1, 1, 1, 0.3)
+scale = Vector2(0.13352408, 0.13352408)
+texture = ExtResource("t2")
+offset = Vector2(-19.5, -6.5)
+
+[node name="ReflectionMotion" type="Node2D" parent="Composition" unique_id=837160051]
+modulate = Color(1, 1, 1, 0.25)
+
+[node name="Reflection" type="Sprite2D" parent="Composition/ReflectionMotion" unique_id=1512741058]
+position = Vector2(793, 805)
+scale = Vector2(0.2939759, 0.2939759)
+texture = ExtResource("t6")
+offset = Vector2(-12.5, 362)
+
+[node name="Ripple1" type="Node2D" parent="Composition" unique_id=480065205]
+position = Vector2(793, 852)
+script = ExtResource("ripple")
+
+[node name="Ring" type="Sprite2D" parent="Composition/Ripple1" unique_id=2134004179]
+modulate = Color(1, 1, 1, 0)
+scale = Vector2(0.056737587, 0.056737587)
+texture = ExtResource("t4")
+offset = Vector2(-22.5, 5)
+
+[node name="Ripple2" type="Node2D" parent="Composition" unique_id=2067036105]
+position = Vector2(793, 852)
+script = ExtResource("ripple")
+
+[node name="Ring" type="Sprite2D" parent="Composition/Ripple2" unique_id=1837781053]
+modulate = Color(1, 1, 1, 0)
+scale = Vector2(0.056737587, 0.056737587)
+texture = ExtResource("t4")
+offset = Vector2(-22.5, 5)
+
+[node name="Ripple3" type="Node2D" parent="Composition" unique_id=635238370]
+position = Vector2(793, 852)
+script = ExtResource("ripple")
+
+[node name="Ring" type="Sprite2D" parent="Composition/Ripple3" unique_id=38303401]
+modulate = Color(1, 1, 1, 0)
+scale = Vector2(0.056737587, 0.056737587)
+texture = ExtResource("t4")
+offset = Vector2(-22.5, 5)
+
+[node name="LotusMotion" type="Node2D" parent="Composition" unique_id=511130621]
+
+[node name="Lotus" type="Sprite2D" parent="Composition/LotusMotion" unique_id=116439258]
+material = SubResource("LotusOutline")
+position = Vector2(793, 869)
+scale = Vector2(0.3435512, 0.3435512)
+texture = ExtResource("t3")
+offset = Vector2(-2.5, -424.5)
+script = ExtResource("hover")
+
+[node name="StartPrompt" type="Control" parent="Composition/LotusMotion" unique_id=1710674348]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_left = 593.0
+offset_top = 680.0
+offset_right = 993.0
+offset_bottom = 800.0
+mouse_filter = 2
+script = ExtResource("start")
+
+[node name="Title" type="Sprite2D" parent="Composition" unique_id=1533041476]
+position = Vector2(793, 282)
+scale = Vector2(0.32890132, 0.32890132)
+texture = ExtResource("t5")
+offset = Vector2(9, -9.5)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1279817012]
+libraries/ = SubResource("Library")
+autoplay = &"LotusBreath"
+
+[node name="Credits" type="Control" parent="." unique_id=687386442]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("credits")
+credits_text = "2026 경북 GEN AI 게임잼
+
+개발 기간 2026-10-30 ~ 2026-11-01
+
+팀 단오
+박주영 박현준 김시연 주효은
+
+---
+사운드 출처 표기
+
+MUSIC & SOUND CREDITS
+
+본 게임에는 한국저작권위원회 공유마당에서 제공하는 음원이 사용되었습니다.
+
+1. 국악 배경음악 #142
+- 저작(권)자: 공유마당
+- 출처: 한국저작권위원회 공유마당
+- 라이선스: CC BY
+- 원본: https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=13379725&menuNo=200020
+
+2. 7월 7석, 구름 저편의 약속
+- 저작(권)자: 정혁준
+- 출처: 한국저작권위원회 공유마당
+- 라이선스: CC BY
+- 원본: https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=13048797&menuNo=200020
+
+3. 국악 배경음악 #143
+- 저작(권)자: 공유마당
+- 출처: 한국저작권위원회 공유마당
+- 라이선스: CC BY
+- 원본: https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=13379726&menuNo=200020
+
+4. LSMBG0704_사물놀이
+- 저작(권)자: 한국저작권위원회
+- 출처: 한국저작권위원회 공유마당
+- 라이선스: CC BY
+- 원본: https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=13312616&menuNo=200020
+
+5. 국악 BGM #38
+- 저작(권)자: 주식회사 아이티앤
+- 출처: 한국저작권위원회 공유마당
+- 라이선스: CC BY
+- 원본: https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=13386778&menuNo=200020
+
+6. 국악 배경음악 #129
+- 저작(권)자: 공유마당
+- 출처: 한국저작권위원회 공유마당
+- 라이선스: CC BY
+- 원본: https://gongu.copyright.or.kr/gongu/wrt/wrt/view.do?wrtSn=13379712&menuNo=200020
+
+---
+
+라이선스 안내
+
+Creative Commons Attribution (CC BY)
+https://creativecommons.org/licenses/by/4.0/deed.ko"
+
+[node name="CreditsLink" type="TextureButton" parent="Credits" unique_id=1498576889]
+modulate = Color(1, 1, 1, 0.65)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -206.0
+offset_top = -94.0
+offset_right = -24.0
+offset_bottom = -24.0
+grow_horizontal = 0
+grow_vertical = 0
+tooltip_text = "크레딧"
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource("credit_image")
+ignore_texture_size = true
+stretch_mode = 5

@@ -1,0 +1,34 @@
+{
+  "user_originals": [
+    "braided_woman_user.png",
+    "hair_combing_woman_user.png",
+    "resting_woman_user.png",
+    "bathing_women_user.png"
+  ],
+  "generated_arm_animations": [
+    {
+      "output": "braided_woman_8frames.png",
+      "prompt": "Edit the supplied Korean minhwa character into a game animation sheet. EXACTLY EIGHT frames in a precise 4-column by 2-row equal-cell grid, chronological row-major order. Transparent RGBA outside each figure, no background, no cell borders, labels or text. Same seated position, same face, hairstyle, clothing, proportions, 3/4 viewing angle and fine aged-paper/ink illustration style as the supplied original. Keep the head, torso and bottom of skirt in exactly consistent positions and size between cells, full figure visible with generous clear padding inside each cell. This is an ARM ANIMATION, NOT whole-image sliding or rotation. Only the arms/hands and small hair strands move, clothes follow the arm naturally. 2048 by 2048 sheet, 4 equal columns and 2 equal rows. Make all eight frames visibly distinct poses and a gentle seamless loop. Do not add people, ground, water or scenery. The woman has a WHITE jacket and BLUE skirt and two extremely long thick black braids tied together below the skirt. Preserve the long braids and bottom bow in every frame. Animate her right hand gently grooming her hair: frame 1 holds right braid at chest, 2 lifts fingers along braid, 3 lifts hand toward right temple, 4 touches temple hairline, 5 strokes hair toward back of head, 6 lowers hand alongside braid, 7 smooths braid near shoulder, 8 returns hand close to original chest position. The other hand keeps holding the left braid, with a tiny sympathetic finger change. Preserve the same modest fully clothed sitting posture and complete long braids.",
+      "mode": "built-in image_gen"
+    },
+    {
+      "output": "hair_combing_woman_8frames.png",
+      "prompt": "Edit the supplied Korean minhwa character into a game animation sheet. EXACTLY EIGHT frames in a precise 4-column by 2-row equal-cell grid, chronological row-major order. Transparent RGBA outside each figure, no background, no cell borders, labels or text. Same seated position, same face, hairstyle, clothing, proportions, 3/4 viewing angle and fine aged-paper/ink illustration style as the supplied original. Keep the head, torso and bottom of skirt in exactly consistent positions and size between cells, full figure visible with generous clear padding inside each cell. This is an ARM ANIMATION, NOT whole-image sliding or rotation. Only the arms/hands and small hair strands move, clothes follow the arm naturally. 2048 by 2048 sheet, 4 equal columns and 2 equal rows. Make all eight frames visibly distinct poses and a gentle seamless loop. Do not add people, ground, water or scenery. The seated woman wears an ivory-white flowing hanbok with a muted lavender skirt and black hair in a rounded updo. One arm is raised beside/behind her head. Animate that arm brushing back her hair: frame 1 hand behind head as original, 2 hand slides up toward crown, 3 fingers at crown, 4 hand moves toward temple, 5 brushes backward across hair, 6 hand follows toward back of head, 7 elbow relaxes slightly, 8 hand returns near original back-of-head position. The other hand stays near her lap. Preserve the original large full flowing skirt silhouette and fully clothed posture.",
+      "mode": "built-in image_gen"
+    }
+  ],
+  "frame_regions": "people-animation-atlas.json",
+  "subtle_motion": {
+    "frames": 8,
+    "fps": 3,
+    "waterline": {
+      "RestingWoman": 0.81,
+      "BathingWomen": 0.79
+    },
+    "front_foam_priority": 109,
+    "body_priority": 108
+  },
+  "sticker_source": "main:scripts/grid_stage/paper_cutting.gd::_make_cut_layer (copied exactly); visible tree layers reparented from hidden cut masks",
+  "preview": "previews/people-8frames.gif is an isolated asset preview, not game capture",
+  "validation": "CPU syntax, references, frame bounds/distinctness and protected-source hashes only; no Godot compile, game, GPU or CUDA execution"
+}

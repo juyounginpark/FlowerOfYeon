@@ -1,0 +1,5 @@
+Generator: built-in image_gen tool, transparent_background=true.
+Final prompt:
+Game tutorial keyboard icon sprite sheet on true transparent background. Square canvas divided into exactly THREE equal-height horizontal rows, no dividers, with generous transparent gaps. All icons centered in their own row, entirely inside that row. Top row: compact four-key WASD cluster, W centered above the A S D row; precisely black uppercase letters W, A, S, D one per key. Middle row: one wide horizontal keyboard SPACE bar, text SPACE in black. Bottom row: one single square keyboard E key, text E in black. Matching front-facing gently beveled ivory hanji-paper keycaps, warm charcoal hand-inked outlines, restrained Korean minhwa watercolor shading, crisp readable black Latin labels, no perspective tilt, no extra symbols, no backdrop, no hands, no captions or Korean text. Only these three separate key groups. Icons for a Korean folktale game onboarding tutorial. Preserve real alpha transparency outside keycaps.
+
+Integration: generated sheet is 1254x1254; use transparent gutter boundaries y=636 and y=936, rather than equal thirds.

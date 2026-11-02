@@ -1,0 +1,10 @@
+[
+  {
+    "file": "ink_joseon.png",
+    "prompt": "Precise sprite sheet layout correction. Keep the same 8 painted cats and the same historical Joseon style, markings, faces, poses and animation order. Output a landscape image divided invisibly into EXACTLY 4 columns and 2 rows, 8 equal square cells. Individually reduce EACH cat to 70% of its current size and center it inside its own cell. Leave a WIDE completely transparent safety gutter on ALL FOUR SIDES of EACH cat, at least 15% of cell width, including tail and whiskers. Nothing may touch or cross a cell boundary. The bottom-row stretched jumping cat MUST be fully inside its own second cell, never touching neighbors. Preserve top row idle frames and bottom row 4 distinct pounce frames, all facing left. Transparent alpha background, no labels, no grid lines, no paper ground, no additional subjects."
+  },
+  {
+    "file": "piebald_joseon.png",
+    "prompt": "Precise sprite sheet layout correction. Keep the same 8 painted cats and the same historical Joseon style, markings, faces, poses and animation order. Output a landscape image divided invisibly into EXACTLY 4 columns and 2 rows, 8 equal square cells. Individually reduce EACH cat to 70% of its current size and center it inside its own cell. Leave a WIDE completely transparent safety gutter on ALL FOUR SIDES of EACH cat, at least 15% of cell width, including tail and whiskers. Nothing may touch or cross a cell boundary. The bottom-row stretched jumping cat MUST be fully inside its own second cell, never touching neighbors. Preserve top row idle frames and bottom row 4 distinct pounce frames, all facing left. Transparent alpha background, no labels, no grid lines, no paper ground, no additional subjects."
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "verification": "CPU static only",
+  "gameplay_and_map_restored_exactly": [
+    "scripts/grid_stage/world.gd",
+    "scripts/grid_stage/lotus_stages.gd",
+    "scripts/stage1/tree_bridge.gd",
+    "scripts/stage1/woman_dialogue.gd"
+  ],
+  "gdscript_syntax": "PASS",
+  "rgba_assets": "PASS",
+  "godot_compilation": "NOT_RUN",
+  "game_runtime": "NOT_RUN",
+  "cuda_gpu": "NOT_RUN"
+}

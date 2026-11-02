@@ -1,0 +1,101 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/grid_stage/opening.gd" id="1"]
+[ext_resource type="Texture2D" path="res://art/intro_four_cut/blank_narration.png" id="2"]
+[ext_resource type="Script" path="res://scripts/grid_stage/opening_paper.gd" id="3"]
+[ext_resource type="Shader" path="res://shaders/opening_fog.gdshader" id="4"]
+
+[sub_resource type="ShaderMaterial" id="FogMaterial"]
+shader = ExtResource("4")
+
+[node name="Opening" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1")
+
+[node name="PaperBackground" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.953, 0.855, 0.698, 1)
+
+[node name="Page" type="Node2D" parent="."]
+texture_filter = 2
+
+; Clip the supplied completed painting along its gutters. The two separate
+; middle PNGs contain opaque white/stretched exterior pixels, so sharing the
+; reference texture preserves the diagonal borders and the exact final layout.
+; UVs stay in the 1672 x 941 reference coordinate space for all four panels.
+[node name="01Imugi" type="MeshInstance2D" parent="Page"]
+visible = false
+texture = ExtResource("2")
+script = ExtResource("3")
+outline = PackedVector2Array(0, 0, 466, 0, 466, 941, 0, 941)
+phase = 0.4
+
+[node name="02Question" type="MeshInstance2D" parent="Page"]
+visible = false
+texture = ExtResource("2")
+script = ExtResource("3")
+outline = PackedVector2Array(466, 0, 1047, 0, 1047, 455, 466, 579)
+phase = 2.1
+
+[node name="03Anger" type="MeshInstance2D" parent="Page"]
+visible = false
+texture = ExtResource("2")
+script = ExtResource("3")
+outline = PackedVector2Array(466, 579, 1047, 455, 1047, 941, 466, 941)
+phase = 4.2
+
+[node name="04Descent" type="MeshInstance2D" parent="Page"]
+visible = false
+texture = ExtResource("2")
+script = ExtResource("3")
+outline = PackedVector2Array(1047, 0, 1672, 0, 1672, 941, 1047, 941)
+phase = 5.5
+
+[node name="FloatingFog" type="ColorRect" parent="."]
+material = SubResource("FogMaterial")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Prompt" type="Label" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.27, 0.25, 0.21, 1)
+theme_override_font_sizes/font_size = 24
+text = "화면을 눌러 이야기를 시작하세요"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContinueHint" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 230.0
+offset_bottom = 38.0
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.953, 0.906, 0.808, 1)
+theme_override_font_sizes/font_size = 22
+text = "E 키를 눌러 계속"
+horizontal_alignment = 1
+vertical_alignment = 1

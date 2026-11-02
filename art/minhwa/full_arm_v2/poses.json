@@ -1,0 +1,34 @@
+{
+  "open": {
+    "texture": "res://art/minhwa/full_arm_v2/open.png",
+    "pivot": [
+      590,
+      652
+    ],
+    "scale": 1.08
+  },
+  "open_front": {
+    "texture": "res://art/minhwa/full_arm_v2/open_front.png",
+    "pivot": [
+      590,
+      652
+    ],
+    "scale": 1.08
+  },
+  "cupped": {
+    "texture": "res://art/minhwa/full_arm_v2/cupped.png",
+    "pivot": [
+      635,
+      652
+    ],
+    "scale": 1.08
+  },
+  "cupped_front": {
+    "texture": "res://art/minhwa/full_arm_v2/cupped_front.png",
+    "pivot": [
+      635,
+      652
+    ],
+    "scale": 1.08
+  }
+}

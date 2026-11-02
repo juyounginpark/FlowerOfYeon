@@ -1,0 +1,1627 @@
+{
+  "compositor": {
+    "mode": "twelve_horizontal_screen_slices",
+    "bands": 12,
+    "common_geometry_layer": 1,
+    "art_visibility_bits": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "draw_order": "top_to_bottom_lower_on_top",
+    "draw_boundary_lines": false,
+    "wave_scale_relative_previous": 1.5,
+    "spacing": "Deterministic varied image/aspect selection, alternating adjacent-row motifs, staggered slots, small rolls, flips and phases; native image aspect preserved.",
+    "wave_scale_relative_original": 0.75,
+    "same_band_order": "Full waves remain physically behind map/art. Projected actual-map silhouette mask also prevents cross-band water from appearing on architecture.",
+    "map_silhouette_mask_width": 512,
+    "variation_seed": 20261030,
+    "background_gap_fill_patches": 4
+  },
+  "bands": {
+    "row_0": {
+      "anchor": "HighGoalAndTerrace",
+      "side": "back",
+      "offset": 5.1,
+      "fallback_depth": 58.0,
+      "screen_band": 0
+    },
+    "row_1": {
+      "anchor": "HighGoalAndTerrace",
+      "side": "back",
+      "offset": 5.0,
+      "fallback_depth": 58.0,
+      "screen_band": 1
+    },
+    "row_2": {
+      "anchor": "HighGoalAndTerrace",
+      "side": "back",
+      "offset": 4.9,
+      "fallback_depth": 58.0,
+      "screen_band": 2
+    },
+    "row_3": {
+      "anchor": "HighGoalAndTerrace",
+      "side": "back",
+      "offset": 4.8,
+      "fallback_depth": 58.0,
+      "screen_band": 3
+    },
+    "row_4": {
+      "anchor": "HighGoalAndTerrace",
+      "side": "back",
+      "offset": 4.7,
+      "fallback_depth": 58.0,
+      "screen_band": 4
+    },
+    "row_5": {
+      "anchor": "HighGoalAndTerrace",
+      "side": "back",
+      "offset": 4.6,
+      "fallback_depth": 58.0,
+      "screen_band": 5
+    },
+    "row_6": {
+      "anchor": "HighGoalAndTerrace",
+      "side": "back",
+      "offset": 4.5,
+      "fallback_depth": 58.0,
+      "screen_band": 6
+    },
+    "row_7": {
+      "anchor": "HighGoalAndTerrace",
+      "side": "back",
+      "offset": 4.4,
+      "fallback_depth": 58.0,
+      "screen_band": 7
+    },
+    "row_8": {
+      "anchor": "HighGoalAndTerrace",
+      "side": "back",
+      "offset": 4.3,
+      "fallback_depth": 58.0,
+      "screen_band": 8
+    },
+    "row_9": {
+      "anchor": "HighGoalAndTerrace",
+      "side": "back",
+      "offset": 4.2,
+      "fallback_depth": 58.0,
+      "screen_band": 9
+    },
+    "row_10": {
+      "anchor": "HighGoalAndTerrace",
+      "side": "back",
+      "offset": 4.1,
+      "fallback_depth": 58.0,
+      "screen_band": 10
+    },
+    "row_11": {
+      "anchor": "HighGoalAndTerrace",
+      "side": "back",
+      "offset": 4.0,
+      "fallback_depth": 58.0,
+      "screen_band": 11
+    }
+  },
+  "botanical_bands": {
+    "flowers": "row_2",
+    "leaves": "row_1"
+  },
+  "waves": [
+    {
+      "image": "DummyWave_6.png",
+      "band": "row_0",
+      "screen_band": 0,
+      "center": [
+        0.049985145760054306,
+        0.05222387528376592
+      ],
+      "width": 0.5385515803108732,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        7,
+        418,
+        1440,
+        696
+      ],
+      "crop_uv": [
+        0.004834254143646409,
+        0.3848987108655617,
+        0.9896408839779005,
+        0.2559852670349908
+      ],
+      "cropped_aspect": 0.19399860432658758,
+      "alpha": 0.93,
+      "phase": 0.7756177030643848,
+      "rate": 0.41601195333248114,
+      "amplitude": 0.016425504296561207,
+      "nominal_width": 0.5195614640883978,
+      "size_variation": 1.0365502785234366,
+      "flip_x": true,
+      "rotation_degrees": 0.8075455547888444
+    },
+    {
+      "image": "DummyWave_2.png",
+      "band": "row_0",
+      "screen_band": 0,
+      "center": [
+        0.47929408336045076,
+        0.028750114363230796
+      ],
+      "width": 0.5071708421733717,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        0,
+        327,
+        1448,
+        788
+      ],
+      "crop_uv": [
+        0.0,
+        0.3011049723756906,
+        1.0,
+        0.4244935543278085
+      ],
+      "cropped_aspect": 0.31837016574585636,
+      "alpha": 0.93,
+      "phase": 2.772233114133307,
+      "rate": 0.4274772659933131,
+      "amplitude": 0.016972173700287654,
+      "nominal_width": 0.5249999999999999,
+      "size_variation": 0.966039699377851,
+      "flip_x": true,
+      "rotation_degrees": 2.5266065482003484
+    },
+    {
+      "image": "DummyWave_1.png",
+      "band": "row_0",
+      "screen_band": 0,
+      "center": [
+        0.9299034121171734,
+        0.051563015991010236
+      ],
+      "width": 0.3682008362391289,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        9,
+        199,
+        1433,
+        921
+      ],
+      "crop_uv": [
+        0.006215469613259668,
+        0.1832412523020258,
+        0.9834254143646409,
+        0.6648250460405156
+      ],
+      "cropped_aspect": 0.5070224719101124,
+      "alpha": 0.95,
+      "phase": 1.5118619217762297,
+      "rate": 0.4516999408727186,
+      "amplitude": 0.01866021412707322,
+      "nominal_width": 0.36878453038674036,
+      "size_variation": 0.9984172488281997,
+      "flip_x": false,
+      "rotation_degrees": 2.3041176623099986
+    },
+    {
+      "image": "DummyWave_8.png",
+      "band": "row_1",
+      "screen_band": 1,
+      "center": [
+        0.08473863981205766,
+        0.10717692184796382
+      ],
+      "width": 0.3870133294381028,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        6,
+        243,
+        1252,
+        1018
+      ],
+      "crop_uv": [
+        0.004784688995215311,
+        0.1937799043062201,
+        0.9936204146730463,
+        0.6180223285486444
+      ],
+      "cropped_aspect": 0.6219903691813804,
+      "alpha": 0.95,
+      "phase": 1.662522120925168,
+      "rate": 0.44127280633437466,
+      "amplitude": 0.016605763846457337,
+      "nominal_width": 0.3726076555023924,
+      "size_variation": 1.0386617765979258,
+      "flip_x": false,
+      "rotation_degrees": -1.9161331627810634
+    },
+    {
+      "image": "DummyWave_1.png",
+      "band": "row_1",
+      "screen_band": 1,
+      "center": [
+        0.4839654529730213,
+        0.13671260152239031
+      ],
+      "width": 0.3713952628893857,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        9,
+        199,
+        1433,
+        921
+      ],
+      "crop_uv": [
+        0.006215469613259668,
+        0.1832412523020258,
+        0.9834254143646409,
+        0.6648250460405156
+      ],
+      "cropped_aspect": 0.5070224719101124,
+      "alpha": 0.95,
+      "phase": 5.792160643305216,
+      "rate": 0.42548443000437003,
+      "amplitude": 0.017766737484504292,
+      "nominal_width": 0.36878453038674036,
+      "size_variation": 1.0070792896326413,
+      "flip_x": false,
+      "rotation_degrees": -2.5632174252876547
+    },
+    {
+      "image": "DummyWave_2.png",
+      "band": "row_1",
+      "screen_band": 1,
+      "center": [
+        0.9139953215280596,
+        0.13355828809692474
+      ],
+      "width": 0.5110830740808286,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        0,
+        327,
+        1448,
+        788
+      ],
+      "crop_uv": [
+        0.0,
+        0.3011049723756906,
+        1.0,
+        0.4244935543278085
+      ],
+      "cropped_aspect": 0.31837016574585636,
+      "alpha": 0.93,
+      "phase": 6.262170973991235,
+      "rate": 0.3993672228515851,
+      "amplitude": 0.01730202390882531,
+      "nominal_width": 0.5249999999999999,
+      "size_variation": 0.9734915696777691,
+      "flip_x": true,
+      "rotation_degrees": -2.5680260050489325
+    },
+    {
+      "image": "DummyWave_1.png",
+      "band": "row_2",
+      "screen_band": 2,
+      "center": [
+        0.017394239478262637,
+        0.20017088651654383
+      ],
+      "width": 0.3785587383423366,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        9,
+        199,
+        1433,
+        921
+      ],
+      "crop_uv": [
+        0.006215469613259668,
+        0.1832412523020258,
+        0.9834254143646409,
+        0.6648250460405156
+      ],
+      "cropped_aspect": 0.5070224719101124,
+      "alpha": 0.95,
+      "phase": 6.0590287689946045,
+      "rate": 0.41439414663697943,
+      "amplitude": 0.01756889695387572,
+      "nominal_width": 0.36878453038674036,
+      "size_variation": 1.026503844793452,
+      "flip_x": true,
+      "rotation_degrees": 2.430262409151558
+    },
+    {
+      "image": "DummyWave_2.png",
+      "band": "row_2",
+      "screen_band": 2,
+      "center": [
+        0.49444967929008843,
+        0.22012084564439147
+      ],
+      "width": 0.5126949785912801,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        0,
+        327,
+        1448,
+        788
+      ],
+      "crop_uv": [
+        0.0,
+        0.3011049723756906,
+        1.0,
+        0.4244935543278085
+      ],
+      "cropped_aspect": 0.31837016574585636,
+      "alpha": 0.93,
+      "phase": 4.5777874056980234,
+      "rate": 0.4452368557845999,
+      "amplitude": 0.017109998527264893,
+      "nominal_width": 0.5249999999999999,
+      "size_variation": 0.9765618639833908,
+      "flip_x": false,
+      "rotation_degrees": -2.7619003524095818
+    },
+    {
+      "image": "DummyWave_6.png",
+      "band": "row_2",
+      "screen_band": 2,
+      "center": [
+        0.9180895376227731,
+        0.19183987605719086
+      ],
+      "width": 0.5014079878847161,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        7,
+        418,
+        1440,
+        696
+      ],
+      "crop_uv": [
+        0.004834254143646409,
+        0.3848987108655617,
+        0.9896408839779005,
+        0.2559852670349908
+      ],
+      "cropped_aspect": 0.19399860432658758,
+      "alpha": 0.93,
+      "phase": 2.2786838161758167,
+      "rate": 0.4622279562667758,
+      "amplitude": 0.01890716640102653,
+      "nominal_width": 0.5195614640883978,
+      "size_variation": 0.965060002601361,
+      "flip_x": true,
+      "rotation_degrees": 1.2131629063589653
+    },
+    {
+      "image": "DummyWave_6.png",
+      "band": "row_3",
+      "screen_band": 3,
+      "center": [
+        0.10168736941529104,
+        0.28059735485137627
+      ],
+      "width": 0.5339300291436118,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        7,
+        418,
+        1440,
+        696
+      ],
+      "crop_uv": [
+        0.004834254143646409,
+        0.3848987108655617,
+        0.9896408839779005,
+        0.2559852670349908
+      ],
+      "cropped_aspect": 0.19399860432658758,
+      "alpha": 0.93,
+      "phase": 1.2452036513219864,
+      "rate": 0.4160487306592451,
+      "amplitude": 0.016893978105758482,
+      "nominal_width": 0.5195614640883978,
+      "size_variation": 1.0276551785464392,
+      "flip_x": false,
+      "rotation_degrees": 0.8912903249457726
+    },
+    {
+      "image": "DummyWave_6.png",
+      "band": "row_3",
+      "screen_band": 3,
+      "center": [
+        0.5446577894181195,
+        0.2823022872201151
+      ],
+      "width": 0.5400095841416968,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        7,
+        418,
+        1440,
+        696
+      ],
+      "crop_uv": [
+        0.004834254143646409,
+        0.3848987108655617,
+        0.9896408839779005,
+        0.2559852670349908
+      ],
+      "cropped_aspect": 0.19399860432658758,
+      "alpha": 0.93,
+      "phase": 1.77547963459269,
+      "rate": 0.4487387578970766,
+      "amplitude": 0.016867923452340727,
+      "nominal_width": 0.5195614640883978,
+      "size_variation": 1.0393564986371275,
+      "flip_x": true,
+      "rotation_degrees": 1.4482659097981472
+    },
+    {
+      "image": "DummyWave_2.png",
+      "band": "row_3",
+      "screen_band": 3,
+      "center": [
+        0.9680772167798537,
+        0.3035837580764764
+      ],
+      "width": 0.5049208532991287,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        0,
+        327,
+        1448,
+        788
+      ],
+      "crop_uv": [
+        0.0,
+        0.3011049723756906,
+        1.0,
+        0.4244935543278085
+      ],
+      "cropped_aspect": 0.31837016574585636,
+      "alpha": 0.93,
+      "phase": 4.203582119865223,
+      "rate": 0.4542109002519125,
+      "amplitude": 0.01684976237547715,
+      "nominal_width": 0.5249999999999999,
+      "size_variation": 0.9617540062840548,
+      "flip_x": true,
+      "rotation_degrees": 2.8734457342657587
+    },
+    {
+      "image": "DummyWave_2.png",
+      "band": "row_4",
+      "screen_band": 4,
+      "center": [
+        0.04523823480054118,
+        0.3587341732253088
+      ],
+      "width": 0.5066113756842425,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        0,
+        327,
+        1448,
+        788
+      ],
+      "crop_uv": [
+        0.0,
+        0.3011049723756906,
+        1.0,
+        0.4244935543278085
+      ],
+      "cropped_aspect": 0.31837016574585636,
+      "alpha": 0.93,
+      "phase": 2.3376440735297717,
+      "rate": 0.41248953542881805,
+      "amplitude": 0.016736278171225062,
+      "nominal_width": 0.5249999999999999,
+      "size_variation": 0.9649740489223668,
+      "flip_x": false,
+      "rotation_degrees": -2.7215168531861185
+    },
+    {
+      "image": "DummyWave_1.png",
+      "band": "row_4",
+      "screen_band": 4,
+      "center": [
+        0.4690816945353664,
+        0.3800225705353604
+      ],
+      "width": 0.3846328596989678,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        9,
+        199,
+        1433,
+        921
+      ],
+      "crop_uv": [
+        0.006215469613259668,
+        0.1832412523020258,
+        0.9834254143646409,
+        0.6648250460405156
+      ],
+      "cropped_aspect": 0.5070224719101124,
+      "alpha": 0.95,
+      "phase": 5.90894741141112,
+      "rate": 0.4661525242464952,
+      "amplitude": 0.01740090698884532,
+      "nominal_width": 0.36878453038674036,
+      "size_variation": 1.042974495962744,
+      "flip_x": false,
+      "rotation_degrees": -0.00098528499247319
+    },
+    {
+      "image": "DummyWave_6.png",
+      "band": "row_4",
+      "screen_band": 4,
+      "center": [
+        0.9066123627661095,
+        0.37757187462688463
+      ],
+      "width": 0.539546922929331,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        7,
+        418,
+        1440,
+        696
+      ],
+      "crop_uv": [
+        0.004834254143646409,
+        0.3848987108655617,
+        0.9896408839779005,
+        0.2559852670349908
+      ],
+      "cropped_aspect": 0.19399860432658758,
+      "alpha": 0.93,
+      "phase": 3.2233148389024127,
+      "rate": 0.46188749130309914,
+      "amplitude": 0.016137279677843355,
+      "nominal_width": 0.5195614640883978,
+      "size_variation": 1.0384660145571014,
+      "flip_x": false,
+      "rotation_degrees": 2.7472293259901672
+    },
+    {
+      "image": "DummyWave_1.png",
+      "band": "row_5",
+      "screen_band": 5,
+      "center": [
+        0.08514241893673624,
+        0.4492805466895931
+      ],
+      "width": 0.3736418139935331,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        9,
+        199,
+        1433,
+        921
+      ],
+      "crop_uv": [
+        0.006215469613259668,
+        0.1832412523020258,
+        0.9834254143646409,
+        0.6648250460405156
+      ],
+      "cropped_aspect": 0.5070224719101124,
+      "alpha": 0.95,
+      "phase": 4.116576029925561,
+      "rate": 0.44162745814212157,
+      "amplitude": 0.018544006721694112,
+      "nominal_width": 0.36878453038674036,
+      "size_variation": 1.0131710611659848,
+      "flip_x": false,
+      "rotation_degrees": 1.5416343597013462
+    },
+    {
+      "image": "DummyWave_6.png",
+      "band": "row_5",
+      "screen_band": 5,
+      "center": [
+        0.551977875919665,
+        0.4508225403651792
+      ],
+      "width": 0.5084878411400025,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        7,
+        418,
+        1440,
+        696
+      ],
+      "crop_uv": [
+        0.004834254143646409,
+        0.3848987108655617,
+        0.9896408839779005,
+        0.2559852670349908
+      ],
+      "cropped_aspect": 0.19399860432658758,
+      "alpha": 0.93,
+      "phase": 2.9122942851686062,
+      "rate": 0.440489584899018,
+      "amplitude": 0.018267784327851783,
+      "nominal_width": 0.5195614640883978,
+      "size_variation": 0.9786865968440815,
+      "flip_x": false,
+      "rotation_degrees": -0.10507050379681537
+    },
+    {
+      "image": "DummyWave_8.png",
+      "band": "row_5",
+      "screen_band": 5,
+      "center": [
+        0.9452317801988646,
+        0.4652758527552431
+      ],
+      "width": 0.38042097893640736,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        6,
+        243,
+        1252,
+        1018
+      ],
+      "crop_uv": [
+        0.004784688995215311,
+        0.1937799043062201,
+        0.9936204146730463,
+        0.6180223285486444
+      ],
+      "cropped_aspect": 0.6219903691813804,
+      "alpha": 0.95,
+      "phase": 2.620913530633043,
+      "rate": 0.45392460982765365,
+      "amplitude": 0.017433225575988028,
+      "nominal_width": 0.3726076555023924,
+      "size_variation": 1.0209693046254784,
+      "flip_x": true,
+      "rotation_degrees": 2.023154817104846
+    },
+    {
+      "image": "DummyWave_2.png",
+      "band": "row_6",
+      "screen_band": 6,
+      "center": [
+        0.0230190219857363,
+        0.5308251169584082
+      ],
+      "width": 0.54775379407828,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        0,
+        327,
+        1448,
+        788
+      ],
+      "crop_uv": [
+        0.0,
+        0.3011049723756906,
+        1.0,
+        0.4244935543278085
+      ],
+      "cropped_aspect": 0.31837016574585636,
+      "alpha": 0.93,
+      "phase": 0.3050455466843909,
+      "rate": 0.41752992784644444,
+      "amplitude": 0.017541716456743427,
+      "nominal_width": 0.5249999999999999,
+      "size_variation": 1.0433405601491048,
+      "flip_x": true,
+      "rotation_degrees": -2.7207826668893818
+    },
+    {
+      "image": "DummyWave_2.png",
+      "band": "row_6",
+      "screen_band": 6,
+      "center": [
+        0.49351828793481256,
+        0.556688780951741
+      ],
+      "width": 0.5479095335171961,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        0,
+        327,
+        1448,
+        788
+      ],
+      "crop_uv": [
+        0.0,
+        0.3011049723756906,
+        1.0,
+        0.4244935543278085
+      ],
+      "cropped_aspect": 0.31837016574585636,
+      "alpha": 0.93,
+      "phase": 1.8227893937606905,
+      "rate": 0.44308915537129867,
+      "amplitude": 0.017796404544035433,
+      "nominal_width": 0.5249999999999999,
+      "size_variation": 1.0436372066994213,
+      "flip_x": false,
+      "rotation_degrees": 2.1439355377997735
+    },
+    {
+      "image": "DummyWave_2.png",
+      "band": "row_6",
+      "screen_band": 6,
+      "center": [
+        0.9102902106624612,
+        0.5294227345243745
+      ],
+      "width": 0.5444042161981871,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        0,
+        327,
+        1448,
+        788
+      ],
+      "crop_uv": [
+        0.0,
+        0.3011049723756906,
+        1.0,
+        0.4244935543278085
+      ],
+      "cropped_aspect": 0.31837016574585636,
+      "alpha": 0.93,
+      "phase": 0.6675278796321008,
+      "rate": 0.4161374111185671,
+      "amplitude": 0.01633679808458065,
+      "nominal_width": 0.5249999999999999,
+      "size_variation": 1.036960411806071,
+      "flip_x": true,
+      "rotation_degrees": 0.8817053714778762
+    },
+    {
+      "image": "DummyWave_1.png",
+      "band": "row_7",
+      "screen_band": 7,
+      "center": [
+        0.11577513971905029,
+        0.6424799443583488
+      ],
+      "width": 0.38012266534896366,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        9,
+        199,
+        1433,
+        921
+      ],
+      "crop_uv": [
+        0.006215469613259668,
+        0.1832412523020258,
+        0.9834254143646409,
+        0.6648250460405156
+      ],
+      "cropped_aspect": 0.5070224719101124,
+      "alpha": 0.95,
+      "phase": 3.593293082289225,
+      "rate": 0.45641805699797566,
+      "amplitude": 0.01611278283150907,
+      "nominal_width": 0.36878453038674036,
+      "size_variation": 1.0307446056653546,
+      "flip_x": false,
+      "rotation_degrees": 2.149175597654067
+    },
+    {
+      "image": "DummyWave_8.png",
+      "band": "row_7",
+      "screen_band": 7,
+      "center": [
+        0.5308180999991251,
+        0.6223145534771746
+      ],
+      "width": 0.3734436369872233,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        6,
+        243,
+        1252,
+        1018
+      ],
+      "crop_uv": [
+        0.004784688995215311,
+        0.1937799043062201,
+        0.9936204146730463,
+        0.6180223285486444
+      ],
+      "cropped_aspect": 0.6219903691813804,
+      "alpha": 0.95,
+      "phase": 3.907489327516257,
+      "rate": 0.39769380989344827,
+      "amplitude": 0.01619856933234559,
+      "nominal_width": 0.3726076555023924,
+      "size_variation": 1.0022435971791932,
+      "flip_x": true,
+      "rotation_degrees": -0.753015348261072
+    },
+    {
+      "image": "DummyWave_6.png",
+      "band": "row_7",
+      "screen_band": 7,
+      "center": [
+        0.938867989084768,
+        0.6075787998521319
+      ],
+      "width": 0.5389310542786566,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        7,
+        418,
+        1440,
+        696
+      ],
+      "crop_uv": [
+        0.004834254143646409,
+        0.3848987108655617,
+        0.9896408839779005,
+        0.2559852670349908
+      ],
+      "cropped_aspect": 0.19399860432658758,
+      "alpha": 0.93,
+      "phase": 3.9630320759612574,
+      "rate": 0.3927304773214281,
+      "amplitude": 0.01873081021888553,
+      "nominal_width": 0.5195614640883978,
+      "size_variation": 1.0372806521057985,
+      "flip_x": true,
+      "rotation_degrees": 1.7311662183619774
+    },
+    {
+      "image": "DummyWave_6.png",
+      "band": "row_8",
+      "screen_band": 8,
+      "center": [
+        0.004707214836534735,
+        0.7181776203887664
+      ],
+      "width": 0.527115908854449,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        7,
+        418,
+        1440,
+        696
+      ],
+      "crop_uv": [
+        0.004834254143646409,
+        0.3848987108655617,
+        0.9896408839779005,
+        0.2559852670349908
+      ],
+      "cropped_aspect": 0.19399860432658758,
+      "alpha": 0.93,
+      "phase": 1.3911412686177165,
+      "rate": 0.4080307964175444,
+      "amplitude": 0.01842995497676294,
+      "nominal_width": 0.5195614640883978,
+      "size_variation": 1.014540040569225,
+      "flip_x": true,
+      "rotation_degrees": -1.8259934476172324
+    },
+    {
+      "image": "DummyWave_6.png",
+      "band": "row_8",
+      "screen_band": 8,
+      "center": [
+        0.441615106930154,
+        0.7235496353699179
+      ],
+      "width": 0.542854497221011,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        7,
+        418,
+        1440,
+        696
+      ],
+      "crop_uv": [
+        0.004834254143646409,
+        0.3848987108655617,
+        0.9896408839779005,
+        0.2559852670349908
+      ],
+      "cropped_aspect": 0.19399860432658758,
+      "alpha": 0.93,
+      "phase": 3.3746925673452,
+      "rate": 0.4319096788343896,
+      "amplitude": 0.01697027507036883,
+      "nominal_width": 0.5195614640883978,
+      "size_variation": 1.044832103115042,
+      "flip_x": false,
+      "rotation_degrees": 1.0407531664956302
+    },
+    {
+      "image": "DummyWave_2.png",
+      "band": "row_8",
+      "screen_band": 8,
+      "center": [
+        0.8938752602994129,
+        0.7260059646451226
+      ],
+      "width": 0.5511512181792053,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        0,
+        327,
+        1448,
+        788
+      ],
+      "crop_uv": [
+        0.0,
+        0.3011049723756906,
+        1.0,
+        0.4244935543278085
+      ],
+      "cropped_aspect": 0.31837016574585636,
+      "alpha": 0.93,
+      "phase": 5.721248099990651,
+      "rate": 0.42463230869483615,
+      "amplitude": 0.018855103452027993,
+      "nominal_width": 0.5249999999999999,
+      "size_variation": 1.0498118441508675,
+      "flip_x": false,
+      "rotation_degrees": -1.5298698738420065
+    },
+    {
+      "image": "DummyWave_2.png",
+      "band": "row_9",
+      "screen_band": 9,
+      "center": [
+        0.10329993714810884,
+        0.7904557347735457
+      ],
+      "width": 0.4988789373468743,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        0,
+        327,
+        1448,
+        788
+      ],
+      "crop_uv": [
+        0.0,
+        0.3011049723756906,
+        1.0,
+        0.4244935543278085
+      ],
+      "cropped_aspect": 0.31837016574585636,
+      "alpha": 0.93,
+      "phase": 1.91606233593611,
+      "rate": 0.4764754969026891,
+      "amplitude": 0.018148517920433392,
+      "nominal_width": 0.5249999999999999,
+      "size_variation": 0.9502455949464274,
+      "flip_x": false,
+      "rotation_degrees": 0.0691645492749311
+    },
+    {
+      "image": "DummyWave_2.png",
+      "band": "row_9",
+      "screen_band": 9,
+      "center": [
+        0.5519221652366917,
+        0.7954855717870993
+      ],
+      "width": 0.5509158336857005,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        0,
+        327,
+        1448,
+        788
+      ],
+      "crop_uv": [
+        0.0,
+        0.3011049723756906,
+        1.0,
+        0.4244935543278085
+      ],
+      "cropped_aspect": 0.31837016574585636,
+      "alpha": 0.93,
+      "phase": 5.7301363861865,
+      "rate": 0.4619892365960155,
+      "amplitude": 0.018141743019071923,
+      "nominal_width": 0.5249999999999999,
+      "size_variation": 1.0493634927346678,
+      "flip_x": true,
+      "rotation_degrees": -1.9667760673440315
+    },
+    {
+      "image": "DummyWave_8.png",
+      "band": "row_9",
+      "screen_band": 9,
+      "center": [
+        0.9515144060453343,
+        0.8054554121285821
+      ],
+      "width": 0.3616980891173183,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        6,
+        243,
+        1252,
+        1018
+      ],
+      "crop_uv": [
+        0.004784688995215311,
+        0.1937799043062201,
+        0.9936204146730463,
+        0.6180223285486444
+      ],
+      "cropped_aspect": 0.6219903691813804,
+      "alpha": 0.95,
+      "phase": 3.2000236994006714,
+      "rate": 0.4600300034236316,
+      "amplitude": 0.018443231712703744,
+      "nominal_width": 0.3726076555023924,
+      "size_variation": 0.9707210353196728,
+      "flip_x": true,
+      "rotation_degrees": 2.0033326298401324
+    },
+    {
+      "image": "DummyWave_8.png",
+      "band": "row_10",
+      "screen_band": 10,
+      "center": [
+        0.1367235828145754,
+        0.8744460490134095
+      ],
+      "width": 0.3837423350829961,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        6,
+        243,
+        1252,
+        1018
+      ],
+      "crop_uv": [
+        0.004784688995215311,
+        0.1937799043062201,
+        0.9936204146730463,
+        0.6180223285486444
+      ],
+      "cropped_aspect": 0.6219903691813804,
+      "alpha": 0.95,
+      "phase": 0.9045408370357884,
+      "rate": 0.39311840124733405,
+      "amplitude": 0.017838300497889675,
+      "nominal_width": 0.3726076555023924,
+      "size_variation": 1.029883120800593,
+      "flip_x": true,
+      "rotation_degrees": -1.74731699242151
+    },
+    {
+      "image": "DummyWave_6.png",
+      "band": "row_10",
+      "screen_band": 10,
+      "center": [
+        0.5634219066572815,
+        0.862775566218278
+      ],
+      "width": 0.5023514112951933,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        7,
+        418,
+        1440,
+        696
+      ],
+      "crop_uv": [
+        0.004834254143646409,
+        0.3848987108655617,
+        0.9896408839779005,
+        0.2559852670349908
+      ],
+      "cropped_aspect": 0.19399860432658758,
+      "alpha": 0.93,
+      "phase": 3.0820584739102803,
+      "rate": 0.39540720373061317,
+      "amplitude": 0.01829521345931821,
+      "nominal_width": 0.5195614640883978,
+      "size_variation": 0.9668758097304223,
+      "flip_x": false,
+      "rotation_degrees": 1.4049307580515613
+    },
+    {
+      "image": "DummyWave_1.png",
+      "band": "row_10",
+      "screen_band": 10,
+      "center": [
+        0.9711586919832838,
+        0.8767686073041016
+      ],
+      "width": 0.3821073461439188,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        9,
+        199,
+        1433,
+        921
+      ],
+      "crop_uv": [
+        0.006215469613259668,
+        0.1832412523020258,
+        0.9834254143646409,
+        0.6648250460405156
+      ],
+      "cropped_aspect": 0.5070224719101124,
+      "alpha": 0.95,
+      "phase": 6.110357643870757,
+      "rate": 0.4368628752352692,
+      "amplitude": 0.01825689722028902,
+      "nominal_width": 0.36878453038674036,
+      "size_variation": 1.0361262869220869,
+      "flip_x": false,
+      "rotation_degrees": 0.34859228915932894
+    },
+    {
+      "image": "DummyWave_2.png",
+      "band": "row_11",
+      "screen_band": 11,
+      "center": [
+        0.057175014962863036,
+        0.953028605219313
+      ],
+      "width": 0.5059652115474316,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        0,
+        327,
+        1448,
+        788
+      ],
+      "crop_uv": [
+        0.0,
+        0.3011049723756906,
+        1.0,
+        0.4244935543278085
+      ],
+      "cropped_aspect": 0.31837016574585636,
+      "alpha": 0.93,
+      "phase": 2.1712702551211196,
+      "rate": 0.4550456890469138,
+      "amplitude": 0.016358803473806235,
+      "nominal_width": 0.5249999999999999,
+      "size_variation": 0.963743260090346,
+      "flip_x": false,
+      "rotation_degrees": -1.10703489848643
+    },
+    {
+      "image": "DummyWave_2.png",
+      "band": "row_11",
+      "screen_band": 11,
+      "center": [
+        0.49846419777891987,
+        0.9416879849006264
+      ],
+      "width": 0.5489204775180646,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        0,
+        327,
+        1448,
+        788
+      ],
+      "crop_uv": [
+        0.0,
+        0.3011049723756906,
+        1.0,
+        0.4244935543278085
+      ],
+      "cropped_aspect": 0.31837016574585636,
+      "alpha": 0.93,
+      "phase": 1.8119634204506894,
+      "rate": 0.4675964210478641,
+      "amplitude": 0.018479452610598787,
+      "nominal_width": 0.5249999999999999,
+      "size_variation": 1.0455628143201232,
+      "flip_x": true,
+      "rotation_degrees": 0.8269105982095288
+    },
+    {
+      "image": "DummyWave_8.png",
+      "band": "row_11",
+      "screen_band": 11,
+      "center": [
+        0.942551875091496,
+        0.9570545617915451
+      ],
+      "width": 0.3759367518171824,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        6,
+        243,
+        1252,
+        1018
+      ],
+      "crop_uv": [
+        0.004784688995215311,
+        0.1937799043062201,
+        0.9936204146730463,
+        0.6180223285486444
+      ],
+      "cropped_aspect": 0.6219903691813804,
+      "alpha": 0.95,
+      "phase": 3.4142377564753428,
+      "rate": 0.47387992814266355,
+      "amplitude": 0.01626023979579025,
+      "nominal_width": 0.3726076555023924,
+      "size_variation": 1.0089345891465953,
+      "flip_x": true,
+      "rotation_degrees": -1.8850906300900137
+    },
+    {
+      "image": "DummyWave_3.png",
+      "band": "row_1",
+      "screen_band": 1,
+      "center": [
+        -0.10026860075403675,
+        0.12286803871814904
+      ],
+      "width": 0.3171164281516629,
+      "original_width_before_halving": 0.43,
+      "alpha_bbox": [
+        24,
+        32,
+        1250,
+        1236
+      ],
+      "crop_uv": [
+        0.019138755980861243,
+        0.025518341307814992,
+        0.9776714513556619,
+        0.960127591706539
+      ],
+      "cropped_aspect": 0.9820554649265906,
+      "alpha": 0.95,
+      "phase": 2.3259818295211603,
+      "rate": 0.44,
+      "amplitude": 0.018,
+      "nominal_width": 0.3152990430622009,
+      "size_variation": 1.0057640044568847,
+      "flip_x": true,
+      "rotation_degrees": 2.006954895166201
+    },
+    {
+      "image": "DummyWave_4.png",
+      "band": "row_3",
+      "screen_band": 3,
+      "center": [
+        1.069929627093236,
+        0.29782964930866906
+      ],
+      "width": 0.3056737470524032,
+      "original_width_before_halving": 0.43,
+      "alpha_bbox": [
+        12,
+        31,
+        1243,
+        1247
+      ],
+      "crop_uv": [
+        0.009569377990430622,
+        0.024720893141945772,
+        0.981658692185008,
+        0.9696969696969697
+      ],
+      "cropped_aspect": 0.9878147847278635,
+      "alpha": 0.95,
+      "phase": 2.8822274563056083,
+      "rate": 0.44,
+      "amplitude": 0.018,
+      "nominal_width": 0.3165849282296651,
+      "size_variation": 0.9655347421676801,
+      "flip_x": true,
+      "rotation_degrees": -1.5970057246653184
+    },
+    {
+      "image": "DummyWave_1.png",
+      "band": "row_5",
+      "screen_band": 5,
+      "center": [
+        -0.0821631668932135,
+        0.4655787087707403
+      ],
+      "width": 0.37473316701187226,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        9,
+        199,
+        1433,
+        921
+      ],
+      "crop_uv": [
+        0.006215469613259668,
+        0.1832412523020258,
+        0.9834254143646409,
+        0.6648250460405156
+      ],
+      "cropped_aspect": 0.5070224719101124,
+      "alpha": 0.95,
+      "phase": 5.216168420994813,
+      "rate": 0.44,
+      "amplitude": 0.018,
+      "nominal_width": 0.36878453038674036,
+      "size_variation": 1.0161303854554138,
+      "flip_x": false,
+      "rotation_degrees": -2.314124190505619
+    },
+    {
+      "image": "DummyWave_5.png",
+      "band": "row_7",
+      "screen_band": 7,
+      "center": [
+        1.0994364332890798,
+        0.6120566923832897
+      ],
+      "width": 0.34583475027152627,
+      "original_width_before_halving": 0.46,
+      "alpha_bbox": [
+        15,
+        117,
+        1236,
+        1141
+      ],
+      "crop_uv": [
+        0.011961722488038277,
+        0.09330143540669857,
+        0.9736842105263158,
+        0.8165869218500797
+      ],
+      "cropped_aspect": 0.8386568386568387,
+      "alpha": 0.95,
+      "phase": 4.032666062087183,
+      "rate": 0.44,
+      "amplitude": 0.018,
+      "nominal_width": 0.3359210526315789,
+      "size_variation": 1.0295119867072464,
+      "flip_x": true,
+      "rotation_degrees": -1.758720620146667
+    },
+    {
+      "image": "DummyWave_8.png",
+      "band": "row_9",
+      "screen_band": 9,
+      "center": [
+        1.0800451328825036,
+        0.7771503134053028
+      ],
+      "width": 0.39003148992810366,
+      "original_width_before_halving": 0.5,
+      "alpha_bbox": [
+        6,
+        243,
+        1252,
+        1018
+      ],
+      "crop_uv": [
+        0.004784688995215311,
+        0.1937799043062201,
+        0.9936204146730463,
+        0.6180223285486444
+      ],
+      "cropped_aspect": 0.6219903691813804,
+      "alpha": 0.95,
+      "phase": 0.5845257518849047,
+      "rate": 0.44,
+      "amplitude": 0.018,
+      "nominal_width": 0.3726076555023924,
+      "size_variation": 1.0467618798712508,
+      "flip_x": true,
+      "rotation_degrees": 0.9502295405487766
+    },
+    {
+      "image": "DummyWave_7.png",
+      "band": "row_11",
+      "screen_band": 11,
+      "center": [
+        -0.10976154793852058,
+        0.9594348687413109
+      ],
+      "width": 0.35228356125899907,
+      "original_width_before_halving": 0.46,
+      "alpha_bbox": [
+        15,
+        81,
+        1254,
+        1188
+      ],
+      "crop_uv": [
+        0.011961722488038277,
+        0.0645933014354067,
+        0.9880382775119617,
+        0.8827751196172249
+      ],
+      "cropped_aspect": 0.8934624697336562,
+      "alpha": 0.95,
+      "phase": 6.146270220392049,
+      "rate": 0.44,
+      "amplitude": 0.018,
+      "nominal_width": 0.34087320574162683,
+      "size_variation": 1.0334738997526869,
+      "flip_x": false,
+      "rotation_degrees": 1.9584070571729644
+    },
+    {
+      "image": "DummyWave_6.png",
+      "band": "row_2",
+      "screen_band": 2,
+      "center": [
+        0.18,
+        0.21
+      ],
+      "width": 0.68,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        7,
+        418,
+        1440,
+        696
+      ],
+      "crop_uv": [
+        0.004834254143646409,
+        0.3848987108655617,
+        0.9896408839779005,
+        0.2559852670349908
+      ],
+      "cropped_aspect": 0.19399860432658758,
+      "alpha": 0.38,
+      "phase": 1.03,
+      "rate": 0.41601195333248114,
+      "amplitude": 0.012,
+      "nominal_width": 0.5195614640883978,
+      "size_variation": 1.0365502785234366,
+      "flip_x": true,
+      "rotation_degrees": -2,
+      "gap_fill": true,
+      "extra_depth": 1.2
+    },
+    {
+      "image": "DummyWave_2.png",
+      "band": "row_5",
+      "screen_band": 5,
+      "center": [
+        0.75,
+        0.46
+      ],
+      "width": 0.68,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        0,
+        327,
+        1448,
+        788
+      ],
+      "crop_uv": [
+        0.0,
+        0.3011049723756906,
+        1.0,
+        0.4244935543278085
+      ],
+      "cropped_aspect": 0.31837016574585636,
+      "alpha": 0.38,
+      "phase": 2.83,
+      "rate": 0.4274772659933131,
+      "amplitude": 0.012,
+      "nominal_width": 0.5249999999999999,
+      "size_variation": 0.966039699377851,
+      "flip_x": true,
+      "rotation_degrees": 1.5,
+      "gap_fill": true,
+      "extra_depth": 1.2
+    },
+    {
+      "image": "DummyWave_6.png",
+      "band": "row_8",
+      "screen_band": 8,
+      "center": [
+        0.22,
+        0.71
+      ],
+      "width": 0.68,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        7,
+        418,
+        1440,
+        696
+      ],
+      "crop_uv": [
+        0.004834254143646409,
+        0.3848987108655617,
+        0.9896408839779005,
+        0.2559852670349908
+      ],
+      "cropped_aspect": 0.19399860432658758,
+      "alpha": 0.38,
+      "phase": 4.63,
+      "rate": 0.41601195333248114,
+      "amplitude": 0.012,
+      "nominal_width": 0.5195614640883978,
+      "size_variation": 1.0365502785234366,
+      "flip_x": true,
+      "rotation_degrees": -1,
+      "gap_fill": true,
+      "extra_depth": 1.2
+    },
+    {
+      "image": "DummyWave_6.png",
+      "band": "row_11",
+      "screen_band": 11,
+      "center": [
+        0.74,
+        0.96
+      ],
+      "width": 0.68,
+      "original_width_before_halving": 0.7,
+      "alpha_bbox": [
+        7,
+        418,
+        1440,
+        696
+      ],
+      "crop_uv": [
+        0.004834254143646409,
+        0.3848987108655617,
+        0.9896408839779005,
+        0.2559852670349908
+      ],
+      "cropped_aspect": 0.19399860432658758,
+      "alpha": 0.38,
+      "phase": 6.430000000000001,
+      "rate": 0.41601195333248114,
+      "amplitude": 0.012,
+      "nominal_width": 0.5195614640883978,
+      "size_variation": 1.0365502785234366,
+      "flip_x": true,
+      "rotation_degrees": 2,
+      "gap_fill": true,
+      "extra_depth": 1.2
+    }
+  ],
+  "edge_water": {
+    "source_manifest": "res://art/dummys/diagonal_waves.json",
+    "max_patches": 32,
+    "placement": "Camera-facing vertical-face bottom edges; projected mask inside/outside rejection excludes hidden internal edges. Centers offset outside silhouette.",
+    "native_size": "Small patches at about 80 screen pixels per run at 720p; aspect preserved.",
+    "cuttable": false,
+    "contact_overlay": false
+  },
+  "flow": {
+    "speed_multipliers": [
+      0.55,
+      0.635,
+      0.72,
+      0.805,
+      0.89,
+      0.975,
+      1.06,
+      1.145,
+      1.23,
+      1.315,
+      1.4,
+      1.485
+    ],
+    "repeat_period": 1.15
+  }
+}

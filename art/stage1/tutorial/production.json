@@ -1,0 +1,7 @@
+{
+  "tool": "built-in image_gen",
+  "prompts": {
+    "red_cut_dashes": "Use case: ui-mockup. A single isolated horizontal dashed cutting guide for a Korean minhwa paper collage game tutorial. Exactly one straight row of 12 equally spaced short rounded dashes in vivid vermilion red, slight dry ink brush texture, high contrast, no arrowheads, no scissors, no text, no paper rectangle, no shadows or glow. Wide horizontal asset, dashes occupy central 85 percent of width and central 5 percent of canvas height. True transparent PNG background, clean empty margins.",
+    "tutorial_mouse": "Use case: ui-mockup. One isolated instructional computer mouse icon for a Korean minhwa paper collage game. Top view, simple clear ivory mouse silhouette with thick charcoal ink contour, central divider, left mouse button filled vivid vermilion red to indicate held left-click, tiny charcoal scroll wheel. Subtle handmade brush texture, readable when rendered 48 pixels wide. Vertical centered icon, no cord, no pointer arrow, no hand, no text, no shadow, no glow, no background. Entire mouse fits with generous transparent margins. Transparent PNG."
+  }
+}

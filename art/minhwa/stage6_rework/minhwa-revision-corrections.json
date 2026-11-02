@@ -1,0 +1,7 @@
+{
+  "mother": "Use case: precise-object-edit. Edit target attached existing mother character. Keep EXACT same character face, pose, clothing, muted Kim Hong-do Joseon ink wash style, proportions and placement on same1024x1536 canvas. Remove ONLY the basket of rice cakes above her head. Keep cloth head pad and raised right hand, fingers poised to support a separate basket later. No new objects. Mother alone, full body with feet intact. Clean actual fully transparent background, no glow or paper rectangle. Preserve all details below cloth head pad. Do not resize/reposition the woman.",
+  "frame_corrections": {
+    "tiger_run": "Precise sprite-sheet layout correction only. Keep this exact minhwa tiger design and poses. MUST be a transparent PNG with generous gutters. Shrink EVERY pose to fit INSIDE the central70 percent of its own equally sized cell. No opaque or semiopaque pixels may touch any cell boundary. No glow. Exact 3columns2rows, five poses row-major, sixthcell totally empty.1536x1024.",
+    "tiger_eat": "Precise sprite-sheet layout correction only. Keep this exact minhwa tiger design and poses. MUST be a transparent PNG with generous gutters. Shrink EVERY pose to fit INSIDE the central70 percent of its own equally sized cell. No opaque or semiopaque pixels may touch any cell boundary. No glow. Exact3columns1row, three eatingposes.1536x512."
+  }
+}

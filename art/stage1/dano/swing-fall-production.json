@@ -1,0 +1,12 @@
+{
+  "output": "swing_woman_fall_8frames.png",
+  "reference": "exec-afe86cc3-9c35-4fb6-9b9c-63c271274eb8.png",
+  "mode": "built-in image_gen",
+  "prompt": "Edit the provided eight-frame Korean minhwa game sprite sheet into a NEW eight-frame accidental FALL-AND-SAFE-LANDING animation of the SAME adult woman. Match her face, elaborate black hair, yellow jacket, maroon cuffs/ribbons, bright red skirt, pale flowing trousers and dark shoes, fine traditional ink strokes and paper-grain coloring exactly. This is a harmless whimsical game animation; she lands safely, no injury, no distress. EXACTLY 4 equal columns and 2 equal rows in chronological order, true transparent RGBA. Frame 1 startled loss of balance with hands beginning to open; 2 hands released, both arms spread, knees up; 3 moving downward, body slightly tilted, loose cloth trailing; 4 upright descent with feet below and arms balancing; 5 bends knees preparing to land; 6 soft seated/crouched landing with one hand braced; 7 settles after landing with cloth coming to rest; 8 stable calm seated pose. Red skirt stays around hips and behind trousers, fully clothed throughout. Character only: REMOVE ALL ropes and wooden planks from all eight frames, no ground, scenery, effects, impact marks, words, numbers or cell borders. All hands, feet, hair and clothes complete with generous TRANSPARENT padding in each cell; never touch adjacent cells. Same torso/face size, same 3/4 view, consistent foot baseline and centered alignment in every cell. Game physics controls vertical position, so keep each full figure inside its own cell. Canvas 2048 x 2048, exact 4 x 2 layout, eight clearly different drawn body/arm/leg poses, not eight copies or mere rotations of the original.",
+  "atlas": "swing-fall-atlas.json",
+  "animation": "8 newly drawn poses: loss of balance, descent, landing, seated recovery",
+  "trigger": "successful cut of the attached swing tree",
+  "motion": "RigidBody3D gravity/contact; frames 0-4 during descent and 5-7 after ground contact",
+  "children": "peeking_children_user_v2.png behind UpperLeftRock; old PeekingChildren scene texture replaced",
+  "validation": "GDScript syntax only; no game, physics simulation, compile or GPU/CUDA execution"
+}

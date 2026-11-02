@@ -1,0 +1,46 @@
+{
+  "generator": "built-in image_gen",
+  "layout": "Each cat sheet is a 2x2 grid: TL, TR, BL, BR. Runtime extracts individual cells and aligns their opaque foot bounds.",
+  "prompts": [
+    {
+      "file": "pine_01.png",
+      "prompt": "Use case: illustration-story. Production game sprite, one isolated Korean minhwa pine tree variation 1: tall elegant S-curved brown trunk with three asymmetric tiers of muted jade and charcoal ink pine needles, broad roots. Hand-painted Joseon folk painting on fibrous warm paper, delicate ink contours, ochre bark. Full tree centered with generous transparent margin, portrait format. Actual transparent background, no ground scene, no lettering, no frame, no white rectangle. The game will add its cuttable sticker outline itself. Tree should read as a beautiful paper cutout in a Korean mountain landscape."
+    },
+    {
+      "file": "pine_02.png",
+      "prompt": "Use case: illustration-story. Production asset for Korean folktale paper collage game. one isolated windswept Korean pine tree leaning LEFT, long branching trunk, flat layered dark jade needle canopies. Traditional Joseon minhwa ink and softly weathered watercolor pigments, delicate hand-painted fibrous texture, muted ochre jade charcoal palette. Actual transparent background. No text, labels, watermark, grid lines, shadows outside subject, or UI. Full tree including roots, portrait composition with margin. No scenery or paper rectangle. Cuttable sticker border added by game code."
+    },
+    {
+      "file": "pine_03.png",
+      "prompt": "Use case: illustration-story. Production asset for Korean folktale paper collage game. one isolated old Korean pine tree with a forked twin trunk and rounded dense moss-green needle clusters. Traditional Joseon minhwa ink and softly weathered watercolor pigments, delicate hand-painted fibrous texture, muted ochre jade charcoal palette. Actual transparent background. No text, labels, watermark, grid lines, shadows outside subject, or UI. Full tree including roots, portrait composition with margin. No scenery or paper rectangle. Cuttable sticker border added by game code."
+    },
+    {
+      "file": "pine_04.png",
+      "prompt": "Use case: illustration-story. Production asset for Korean folktale paper collage game. one isolated slender Korean pine tree leaning RIGHT with a dramatic crooked trunk and sparse wide horizontal needle branches. Traditional Joseon minhwa ink and softly weathered watercolor pigments, delicate hand-painted fibrous texture, muted ochre jade charcoal palette. Actual transparent background. No text, labels, watermark, grid lines, shadows outside subject, or UI. Full tree including roots, portrait composition with margin. No scenery or paper rectangle. Cuttable sticker border added by game code."
+    },
+    {
+      "file": "kitten_idle.png",
+      "prompt": "Use case: illustration-story. Production asset for Korean folktale paper collage game. Exactly FOUR animation frames of ONE tiny cream and ginger baby kitten, in a precise 2 by 2 grid of equal square cells. Frame 1 eyes open tail curled; frame 2 eyes half closed chest inhaling; frame 3 eyes closed tiny mouth meowing; frame 4 eyes opening tail tip raised. Identical identity proportions size camera and foot baseline in every cell. One complete kitten centered in EACH cell with generous transparent padding. No contact between cells. Sprite sheet is square. Subtle coherent idle loop, adorable but painted traditionally. Traditional Joseon minhwa ink and softly weathered watercolor pigments, delicate hand-painted fibrous texture, muted ochre jade charcoal palette. Actual transparent background. No text, labels, watermark, grid lines, shadows outside subject, or UI. "
+    },
+    {
+      "file": "roof_tabby_idle.png",
+      "prompt": "Use case: illustration-story. Production asset for Korean folktale paper collage game. Exactly FOUR animation frames of ONE seated brown striped tabby cat, in precise 2 by 2 equal square cells. Frame 1 eyes open tail curved right; frame 2 eyelids lowering tail tip raised; frame 3 blink closed ears twitch; frame 4 eyes reopen tail relaxes. Same cat same size and pose baseline in each cell, four separate complete cats, generous transparent padding, no cell overlap. Square sprite sheet, coherent subtle idle loop. Traditional Joseon minhwa ink and softly weathered watercolor pigments, delicate hand-painted fibrous texture, muted ochre jade charcoal palette. Actual transparent background. No text, labels, watermark, grid lines, shadows outside subject, or UI. "
+    },
+    {
+      "file": "roof_calico_idle.png",
+      "prompt": "Use case: illustration-story. Production asset for Korean folktale paper collage game. Exactly FOUR animation frames of ONE seated white calico cat with ochre orange and charcoal patches, precise 2 by 2 equal square cells. Frame 1 looking left; frame 2 slight head tilt; frame 3 blinking; frame 4 eyes open facing left again. Same cat markings size proportions and paw baseline, each complete cat individually centered with generous transparent padding, no overlap. Square sprite sheet. Traditional Joseon minhwa ink and softly weathered watercolor pigments, delicate hand-painted fibrous texture, muted ochre jade charcoal palette. Actual transparent background. No text, labels, watermark, grid lines, shadows outside subject, or UI. "
+    },
+    {
+      "file": "roof_black_idle.png",
+      "prompt": "Use case: illustration-story. Production asset for Korean folktale paper collage game. Exactly FOUR animation frames of ONE seated charcoal black cat with white bib and paws, precise 2 by 2 equal square cells. Frame 1 alert eyes; frame 2 relaxed half eyes; frame 3 closed eyes and tiny ear twitch; frame 4 reopen eyes tail slightly sways. Same cat markings size proportions and paw baseline, each complete cat individually centered with generous transparent padding, no overlap. Square sprite sheet. Traditional Joseon minhwa ink and softly weathered watercolor pigments, delicate hand-painted fibrous texture, muted ochre jade charcoal palette. Actual transparent background. No text, labels, watermark, grid lines, shadows outside subject, or UI. "
+    },
+    {
+      "file": "rat_marker.png",
+      "prompt": "Use case: illustration-story. Production asset for Korean folktale paper collage game. One small Korean minhwa mouse icon, cute gray brown field mouse with rounded ears whiskers long curled tail, three quarter side view. Compact readable silhouette for overhead marker in game, no circle or speech bubble. Traditional Joseon minhwa ink and softly weathered watercolor pigments, delicate hand-painted fibrous texture, muted ochre jade charcoal palette. Actual transparent background. No text, labels, watermark, grid lines, shadows outside subject, or UI. "
+    },
+    {
+      "file": "beauty_painting.png",
+      "prompt": "Use case: illustration-story. Production asset for Korean folktale paper collage game. A complete rectangular traditional Korean minhwa painting on warm aged hanji paper: elegant full length Joseon woman with ivory jeogori and muted blue chima, delicate black hair, standing amid painted low flowers and a slender plum blossom branch, distant faint ink mountains. Include the beautiful parchment background surrounding her as an integral opaque rectangular painting, straight frontal view, portrait aspect 1:2, no perspective, no hanging hardware, no writing, thin subtle ink border. Transparency only outside rectangular painting. Traditional Joseon minhwa ink and softly weathered watercolor pigments, delicate hand-painted fibrous texture, muted ochre jade charcoal palette. Actual transparent background. No text, labels, watermark, grid lines, shadows outside subject, or UI. "
+    }
+  ]
+}

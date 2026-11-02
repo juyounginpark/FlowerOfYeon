@@ -1,0 +1,13 @@
+﻿/build/
+/.godot/
+/output/
+/artifacts/
+*.tmp
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+/*.exe
+/*.pck
+/*.wasm
+/*.zip

@@ -1,0 +1,128 @@
+extends "res://tests/stage3/verify_sun_puzzle.gd"
+
+func item_point(fish: Node) -> Vector2:
+	var center := Vector2.ZERO
+	for vertex: Vector2 in fish.item.polygon: center += vertex
+	center /= fish.item.polygon.size()
+	return world.camera.unproject_position(fish.item.visual.to_global(Vector3(center.x,-center.y,0)))
+
+func run() -> void:
+	root.size = Vector2i(1280,720)
+	world = load("res://scenes/grid_stage/main.tscn").instantiate()
+	world.stage_number = 6
+	root.add_child(world)
+	world.transition.cancel(); world.stage_intro.hide()
+	await frames(8)
+	var system = world.stage_root.get_node("Stage3Fish")
+	var sun = world.stage_root.get_node("Stage3SunPuzzle")
+	system.land_chance = 0
+	check(not system.started and system.sea.is_empty(),"no fish before clouds clear")
+	var pose: Transform3D = sun.original.global_transform
+	var unit: float = sun.original.pixel_size
+	var cut: Vector2 = world.camera.unproject_position(pose*Vector3(32*unit,43.5*unit,0))
+	await stroke(cut-Vector2(200,0),cut+Vector2(200,0))
+	check(sun.state == 1,"sun cut")
+	var point := sun_point(sun)
+	await motion(point); await mouse(point,true)
+	await motion(Vector2(950,150),true); await mouse(Vector2(950,150),false)
+	await frames(140)
+	check(sun.state == 3 and system.started,"cloud clear starts fish")
+	system.interval = 1000
+	for actor in system.sea: actor.queue_free()
+	system.sea.clear()
+	system.land_chance = 0
+	var ordinary = system.spawn()
+	check(is_instance_valid(ordinary) and not ordinary.lands,"ordinary sea fish")
+	check(system.ground_at(ordinary.origin).is_empty(),"sea spawn avoids land")
+	await frames(35)
+	await capture("stage3-fish-sea")
+	var limit: int = system.max_sea
+	system.max_sea = 1
+	check(system.spawn() == null,"simultaneous sea limit enforced")
+	system.max_sea = limit
+	await frames(110)
+	check(not is_instance_valid(ordinary),"sea animation removes ordinary fish")
+	system.landing_points.assign([Vector3(-.45,0,4.0)])
+	var landing = system.spawn(true)
+	check(is_instance_valid(landing) and landing.lands,"test forces valid landing without changing defaults")
+	await frames(55)
+	check(landing.landed and landing.mode == 1,"first eight frames switch to looping 6")
+	check(system.items.size() == 1,"one persistent landed fish")
+	var fish = system.items[0]
+	await capture("stage3-fish-landed")
+	await frames(100)
+	check(is_instance_valid(landing),"land fish survives sea cleanup")
+	# Shared silhouette cut via actual mouse stroke.
+	var polygon: PackedVector2Array = fish.cut_piece.polygon
+	var bounds := Rect2(polygon[0],Vector2.ZERO)
+	for vertex in polygon: bounds = bounds.expand(vertex)
+	var center: Vector2 = fish.cut_piece.body.position+bounds.get_center()
+	var ratio: float = root.size.y/1000.0
+	await stroke((center-Vector2(bounds.size.x,0))*ratio,(center+Vector2(bounds.size.x,0))*ratio)
+	check(fish.converted and fish.pieces.size() == 1,"shared cut creates one 4 item")
+	if not fish.converted: quit(1); return
+	fish._cut(Vector2.ZERO,Vector2(1800,1000))
+	check(fish.pieces.size() == 1,"recut cannot duplicate fish")
+	await capture("stage3-fish-cut")
+	point = item_point(fish)
+	await motion(point); await mouse(point,true)
+	check(is_instance_valid(fish.grabbed),"shared fish drag")
+	await motion(Vector2(1200,100),true); await mouse(Vector2(1200,100),false)
+	check(not fish.installed and fish.item.visual.visible,"invalid sky drop retains fish")
+	point = item_point(fish)
+	await motion(point); await mouse(point,true)
+	var target := world.camera.unproject_position(Vector3(0,0,4.2))
+	await motion(target,true)
+	check(not fish.installed,"dragging is not a jump pad")
+	await mouse(target,false)
+	check(fish.installed,"shared sticker installs on walkable platform")
+	await capture("stage3-fish-installed")
+	world.player.position = fish.contact+Vector3(0,.04,.05)
+	world.player.heading = Vector3.FORWARD
+	await ticks(65)
+	check(not is_instance_valid(fish.tail) and system.flight_count == 0,"standing on fish never auto-launches")
+	check(fish.item.visual.material_override.get_shader_parameter("protect_player") == true,"4 renders behind player silhouette")
+	await capture("stage3-fish-behind-player-4")
+	Input.action_press("jump")
+	await ticks(1)
+	check(system.flying and is_instance_valid(fish.tail) and world.player.velocity.y>world.player.jump_speed,"jump press boosts immediately with tail pose")
+	check(fish.tail.material_override.get_shader_parameter("protect_player") == true,"7 renders behind player silhouette")
+	await capture("stage3-fish-behind-player-7")
+	await ticks(20)
+	check(system.flight_count == 1 and fish.launch_count == 1,"held jump launches exactly once")
+	Input.action_release("jump")
+	check(is_equal_approx(system.last_distance,3*8*StageCells.UNIT),"jump length derived from terrain cells")
+	await capture("stage3-fish-jump")
+	await ticks(110)
+	check(not system.flying and not world.player.input_locked and world.player.is_on_floor(),"normal controls restored after real landing")
+	check(world.player.position.y>1.7,"lands on higher platform")
+	var travelled := Vector2(system.last_landing.x-system.flight_origin.x,system.last_landing.z-system.flight_origin.z).length()
+	check(absf(travelled-system.last_distance)<StageCells.UNIT,"horizontal jump covers three blocks within one cell")
+	check(not is_instance_valid(fish.tail) and fish.item.visual.visible,"tail returns to 4")
+	var before_walk := world.player.position
+	Input.action_press("right")
+	await ticks(6)
+	Input.action_release("right")
+	check(world.player.position.distance_to(before_walk)>.02,"normal movement works after landing")
+	await capture("stage3-fish-landing")
+	await ticks(20)
+	check(fish.launch_count == 1,"no repeat from same contact")
+	world.player.position = fish.contact+Vector3(0,.04,0)
+	world.player.heading = Vector3.FORWARD
+	await ticks(10)
+	check(fish.launch_count == 1,"returning to fish without jump does not trigger")
+	Input.action_press("jump")
+	await ticks(2)
+	Input.action_release("jump")
+	check(fish.launch_count == 2,"new jump press reuses fish")
+	world.restart(); world.transition.cancel(); await frames(5)
+	check(not is_instance_valid(system) and not world.player.input_locked,"restart cancels active flight and old fish")
+	system = world.stage_root.get_node("Stage3Fish")
+	check(not system.started and system.sea.is_empty() and system.items.is_empty(),"restart resets timers and fish")
+	check(is_equal_approx(system.land_chance,.25),"normal probability preserved")
+	world.load_stage(5); world.transition.cancel(); await frames(5)
+	check(not is_instance_valid(system) and not world.stage_root.has_node("Stage3Fish"),"stage change removes fish manager")
+	check(world.stage_root.has_node("StartAndPath") and not world.rune_candidates.is_empty(),"Stage2 base map and lifts retained")
+	world.queue_free(); await frames()
+	if not failed: print("PASS: %d Stage3 fish checks" % checks)
+	quit(1 if failed else 0)

@@ -1,0 +1,39 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "stage": 2,
+      "title": "선녀와 나무꾼",
+      "key": "stage-2",
+      "prompt": "Use case: logo-brand. Asset: Korean ink-brush game stage title, TRUE TRANSPARENT background. Write EXACTLY \"선녀와 나무꾼\" in ONE HORIZONTAL LINE, left to right, with the word spaces shown. Individual Hangul syllables in order: 선 / 녀 / 와 / 나 / 무 / 꾼. Authentic bold Korean brush calligraphy matching the black ink title logo 연의 꽃: confident thick-to-thin brush strokes, visible dry-brush bristles, natural irregular black edges, dense sumi ink and slight paper grain inside ink only. Every Hangul syllable and final consonant must be clearly legible and spelled correctly. All text is black ink only. Uniform character height, generous transparent margins, complete text not cut off. No frame or border, no paper/background fill, no seal, no English, no numbers, no extra words, no other objects. Do not paraphrase, abbreviate, merge or change the title \"선녀와 나무꾼\". This horizontal title will be displayed in a game at about 20–25 pixels tall, so prioritize readable, strong ink lettering over decorative flourishes.",
+      "file": "stage-02-v2.png"
+    },
+    {
+      "stage": 4,
+      "title": "빨간부채  파란부채",
+      "key": "stage-4",
+      "prompt": "Use case: logo-brand. Asset: Korean ink-brush game stage title, TRUE TRANSPARENT background. Write EXACTLY \"빨간부채  파란부채\" in ONE HORIZONTAL LINE, left to right, with the word spaces shown. Individual Hangul syllables in order: 빨 / 간 / 부 / 채 / 파 / 란 / 부 / 채. Authentic bold Korean brush calligraphy matching the black ink title logo 연의 꽃: confident thick-to-thin brush strokes, visible dry-brush bristles, natural irregular black edges, dense sumi ink and slight paper grain inside ink only. Every Hangul syllable and final consonant must be clearly legible and spelled correctly. All text is black ink only. Uniform character height, generous transparent margins, complete text not cut off. No frame or border, no paper/background fill, no seal, no English, no numbers, no extra words, no other objects. Do not paraphrase, abbreviate, merge or change the title \"빨간부채  파란부채\". This horizontal title will be displayed in a game at about 20–25 pixels tall, so prioritize readable, strong ink lettering over decorative flourishes.",
+      "file": "stage-04-v2.png"
+    },
+    {
+      "stage": 5,
+      "title": "손톱먹은 쥐",
+      "key": "stage-5",
+      "prompt": "Use case: logo-brand. Asset: Korean ink-brush game stage title, TRUE TRANSPARENT background. Write EXACTLY \"손톱먹은 쥐\" in ONE HORIZONTAL LINE, left to right, with the word spaces shown. Individual Hangul syllables in order: 손 / 톱 / 먹 / 은 / 쥐. Authentic bold Korean brush calligraphy matching the black ink title logo 연의 꽃: confident thick-to-thin brush strokes, visible dry-brush bristles, natural irregular black edges, dense sumi ink and slight paper grain inside ink only. Every Hangul syllable and final consonant must be clearly legible and spelled correctly. All text is black ink only. Uniform character height, generous transparent margins, complete text not cut off. No frame or border, no paper/background fill, no seal, no English, no numbers, no extra words, no other objects. Do not paraphrase, abbreviate, merge or change the title \"손톱먹은 쥐\". This horizontal title will be displayed in a game at about 20–25 pixels tall, so prioritize readable, strong ink lettering over decorative flourishes.",
+      "file": "stage-05-v2.png"
+    },
+    {
+      "stage": 6,
+      "title": "해와 달이 된 오누이",
+      "key": "stage-6",
+      "prompt": "Use case: logo-brand. Asset: Korean ink-brush game stage title, TRUE TRANSPARENT background. Write EXACTLY \"해와 달이 된 오누이\" in ONE HORIZONTAL LINE, left to right, with the word spaces shown. Individual Hangul syllables in order: 해 / 와 / 달 / 이 / 된 / 오 / 누 / 이. Authentic bold Korean brush calligraphy matching the black ink title logo 연의 꽃: confident thick-to-thin brush strokes, visible dry-brush bristles, natural irregular black edges, dense sumi ink and slight paper grain inside ink only. Every Hangul syllable and final consonant must be clearly legible and spelled correctly. All text is black ink only. Uniform character height, generous transparent margins, complete text not cut off. No frame or border, no paper/background fill, no seal, no English, no numbers, no extra words, no other objects. Do not paraphrase, abbreviate, merge or change the title \"해와 달이 된 오누이\". This horizontal title will be displayed in a game at about 20–25 pixels tall, so prioritize readable, strong ink lettering over decorative flourishes.",
+      "file": "stage-06-v2.png"
+    },
+    {
+      "key": "frame",
+      "prompt": "Use case: illustration-story. Asset: one EMPTY hand-brushed rectangular outline for a Korean ink-calligraphy game title, true transparent background. A complete wide horizontal rectangle, approximately 5:1 aspect ratio, made of four confident black ink-brush strokes with slightly irregular hand-drawn corners, dry bristle texture and natural feathered edges, matching a traditional Korean black ink-brush logo. Border stroke relatively fine, about 2 percent of rectangle height, so it remains a readable frame when shown 170 pixels wide and 35 pixels high. The inside must be TOTALLY TRANSPARENT, no paper fill or color wash. Outside also totally transparent, generous clear margins. Black ink only; no red stamps, no letters, no words, no dividing line, no ornaments, no shadows, no panels, no computer-perfect vector shape. Only a single empty horizontal black brush-painted rectangular frame, complete and centered.",
+      "file": "ink-frame.png"
+    }
+  ]
+}

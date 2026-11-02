@@ -1,0 +1,14 @@
+{
+  "generator": "built-in image_gen",
+  "file": "house_map_view.png",
+  "reference": "User supplied 기왓집.PNG traditional minhwa book",
+  "prompt": "Reference image supplied by user: an old Korean minhwa book depicting giwa houses and courtyards. Use this ONLY for subdued folk painting ink/pigment texture and restrained architectural details. Generate ONE isolated modest single-storey Korean tiled-roof courtyard house cutout for an orthographic 3D game. CRITICAL CAMERA: match orthographic game camera elevation 42 degrees downward, azimuth 15 degrees from the front, NOT symmetrical 30/30 isometric. Roof/courtyard plane X edges run 10 degrees down toward screen RIGHT; perpendicular depth edges run 68 degrees up toward screen RIGHT. Parallel edges stay exactly parallel, no perspective convergence. LOW squat one-storey building, roofs spread horizontally and dominate silhouette, visible walls only 10 percent of overall height, no tall facade, no tower or upright silhouette. Looking down clearly onto dark grey tiled roofs and the open inner courtyard. Quiet faded ochre plaster, brown timber, warm ivory and ink-grey Korean minhwa brushwork inspired by reference, not glossy or 3D rendered. Entire structure contained within wide landscape transparent canvas with 12 percent clear padding. TRUE transparency outside silhouette; no grey haze, no glow, no drop shadow, no surrounding paper or landscape, no people, no text.",
+  "camera": {
+    "azimuth_degrees": 15,
+    "elevation_degrees": 42,
+    "projection": "orthographic"
+  },
+  "image_review": "Viewed generated image: low single-storey roof and courtyard dominate, front edge approx 10 degrees descending right, depth edge steeply rising right. Transparent exterior samples alpha=0. Actual gameplay composite not run.",
+  "carrier_fix": "Use collision-radius insets, derive fall height from screen rows, scale gourds as well as birds if necessary, retry after viewport layout instead of permanently skipping all carriers.",
+  "validation": "Five GDScript --check-only checks passed. No game, simulation or GPU validation."
+}

@@ -1,0 +1,12 @@
+{
+  "tool": "built-in image_gen",
+  "edit_target": "peach_branches_reference.png",
+  "asset": "peach_branches_cutout_v2.png",
+  "source_asset": "peach_branch_tall.png",
+  "prompt": "Extract ONLY the TWO PAINTED PEACH TREE BRANCHES from this reference onto a completely EMPTY TRANSPARENT canvas. The reference's blurry mottled dark green/brown background MUST DISAPPEAR ENTIRELY: absolutely no backdrop, gradient, tinted haze, colored glow, soft shadow, rectangular panel or filling between leaves. All negative spaces and the gap between the two separate horizontal branches must be alpha ZERO. Keep original dark outlined leaves, wooden twigs, red blossoms and peach fruit with the same illustration style and shape. This is a sprite CUTOUT, not the original painting displayed as a whole image. Recreate the illustrated objects as needed to guarantee truly clean transparent alpha. Arrange the two COMPLETE horizontal branch sprites in two separate rows, each strictly inside its own half of a 1536x1024 canvas, with generous empty TRANSPARENT margin (at least 40px) around every row; no objects overlapping the row boundary. Upper branch in top half, lower branch in bottom half. Do not draw transparency checkerboard. No text, frames, sticker border or any other content. ONLY the illustrated fruit-bearing branches should be visible.",
+  "initial_prompt": "Edit target: the provided two-branch Korean peach illustration. Remove ONLY the blurred green/brown/red background, replacing it with real transparent alpha, including all gaps between leaves and twigs. Preserve EXACTLY the two original horizontal flowering peach boughs, their placement, contours, all peach fruit, blossoms, leaves, ink detail and saturated colors. Do not redraw, invent, rearrange, crop, add outlines, shadows or text. Keep both branches fully separate with transparent gap, one above the other in the same original landscape composition, with no connection between them. Produce a clean game-sprite cutout on a genuinely transparent background.",
+  "placement": "Left green-marked area; original tall bough plus transparent pair of boughs rotated upward.",
+  "cutting": "Existing GridPaperCutting, alpha sticker border, gravity/collision and map occlusion.",
+  "dragon_rig": "Native Skeleton3D/Skin, 12 hierarchical bones, 48x48 weighted mesh. Existing mane frames and hover retained.",
+  "validation": "Static GDScript syntax/reference review. No game execution, engine compilation or CUDA/GPU verification."
+}

@@ -1,0 +1,17 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "file": "lotus.png",
+      "prompt": "Use case: illustration-story. Transparent game sprite, ONE large open pink lotus rescue boat, Korean traditional minhwa watercolor and fine ink on painted paper texture. Three-quarter elevated view, wide horizontal ellipse, layered ivory and dusty pink petals around a flat pale golden seed center where a person could stand, two jade-green leaves tucked under bloom. Whole flower visible, centered, generous transparent margins, no person, no water rectangle, no background, no text, no shadow/glow outside the object. Width greater than height, delicate hand-painted traditional Korean folk art, coherent cutout silhouette. The TOP of central seed platform must be clearly visible."
+    },
+    {
+      "file": "fish.png",
+      "prompt": "Use case: illustration-story. ONE transparent game cutout sprite of a Korean minhwa carp leaping sideways, facing right, curved but nearly horizontal body with a broad level back suitable for a fantasy stepping-stone bridge. Pale ivory and warm red-orange scales, jade-teal fins, expressive natural fish eye and delicate whiskers, full tail and fins visible. Korean traditional folk painting, delicate ink outlines, watercolor pigment and subtle paper grain INSIDE silhouette. Three-quarter side view with visible back. Centered entire animal with transparent margins all sides, no water, no spray, no background, no text, no scene, no glow or shadow outside silhouette. Landscape 3:2."
+    },
+    {
+      "file": "turtle.png",
+      "prompt": "Use case: illustration-story. ONE transparent game cutout sprite of a Korean minhwa sea turtle, facing right, swimming with four flippers stretched, gently domed broad moss green and muted turquoise shell with delicate gold-ochre hexagonal plates, ivory neck and friendly natural eye. Full shell head tail and all four flippers visible. Three-quarter elevated side view so the TOP of shell is visible as a fantasy stepping stone. Korean traditional folk painting with fine ink contours, watercolor pigments, subtle paper grain INSIDE silhouette, matching an ivory/red carp with teal fins. Horizontal landscape 3:2, centered with transparent margins, no water, no spray, no background, no words, no glow or shadow outside silhouette."
+    }
+  ]
+}

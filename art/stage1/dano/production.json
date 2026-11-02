@@ -1,0 +1,79 @@
+{
+  "source": "reference.png (user first attachment, 744 x 600)",
+  "originals_preserved": [
+    "../1stage photo.png",
+    "../2.png",
+    "../3.png",
+    "../4.png"
+  ],
+  "image_edit_mode": "built-in image_gen",
+  "prompts": [
+    {
+      "output": "landscape.png",
+      "request": "Edit the original Dano painting into an empty landscape plate: remove all people, swing and central tree, preserve original 744:600 composition, rocks, stream, grass and aged paper; then remove remaining upper-right tree. No new objects, lotus, ocean waves, text or UI."
+    },
+    {
+      "output": "main_tree.png",
+      "request": "Extract only the main large tree from original upper-left crop, preserve its ink trunk, roots, branches and left-reaching canopy; remove paper, rocks, grass, writing and all people; real transparent alpha."
+    }
+  ],
+  "original_pixel_crops": "crops.json; regenerated with tools/build_dano_sprites.py using Pillow and hand-traced alpha masks",
+  "layout": "Original source coordinates; 13 metre painting height, fixed orthographic camera; preserve original aspect without stretching actors",
+  "preview": "previews/rock-cutouts.png shows only separated rock assets on a checkerboard",
+  "runtime_validation": "Not run: user prohibits game and GPU/CUDA execution",
+  "active_scene": "Existing grid Stage1 with unchanged waves, map, collisions, spawn and gameplay. Only peripheral flowers removed and individual sprites arranged according to user color annotations.",
+  "active_rocks": {
+    "source": "rock_source.png",
+    "extraction": "tools/extract_dano_rocks.py",
+    "boundaries": "rock-crops.json",
+    "outputs": [
+      "rock_left.png",
+      "rock_right.png"
+    ],
+    "method": "Original pixels with alpha mask along user red boundaries; no new image generation"
+  },
+  "previous_full_painting_layout": "REJECTED by user and removed from active scene. landscape.png and reference.png are not loaded as scene backgrounds.",
+  "active_rock_sprites": [
+    "rock_left_complete_v2.png",
+    "rock_right_complete_v2.png"
+  ],
+  "active_sprite_revision": {
+    "rocks": "Each sprite is one complete boulder with repaired organic edges; placed in purple regions without horizontal stretching",
+    "hair_washing_women": "Green region centered at viewport fraction (0.235, 0.825)",
+    "existing_tree": "Original art/stage1/3.png reused in orange region, root (0.315, 0.56)",
+    "unchanged": "Map, waves/background, camera, collisions, dialogue, cutting and bridge code",
+    "edit_prompts": "rock-complete-v2-production.json",
+    "asset_preview": "previews/rocks-complete-v2.png"
+  },
+  "rock_contact_waves": {
+    "script": "scripts/stage1/rock_waves.gd",
+    "contact_profiles": "rock-wave-contacts.json",
+    "reused": "Existing edge_waves._place, shared advance clock, grid_shore_wave shader and original diagonal foam textures",
+    "patches": 17,
+    "period_seconds": 4.8,
+    "layer": "Above rock, below people; shared map/walking/player masks",
+    "validation": "Static syntax, paths, alpha contours and protected source hashes only. No game/GPU/CUDA execution.",
+    "scale": 2.1,
+    "surge_pixels": 5
+  },
+  "active_swing": "swing-user-v2-production.json",
+  "active_people": "people-production.json",
+  "children_revision": {
+    "source": "peeking_children_user_v2.png",
+    "location": [
+      0.125,
+      0.225
+    ],
+    "mirrored": true,
+    "priority": 85,
+    "rock_priority": 90,
+    "old_scene_sprite": "removed"
+  },
+  "swing_fall": {
+    "trigger": "successful cut of the attached rope_tree",
+    "position": "RigidBody3D gravity and ground collision, paused with world",
+    "animation": "8 original-image lean/squash/rebound poses; upper loose rope tips cropped by AtlasTexture",
+    "shader": "scripts/stage1/swing_fall_ink.gdshader",
+    "validation": "Static only; no game, GPU/CUDA or physics simulation executed"
+  }
+}

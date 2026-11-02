@@ -1,0 +1,54 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "transparent_background": true,
+  "assets": [
+    {
+      "stage": 1,
+      "title": "단오",
+      "prompt": "Use case: logo-brand. Asset type: one Korean calligraphic game-stage title on a TRUE TRANSPARENT background. Write EXACTLY this Korean text, left to right in ONE HORIZONTAL LINE: \"단오\". The text is 단 / 오 in order; preserve the word spacing shown in \"단오\". Black ink only. Bold, authentic Korean brush calligraphy in the same confident handmade mood as a traditional ink-brush logo reading 연의 꽃: expressive thick-to-thin strokes, visible dry-brush bristles, dense black ink with a few broken grainy edges, quiet folk-painting aesthetic. Make every Hangul syllable clearly recognizable and correctly spelled, especially final consonants. Character heights consistent, no stacked lines, no excessive flourishes. The whole inscription is complete, centered, with generous transparent padding and no cropping. No rectangular border or stamp frame, no paper/background, no red seals, no decorations, no lotus, no stage numbers, no English, no subtitle, no extra lettering, no watermark. This asset will be displayed roughly 25 pixels tall, so prioritize readable strong ink strokes over hairline texture. Only the requested text \"단오\".",
+      "file": "stage-01.png"
+    },
+    {
+      "stage": 2,
+      "title": "선녀와나무꾼",
+      "prompt": "Use case: logo-brand. Asset type: one Korean calligraphic game-stage title on a TRUE TRANSPARENT background. Write EXACTLY this Korean text, left to right in ONE HORIZONTAL LINE: \"선녀와나무꾼\". The text is 선 / 녀 / 와 / 나 / 무 / 꾼 in order; preserve the word spacing shown in \"선녀와나무꾼\". Black ink only. Bold, authentic Korean brush calligraphy in the same confident handmade mood as a traditional ink-brush logo reading 연의 꽃: expressive thick-to-thin strokes, visible dry-brush bristles, dense black ink with a few broken grainy edges, quiet folk-painting aesthetic. Make every Hangul syllable clearly recognizable and correctly spelled, especially final consonants. Character heights consistent, no stacked lines, no excessive flourishes. The whole inscription is complete, centered, with generous transparent padding and no cropping. No rectangular border or stamp frame, no paper/background, no red seals, no decorations, no lotus, no stage numbers, no English, no subtitle, no extra lettering, no watermark. This asset will be displayed roughly 25 pixels tall, so prioritize readable strong ink strokes over hairline texture. Only the requested text \"선녀와나무꾼\".",
+      "file": "stage-02.png"
+    },
+    {
+      "stage": 3,
+      "title": "심청전",
+      "prompt": "Use case: logo-brand. Asset type: one Korean calligraphic game-stage title on a TRUE TRANSPARENT background. Write EXACTLY this Korean text, left to right in ONE HORIZONTAL LINE: \"심청전\". The text is 심 / 청 / 전 in order; preserve the word spacing shown in \"심청전\". Black ink only. Bold, authentic Korean brush calligraphy in the same confident handmade mood as a traditional ink-brush logo reading 연의 꽃: expressive thick-to-thin strokes, visible dry-brush bristles, dense black ink with a few broken grainy edges, quiet folk-painting aesthetic. Make every Hangul syllable clearly recognizable and correctly spelled, especially final consonants. Character heights consistent, no stacked lines, no excessive flourishes. The whole inscription is complete, centered, with generous transparent padding and no cropping. No rectangular border or stamp frame, no paper/background, no red seals, no decorations, no lotus, no stage numbers, no English, no subtitle, no extra lettering, no watermark. This asset will be displayed roughly 25 pixels tall, so prioritize readable strong ink strokes over hairline texture. Only the requested text \"심청전\".",
+      "file": "stage-03.png"
+    },
+    {
+      "stage": 4,
+      "title": "빨강파랑부채",
+      "prompt": "Use case: logo-brand. Asset type: one Korean calligraphic game-stage title on a TRUE TRANSPARENT background. Write EXACTLY this Korean text, left to right in ONE HORIZONTAL LINE: \"빨강파랑부채\". The text is 빨 / 강 / 파 / 랑 / 부 / 채 in order; preserve the word spacing shown in \"빨강파랑부채\". Black ink only. Bold, authentic Korean brush calligraphy in the same confident handmade mood as a traditional ink-brush logo reading 연의 꽃: expressive thick-to-thin strokes, visible dry-brush bristles, dense black ink with a few broken grainy edges, quiet folk-painting aesthetic. Make every Hangul syllable clearly recognizable and correctly spelled, especially final consonants. Character heights consistent, no stacked lines, no excessive flourishes. The whole inscription is complete, centered, with generous transparent padding and no cropping. No rectangular border or stamp frame, no paper/background, no red seals, no decorations, no lotus, no stage numbers, no English, no subtitle, no extra lettering, no watermark. This asset will be displayed roughly 25 pixels tall, so prioritize readable strong ink strokes over hairline texture. Only the requested text \"빨강파랑부채\".",
+      "file": "stage-04.png"
+    },
+    {
+      "stage": 5,
+      "title": "손톱",
+      "prompt": "Use case: logo-brand. Asset type: one Korean calligraphic game-stage title on a TRUE TRANSPARENT background. Write EXACTLY this Korean text, left to right in ONE HORIZONTAL LINE: \"손톱\". The text is 손 / 톱 in order; preserve the word spacing shown in \"손톱\". Black ink only. Bold, authentic Korean brush calligraphy in the same confident handmade mood as a traditional ink-brush logo reading 연의 꽃: expressive thick-to-thin strokes, visible dry-brush bristles, dense black ink with a few broken grainy edges, quiet folk-painting aesthetic. Make every Hangul syllable clearly recognizable and correctly spelled, especially final consonants. Character heights consistent, no stacked lines, no excessive flourishes. The whole inscription is complete, centered, with generous transparent padding and no cropping. No rectangular border or stamp frame, no paper/background, no red seals, no decorations, no lotus, no stage numbers, no English, no subtitle, no extra lettering, no watermark. This asset will be displayed roughly 25 pixels tall, so prioritize readable strong ink strokes over hairline texture. Only the requested text \"손톱\".",
+      "file": "stage-05.png"
+    },
+    {
+      "stage": 6,
+      "title": "해와 달",
+      "prompt": "Use case: logo-brand. Asset type: one Korean calligraphic game-stage title on a TRUE TRANSPARENT background. Write EXACTLY this Korean text, left to right in ONE HORIZONTAL LINE: \"해와 달\". The text is 해 / 와 / 달 in order; preserve the word spacing shown in \"해와 달\". Black ink only. Bold, authentic Korean brush calligraphy in the same confident handmade mood as a traditional ink-brush logo reading 연의 꽃: expressive thick-to-thin strokes, visible dry-brush bristles, dense black ink with a few broken grainy edges, quiet folk-painting aesthetic. Make every Hangul syllable clearly recognizable and correctly spelled, especially final consonants. Character heights consistent, no stacked lines, no excessive flourishes. The whole inscription is complete, centered, with generous transparent padding and no cropping. No rectangular border or stamp frame, no paper/background, no red seals, no decorations, no lotus, no stage numbers, no English, no subtitle, no extra lettering, no watermark. This asset will be displayed roughly 25 pixels tall, so prioritize readable strong ink strokes over hairline texture. Only the requested text \"해와 달\".",
+      "file": "stage-06.png"
+    },
+    {
+      "stage": 7,
+      "title": "흥부전",
+      "prompt": "Use case: logo-brand. Asset type: one Korean calligraphic game-stage title on a TRUE TRANSPARENT background. Write EXACTLY this Korean text, left to right in ONE HORIZONTAL LINE: \"흥부전\". The text is 흥 / 부 / 전 in order; preserve the word spacing shown in \"흥부전\". Black ink only. Bold, authentic Korean brush calligraphy in the same confident handmade mood as a traditional ink-brush logo reading 연의 꽃: expressive thick-to-thin strokes, visible dry-brush bristles, dense black ink with a few broken grainy edges, quiet folk-painting aesthetic. Make every Hangul syllable clearly recognizable and correctly spelled, especially final consonants. Character heights consistent, no stacked lines, no excessive flourishes. The whole inscription is complete, centered, with generous transparent padding and no cropping. No rectangular border or stamp frame, no paper/background, no red seals, no decorations, no lotus, no stage numbers, no English, no subtitle, no extra lettering, no watermark. This asset will be displayed roughly 25 pixels tall, so prioritize readable strong ink strokes over hairline texture. Only the requested text \"흥부전\".",
+      "file": "stage-07.png"
+    },
+    {
+      "stage": 8,
+      "title": "견우와 직녀",
+      "prompt": "Use case: logo-brand. Asset type: one Korean calligraphic game-stage title on a TRUE TRANSPARENT background. Write EXACTLY this Korean text, left to right in ONE HORIZONTAL LINE: \"견우와 직녀\". The text is 견 / 우 / 와 / 직 / 녀 in order; preserve the word spacing shown in \"견우와 직녀\". Black ink only. Bold, authentic Korean brush calligraphy in the same confident handmade mood as a traditional ink-brush logo reading 연의 꽃: expressive thick-to-thin strokes, visible dry-brush bristles, dense black ink with a few broken grainy edges, quiet folk-painting aesthetic. Make every Hangul syllable clearly recognizable and correctly spelled, especially final consonants. Character heights consistent, no stacked lines, no excessive flourishes. The whole inscription is complete, centered, with generous transparent padding and no cropping. No rectangular border or stamp frame, no paper/background, no red seals, no decorations, no lotus, no stage numbers, no English, no subtitle, no extra lettering, no watermark. This asset will be displayed roughly 25 pixels tall, so prioritize readable strong ink strokes over hairline texture. Only the requested text \"견우와 직녀\".",
+      "file": "stage-08.png"
+    }
+  ]
+}

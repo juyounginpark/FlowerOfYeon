@@ -1,0 +1,18 @@
+{
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "asset": "ink_drop.png",
+      "prompt": "Use case illustration-story. Production game sprite, single isolated suspended drop of Korean black calligraphy ink, transparent alpha background, centered. Authentic Korean minhwa and sumukhwa pigment painting, a rounded plump ink droplet with a gently tapered pointed tip at the top, heavy rounded bottom, velvety charcoal-black and deep ink-teal watercolor, subtle internal marbling, one restrained warm ivory reflection on upper left. Organic hand-brushed outline, natural fluid surface, refined mineral pigment rather than glossy CGI, no face, no eyes, no cartoon outlines. Small graceful faint brush wisps only close to silhouette, no ground, no splash, no text, no background. Full drop fills center 65 percent of square canvas and all extremities visible. This image will fall onto antique paper and bloom into an illustration."
+    },
+    {
+      "asset": "left_page_hand.png",
+      "prompt": "Use case illustration-story. Asset type transparent game animation cutout. Exactly ONE anatomically correct LEFT hand and long forearm of a compassionate Korean Buddhist bodhisattva, reaching diagonally from lower LEFT toward upper RIGHT to delicately pinch and turn the outside edge of a book page. LEFT hand seen from the back/three-quarter dorsal view, thumb on the lower RIGHT side of the left hand reaching toward the curled index fingertip; thumb and index form a gentle narrow pinch at the UPPER RIGHT of the composition, remaining three fingers naturally bent together. Exactly five fingers, no extra hands. Pinch contact at approximately 78 percent canvas width and 22 percent canvas height. The wrist extends down-left into a long flowing ivory robe sleeve with muted dusty jade lining, subtle antique gold cuff and one restrained lotus motif. Calm graceful elongated fingers, warm light ochre skin, fine dark ink outlines, authentic traditional Korean minhwa / Buddhist painting with mineral pigments on soft paper texture. Full forearm and sleeve visible, sleeve ends at lower-left edge. Landscape 3:2 canvas. Transparent alpha background. No book, no paper, no props held, no brush, no writing, no background, no photorealism, no 3D. The empty pinch space must remain transparent so a real animated page can be placed there. Clear believable LEFT hand anatomy; not a mirrored right hand."
+    }
+  ],
+  "hand_pinch_uv": [
+    0.75,
+    0.17
+  ],
+  "brush_reused": "res://art/minhwa/bodhisattva_hands/right_brush_wide.png"
+}

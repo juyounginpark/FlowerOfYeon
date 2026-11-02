@@ -1,0 +1,243 @@
+{
+  "source_bytes": 791058885,
+  "largest_30": [
+    {
+      "path": "stages/5-손톱/reference_attachments/선녀와나무꾼.zip",
+      "bytes": 18093889
+    },
+    {
+      "path": "art/stage7/수정해줘.pdf",
+      "bytes": 15181485
+    },
+    {
+      "path": "art/stage7/ex7-1.pdf",
+      "bytes": 15160274
+    },
+    {
+      "path": "art/stage7/이런식으로만들어줘흥부놀부.pdf",
+      "bytes": 10481446
+    },
+    {
+      "path": "art/stage1/1stage photo.png",
+      "bytes": 7832381
+    },
+    {
+      "path": "art/finalstage/kkwangcheol_mane_hires.png",
+      "bytes": 6913756
+    },
+    {
+      "path": "하이라이트/01_단오_나무다리.png",
+      "bytes": 4920575
+    },
+    {
+      "path": "하이라이트/02_선녀와나무꾼_선녀승천.png",
+      "bytes": 4850366
+    },
+    {
+      "path": "하이라이트/03_심청전_바다동물다리.png",
+      "bytes": 4678851
+    },
+    {
+      "path": "하이라이트/05_손톱먹은쥐_고양이추격.png",
+      "bytes": 4293763
+    },
+    {
+      "path": "art/stage3/처음시작장면2.pdf",
+      "bytes": 4260552
+    },
+    {
+      "path": "하이라이트/09_이무기_꽝철이의분노.png",
+      "bytes": 4120132
+    },
+    {
+      "path": "하이라이트/06_해와달_호랑이추락.png",
+      "bytes": 3992129
+    },
+    {
+      "path": "하이라이트/07_흥부전_도깨비방망이.png",
+      "bytes": 3954887
+    },
+    {
+      "path": "art/stage2/대화 상호작용 예시.pdf",
+      "bytes": 3805372
+    },
+    {
+      "path": "music/mainboss_clear.mp3",
+      "bytes": 3626948
+    },
+    {
+      "path": "art/stage1/dano/rock_source.png",
+      "bytes": 3500292
+    },
+    {
+      "path": "art/materials/hanji/paper_dark.png",
+      "bytes": 3343840
+    },
+    {
+      "path": "art/stage2/2stageexample.pdf",
+      "bytes": 3339254
+    },
+    {
+      "path": "stages/2-선녀와나무꾼/7.png",
+      "bytes": 3318091
+    },
+    {
+      "path": "art/stage2/7.png",
+      "bytes": 3318091
+    },
+    {
+      "path": "art/stage7/무너진한옥.png",
+      "bytes": 3280146
+    },
+    {
+      "path": "art/materials/hanji/paper_medium.png",
+      "bytes": 3239669
+    },
+    {
+      "path": "stages/5-손톱/주막2.png",
+      "bytes": 3198530
+    },
+    {
+      "path": "art/stage7/1.png",
+      "bytes": 3151790
+    },
+    {
+      "path": "stages/6-해와달이된오누이/호랑이.png",
+      "bytes": 3131953
+    },
+    {
+      "path": "art/minhwa/storybook/open_book.png",
+      "bytes": 3111447
+    },
+    {
+      "path": "stages/4-빨강파랑부채/Unknown-5.png",
+      "bytes": 3068085
+    },
+    {
+      "path": "art/dummys/DummyWave_4.png",
+      "bytes": 3067723
+    },
+    {
+      "path": "stages/5-손톱/고양이.png",
+      "bytes": 3044586
+    }
+  ],
+  "over_100_mib": [],
+  "excluded_from_web_only": [
+    "art/fonts/KCC-AhnJunggeun.ttf",
+    "art/gametitle/lotus.png",
+    "art/gametitle/담청빛 평면 산수화 계곡.png",
+    "art/intro_four_cut/completed_reference.jpeg",
+    "art/intro_four_cut/source/01_imugi.jpeg",
+    "art/intro_four_cut/source/02_question.png",
+    "art/intro_four_cut/source/03_anger.png",
+    "art/intro_four_cut/source/04_descent.jpeg",
+    "art/materials/hanji/ornament_border.svg",
+    "art/materials/hanji/paper_dark.png",
+    "art/materials/hanji/paper_medium.png",
+    "art/minhwa/full_arm_v2/cupped.png",
+    "art/minhwa/full_arm_v2/cupped_front.png",
+    "art/minhwa/full_arm_v2/open.png",
+    "art/minhwa/full_arm_v2/open_front.png",
+    "art/minhwa/storybook/ink_sweep.png",
+    "art/minhwa/storybook/open_book.png",
+    "art/minhwa/title_brush/brush.png",
+    "art/minhwa/woodcutter_dialogue/interaction.png",
+    "art/stage1/1stage photo.png",
+    "art/stage1/2.png",
+    "art/stage1/4.png",
+    "art/stage2/0.png",
+    "art/stage2/1.png",
+    "art/stage2/2.png",
+    "art/stage2/3.png",
+    "art/stage2/4.png",
+    "art/stage2/5.png",
+    "art/stage2/6.png",
+    "art/stage2/7.png",
+    "art/stage2/HS겨울눈꽃체.ttf",
+    "art/stage3/1.png",
+    "art/ui/lotus_pond/stage_titles/stage-02.png",
+    "art/ui/lotus_pond/stage_titles/stage-04.png",
+    "art/ui/lotus_pond/stage_titles/stage-05.png",
+    "art/ui/lotus_pond/stage_titles/stage-06.png",
+    "art/ui/lotus_reference.png",
+    "stages/2-선녀와나무꾼/0.png",
+    "stages/2-선녀와나무꾼/1.png",
+    "stages/2-선녀와나무꾼/2.png",
+    "stages/2-선녀와나무꾼/3.png",
+    "stages/2-선녀와나무꾼/4.png",
+    "stages/2-선녀와나무꾼/5.png",
+    "stages/2-선녀와나무꾼/6.png",
+    "stages/2-선녀와나무꾼/7.png"
+  ],
+  "excluded_source_bytes": 78455904,
+  "retained_dynamic_directories": [
+    "../stage_screenshots/",
+    ".godot/",
+    "art/dummys/",
+    "art/finalstage/",
+    "art/minhwa/bodhisattva_hands/",
+    "art/minhwa/fan_story/",
+    "art/minhwa/gyeonwu_rework/",
+    "art/minhwa/gyonwu_v2/",
+    "art/minhwa/stage3_sea/",
+    "art/minhwa/stage5_rework/",
+    "art/minhwa/stage6_rework/",
+    "art/minhwa/traveler_v3/traveler/",
+    "art/minhwa/walk_v2/",
+    "art/stage1/dano/",
+    "art/stage1/tutorial/",
+    "art/stage2/minhwa/",
+    "art/stage7/",
+    "art/stage7/generated/",
+    "art/stage7/minhwa/",
+    "art/story_props/",
+    "artifacts/ending/",
+    "artifacts/stage6/",
+    "output/opening_verification/",
+    "stages/4-빨강파랑부채/",
+    "stages/5-손톱/",
+    "stages/6-해와달이된오누이/",
+    "stages/8-견우와직녀/"
+  ],
+  "exact_duplicate_groups": [
+    [
+      "stages/2-선녀와나무꾼/0.png",
+      "art/stage2/0.png"
+    ],
+    [
+      "stages/2-선녀와나무꾼/1.png",
+      "art/stage2/1.png"
+    ],
+    [
+      "stages/2-선녀와나무꾼/2.png",
+      "art/stage2/2.png"
+    ],
+    [
+      "stages/2-선녀와나무꾼/3.png",
+      "art/stage2/3.png"
+    ],
+    [
+      "stages/2-선녀와나무꾼/4.png",
+      "art/stage2/4.png"
+    ],
+    [
+      "stages/2-선녀와나무꾼/5.png",
+      "art/stage2/5.png"
+    ],
+    [
+      "stages/2-선녀와나무꾼/6.png",
+      "art/stage2/6.png"
+    ],
+    [
+      "stages/2-선녀와나무꾼/7.png",
+      "art/stage2/7.png"
+    ],
+    [
+      "art/finalstage/dragon_normal_selected_8frames.png",
+      "art/finalstage/kkwangcheol_mane_8frames.png"
+    ]
+  ],
+  "source_audio_bytes": 24786062,
+  "source_image_bytes": 684996769
+}

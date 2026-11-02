@@ -1,0 +1,103 @@
+name: Build and deploy FlowerOfYeon
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+env:
+  GODOT_VERSION: 4.7.2
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+      - name: Install official Godot and Web export template
+        shell: bash
+        run: |
+          set -euo pipefail
+          release="${GODOT_VERSION}-stable"
+          base="https://github.com/godotengine/godot-builds/releases/download/${release}"
+          engine="Godot_v${release}_linux.x86_64.zip"
+          templates="Godot_v${release}_export_templates.tpz"
+          cd "$RUNNER_TEMP"
+          curl --fail --location --retry 3 -O "$base/$engine"
+          curl --fail --location --retry 3 -O "$base/$templates"
+          curl --fail --location --retry 3 -O "$base/SHA512-SUMS.txt"
+          grep -F -e "$engine" -e "$templates" SHA512-SUMS.txt | sha512sum --check --strict
+          unzip -q "$engine" -d godot
+          chmod +x "godot/Godot_v${release}_linux.x86_64"
+          echo "$RUNNER_TEMP/godot" >> "$GITHUB_PATH"
+          python - <<'PY'
+          import os, pathlib, zipfile
+          version = os.environ['GODOT_VERSION']
+          destination = pathlib.Path.home() / '.local/share/godot/export_templates' / (version + '.stable')
+          destination.mkdir(parents=True, exist_ok=True)
+          with zipfile.ZipFile(f'Godot_v{version}-stable_export_templates.tpz') as archive:
+              for name in ('web_nothreads_release.zip', 'web_nothreads_debug.zip', 'version.txt'):
+                  (destination / name).write_bytes(archive.read('templates/' + name))
+          PY
+      - name: Prepare conservative lossless resource filter
+        run: python tools/web_pipeline.py prepare
+      - name: Import resources without running game
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/import_project.py Godot_v${GODOT_VERSION}-stable_linux.x86_64 2>&1 | tee build/import.log
+          if grep -E 'SCRIPT ERROR|Parse Error|Compile Error|^ERROR:' build/import.log; then exit 1; fi
+      - name: Export Web release
+        shell: bash
+        run: |
+          set -euo pipefail
+          Godot_v${GODOT_VERSION}-stable_linux.x86_64 --headless --rendering-driver dummy --audio-driver Dummy --export-release Web build/web/index.html 2>&1 | tee build/export.log
+          if grep -E 'SCRIPT ERROR|Parse Error|Compile Error|^ERROR:' build/export.log; then exit 1; fi
+      - name: Add optional GA4 and validate Pages files
+        env:
+          GA4_MEASUREMENT_ID: ${{ vars.GA4_MEASUREMENT_ID }}
+        run: python tools/web_pipeline.py finish
+      - name: Test telemetry and build helpers without running game
+        run: |
+          node --test tests/web_analytics.test.cjs
+          python -m unittest discover -s tests -p 'test_web*.py'
+          python tools/verify_web.py
+      - name: Upload build evidence
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: web-build-evidence
+          path: |
+            build/*.log
+            build/*report.json
+            build/resource-audit.json
+          retention-days: 1
+      - uses: actions/upload-pages-artifact@v5
+        with:
+          path: build/web
+          retention-days: 1
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v6
+      - name: Deploy verified build
+        id: deployment
+        uses: actions/deploy-pages@v5

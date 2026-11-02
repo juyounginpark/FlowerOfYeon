@@ -1,0 +1,97 @@
+{
+  "images": [
+    {
+      "image": "DummyWaveDiagonal_1.png",
+      "original": "ChatGPT 이미지 2026년 10월 30일 오전 01_58_49-1.png",
+      "sha256": "39c254aee4acf61b3c979e0075f6507d002f8db4b9d72928f1249ba630954ebb",
+      "alpha_bbox": [
+        74,
+        287,
+        1219,
+        1072
+      ],
+      "crop_uv": [
+        0.05901116427432217,
+        0.22886762360446572,
+        0.9130781499202552,
+        0.6259968102073366
+      ],
+      "aspect": 0.6855895196506551,
+      "native_axis_radians": -0.49240738359482483,
+      "paint_axis_extent": 1.1746797112533907,
+      "paint_normal_extent": 0.41884932802131164,
+      "paint_axis_center": -0.010115582167983528,
+      "paint_normal_center": 0.09634357103131605
+    },
+    {
+      "image": "DummyWaveDiagonal_2.png",
+      "original": "ChatGPT 이미지 2026년 10월 30일 오전 01_58_50-2.png",
+      "sha256": "2d454cbad8805736fa9223e5f61807ebc78d6f0c2b31b4d6f6378dae1c3882b9",
+      "alpha_bbox": [
+        122,
+        219,
+        1179,
+        1086
+      ],
+      "crop_uv": [
+        0.09728867623604466,
+        0.17464114832535885,
+        0.8429027113237639,
+        0.6913875598086124
+      ],
+      "aspect": 0.8202459791863765,
+      "native_axis_radians": 0.6919065187148724,
+      "paint_axis_extent": 1.2537228909610816,
+      "paint_normal_extent": 0.4452902591522313,
+      "paint_axis_center": 0.010511349269273274,
+      "paint_normal_center": 0.16222895332371895
+    },
+    {
+      "image": "DummyWaveDiagonal_3.png",
+      "original": "ChatGPT 이미지 2026년 10월 30일 오전 01_58_51-3.png",
+      "sha256": "89b9f16d6df15c647d5ba6fa340f4f23981644a31630589e4772f0e9ef2b89f2",
+      "alpha_bbox": [
+        36,
+        190,
+        1227,
+        1071
+      ],
+      "crop_uv": [
+        0.028708133971291867,
+        0.15151515151515152,
+        0.9497607655502392,
+        0.7025518341307815
+      ],
+      "aspect": 0.7397145256087322,
+      "native_axis_radians": 0.5885846570314704,
+      "paint_axis_extent": 1.1820785020311093,
+      "paint_normal_extent": 0.31669600299434486,
+      "paint_axis_center": -0.005460960900200984,
+      "paint_normal_center": 0.07094287151920059
+    },
+    {
+      "image": "DummyWaveDiagonal_4.png",
+      "original": "ChatGPT 이미지 2026년 10월 30일 오전 01_58_52-4.png",
+      "sha256": "841f1f53d5051a3f9f8442e667f780d58788102f16bd8e59d5b8ff34d52bad4a",
+      "alpha_bbox": [
+        65,
+        209,
+        1226,
+        1039
+      ],
+      "crop_uv": [
+        0.051834130781499205,
+        0.16666666666666666,
+        0.9258373205741627,
+        0.6618819776714514
+      ],
+      "aspect": 0.7149009474590869,
+      "native_axis_radians": -0.6005817795027044,
+      "paint_axis_extent": 1.1534134353909145,
+      "paint_normal_extent": 0.4883597619162929,
+      "paint_axis_center": -0.013988161171441471,
+      "paint_normal_center": 0.13455550908945882
+    }
+  ],
+  "processing": "Byte-identical user images; alpha bounds and dominant painted diagonal used for alignment. Download originals unchanged."
+}

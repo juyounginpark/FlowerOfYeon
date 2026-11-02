@@ -1,0 +1,17 @@
+{
+  "purpose": "One complete boulder per transparent sprite; restore clipped edges in original minhwa style",
+  "assets": [
+    {
+      "output": "rock_left_complete_v2.png",
+      "prompt": "Use case: precise-object-edit. Edit this original Korean minhwa rock crop into ONE complete standalone boulder game sprite on a truly transparent background. Restore all clipped edges naturally into a closed, organic irregular boulder silhouette: rounded upper-left shoulder, continuous uneven sides, tapered rounded rocky base. Preserve the original light beige/lavender stone face, fine ink cracks, sparse grasses/moss and Korean old painting brushwork. The result must read as ONE solid rock, not a landscape section. Remove the stream, water, detached pebbles, surrounding land and any paper background. Extend the clipped stone surfaces with matching original brushwork, do not leave any straight rectangular crop edges. A broad tallish asymmetrical rock, slightly wider than tall, all of it in frame with transparent margin on all four sides. Exactly one rock, no tree, no people, no scenery panel, no rectangular beige sheet, no checkerboard painted into pixels. Retain aged-paper texture ONLY inside the stone silhouette. Actual alpha outside rock.",
+      "mode": "built-in image_gen",
+      "reference": "rock_left.png"
+    },
+    {
+      "output": "rock_right_complete_v2.png",
+      "prompt": "Use case: precise-object-edit. Repair this cropped Korean minhwa hillside into ONE complete standalone large rounded stone boulder sprite with real transparent background. Keep the original subdued beige/lavender stone and ink brush shading style, diagonal cracks, a little moss/grass along the top and small dark brush vegetation hugging its base. Reconstruct the cut-off top, right and bottom into ONE continuous organic closed ROCK outline, the whole rock visible with transparent margin. The rock should be wider than tall (approximately 1.5:1) with a gently rising crown and visibly shaded stone sides, not an infinite hillside or paper plane. Remove tree fragments, all surrounding soil/scenery and detached stones; make no people or other objects. Exactly ONE boulder. No straight image crop edges, no giant flat blank beige paper area, no square cutout, no frame. Preserve original brushwork and stone hues, invent only the missing rock edge and surface needed to finish this same rock. True alpha transparency around the entire boulder.",
+      "mode": "built-in image_gen",
+      "reference": "rock_right.png"
+    }
+  ]
+}

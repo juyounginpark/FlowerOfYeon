@@ -1,0 +1,11 @@
+{
+  "asset": "fairy_ascend.png",
+  "prompt": "Transparent PNG, THREE animation frames in one horizontal row of three equal cells. Adult Korean fairy, simple black bun with dark ribbon, wearing fully opaque plain ivory and faded blue-gray hanbok robe with long skirt. Modest full body BACK three-quarter view. Frame1 standing dressed gathering sleeves; frame2 rising with sleeves spread and feet lifting; frame3 ascending with long robe trailing downward. Simple sparse fine ink lines and pale flat washes inspired by Joseon painting, no jewelry or embroidery. Same scale and center, entire figure within inner 65 percent of each cell, wide transparent gutters, no text or grid, no background.",
+  "generator": "built-in image_gen",
+  "frames": 3,
+  "existing_reused_assets": [
+    "woodcutter_push_v2.png",
+    "push_impact.png"
+  ],
+  "validation": "Static review and CPU --check-only only; no runtime execution."
+}

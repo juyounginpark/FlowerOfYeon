@@ -1,0 +1,48 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="FlowerOfYeon"
+run/main_scene="res://scenes/gametitle/GameTitleAnimated.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://art/icons/lotus.png"
+config/windows_native_icon="res://art/icons/lotus.ico"
+
+[autoload]
+
+Analytics="*res://scripts/Analytics.gd"
+
+GameAudio="*res://scripts/grid_stage/audio_settings.gd"
+BgmPlayer="*res://scripts/bgm_player.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/mode=3
+window/size/window_width_override=1280
+window/size/window_height_override=720
+
+[gui]
+
+theme/custom_font="res://art/fonts/HS-Winter-Snowflake.ttf"
+
+[rendering]
+
+renderer/rendering_method.web="gl_compatibility"
+
+renderer/rendering_method.mobile="forward_plus"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(0.78, 0.85, 0.83, 1)

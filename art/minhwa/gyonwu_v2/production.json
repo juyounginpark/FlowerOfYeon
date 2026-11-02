@@ -1,0 +1,38 @@
+{
+  "mode": "built-in image_gen",
+  "scope": "Stage8 only",
+  "assets": [
+    {
+      "file": "crow.png",
+      "prompt": "Use case: style-transfer. Repaint ONLY the crow from the first reference as a production Korean minhwa game cutout; reference 2 sets the faded ink-wash palette and dry-brush texture. One complete elegant crow in left-facing three-quarter profile with one wing slightly opened, long natural tail, clearly readable bird silhouette. Fine sepia/charcoal feather strokes and muted warm gray washes, slightly weathered handmade ink texture, no pure harsh solid black mass. Entire bird isolated on genuine transparent alpha with 18% clear margins; no tree branches, background paper, text, seal, gradient, glow, halo or shadow. This is a 2D upright sprite that must harmonize with antique Korean cloud and mountain collage. Composition compact and anatomically natural, consistent medium detail visible at 100 pixels. No vector look, no 3D render. Preserve the species and folktale tone from the original, clean all colored alpha-edge contamination.",
+      "reference_images": [
+        "C:/Users/medici/Desktop/Team5/TopOfYeon/stages/8-견우와직녀/remove_background.png",
+        "C:/Users/medici/Desktop/Team5/TopOfYeon/art/dummys/DummyRidgeGround_1.png"
+      ]
+    },
+    {
+      "file": "magpie.png",
+      "prompt": "Use case: style-transfer. Repaint ONLY the Korean magpie from the first reference as one complete isolated game sprite. Use the second reference for faded traditional Korean ink-wash texture and soft warm charcoal colors. Magpie facing right in a natural three-quarter profile, black charcoal head and wings, warm ivory belly, extremely subtle dusty blue-green feather accents, long elegant tail, wing slightly open. Fine irregular sepia ink contours and delicate feather strokes; low saturation, antique minhwa, no glossy shading or vector fills. True transparent alpha background with 18% clear margin around complete bird, nothing cropped. Remove original frame, branch, paper, inscriptions, all gradient backgrounds and red/green fringes. No shadow or glow. To be an upright 2D paper cutout in an ink cloud collage game, readable at 100 pixels and consistent with the crow companion.",
+      "reference_images": [
+        "C:/Users/medici/Desktop/Team5/TopOfYeon/stages/8-견우와직녀/remove_background-3.png",
+        "C:/Users/medici/Desktop/Team5/TopOfYeon/art/dummys/DummyRidgeGround_1.png"
+      ]
+    },
+    {
+      "file": "ojak_bridge.png",
+      "prompt": "Use case: illustration-story. Production Korean minhwa 2D game asset: ONE complete straight horizontal Ojakgyo bridge formed entirely by a tightly connected flock of crows and magpies, their layered wings and backs forming a continuous walkable narrow ribbon. Long landscape composition approximately 3:1. The two endpoints are at the same height. Near-top view with very shallow depth drawn entirely in ink; a clear continuous upper center walking band, organic feather edges, no gaps large enough to lose the walking surface. About 12-16 distinct small birds, modest repeated rhythm rather than a chaotic swarm. Restrained Joseon minhwa style: fine sepia outlines, charcoal feather hatching, warm ivory wings, muted gray-green and blue-gray washes, subtle antique paper texture ONLY inside the painted silhouettes. Hand-painted, delicate, organic; no vector shapes, rectangles, planks, geometric platforms, rails, perspective convergence, 3D render, terrain, shadow or surrounding sky. Genuine transparent alpha around the bridge with 12% clear margin. No gradient background, glow, checkerboard, text or watermark. This flat bitmap will supply all visible bridge geometry across a ramp in a Korean paper-collage puzzle game; preserve a simple straight readable span so it can be oriented toward either cardinal direction.",
+      "reference_images": null
+    },
+    {
+      "file": "lovers_cardinal.png",
+      "prompt": "Transparent game sprite atlas, 2 by 2 evenly spaced grid: Korean folktale Gyeonwu and Jiknyeo couple holding hands. Top left front view, top right right-side profile, bottom left back view, bottom right left-side profile. Each cell contains the same two full-length adults in traditional hanbok, man with traditional hat and woman with ribbon. CHARCOAL INK SILHOUETTES, restrained warm gray internal brush strokes, traditional Korean minhwa watercolor illustration. No landscape. No paper background. No glow, no blur, no shadow outside the figures. Truly transparent background between and around the figures. Consistent height and baselines. Generous empty transparent margins in each cell, no grid lines, no text.",
+      "reference_images": []
+    }
+  ],
+  "notes": [
+    "PNG alpha retained unchanged; transparent preview RGB may contain haze that does not render in game.",
+    "Couple atlas is 2x2 front/right/back/left; runtime charcoal tint implements shadow reveal.",
+    "Bridge uses three unstretched 2D ribbon cards on the inclined walking surface. Box is invisible physics only.",
+    "World character cards keep world Y upright and switch yaw in 90-degree steps with 8-degree hysteresis; cut-and-drag inventory stays in screen space."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "left_open",
+      "refs": [
+        "C:/Users/medici/Desktop/Team5/TopOfYeon/art/minhwa/full_arm_v2/open.png"
+      ],
+      "prompt": "Create an isolated transparent game sprite of Avalokiteshvara / Korean Gwaneum bodhisattva's anatomically LEFT hand and full draped forearm, in the same elegant Korean minhwa ink-and-watercolor style as this reference. This is the OPEN supporting pose, palm up, gently placing a tiny traveler on the ground (do NOT draw the traveler). Arm enters from upper LEFT and extends to lower RIGHT. Keep the large draped sage-gray and warm ivory Buddhist sleeve with restrained antique-gold trim. Long graceful compassionate fingers, anatomically correct five digits; clearly LEFT palm, not a mirrored right hand. The flat supporting palm is near 77% image width, 61% image height. Complete hand and sleeve, generous transparent padding, no body, no face, no halo, no background paper, no cast shadow, no separate objects. Portrait sprite matching reference proportions. Muted antique colors and natural brush texture inside the silhouette."
+    },
+    {
+      "id": "left_cupped",
+      "refs": [
+        "C:/Users/medici/Desktop/Team5/TopOfYeon/art/minhwa/full_arm_v2/cupped.png"
+      ],
+      "prompt": "Create an isolated transparent game sprite of Avalokiteshvara / Korean Gwaneum bodhisattva's anatomically LEFT hand and full draped forearm in traditional Korean minhwa ink-and-watercolor, matching reference styling. This is a GENTLY CUPPED supporting pose carrying a tiny traveler (do NOT draw traveler). Palm up, fingers curved gently to cradle, not a fist. Arm enters from upper LEFT and extends to lower RIGHT. Large draped sage-gray and warm ivory Buddhist sleeve with restrained antique-gold trim. Correct five digits, compassionate slender LEFT hand. Palm support surface centered near 77% image width and 61% image height. Complete hand and sleeve, transparent margins. No body, face, halo, background paper, glow, cast shadow or separate objects. Portrait sprite matching reference proportions."
+    },
+    {
+      "id": "right_brush",
+      "refs": [
+        "C:/Users/medici/Downloads/붓손.jpg",
+        "C:/Users/medici/Desktop/Team5/TopOfYeon/art/minhwa/full_arm_v2/open.png"
+      ],
+      "prompt": "Generate a transparent game sprite: ONLY the RIGHT hand and long forearm of Korean Gwaneum / Avalokiteshvara holding a traditional calligraphy brush. FIRST reference supplies the exact natural hand grip and brush angle: forearm reaches in from the RIGHT, right hand holds a tall thin brush, brush top slants toward upper right, bristle point toward lower left. SECOND reference supplies Korean minhwa illustration style, ivory and muted sage-gray Buddhist draped sleeve with restrained antique gold trim. Transform the photographic grip into refined hand-painted ink-and-watercolor; not photorealistic. Anatomically correct right hand with five graceful fingers; bamboo brush with charcoal-black bristles, NO red ink. Show full hand, extended forearm and flowing robe sleeve reaching to the RIGHT edge, so the arm can enter screen naturally. Wide landscape composition, brush tip at roughly 22% width and 80% height, brush handle top around 36% width and 10% height, sleeve extends toward far right. One connected hand-arm-brush silhouette; no face/body/table/paper/inkpot/writing/background/glow/shadow. GENUINE transparent alpha. Keep entire brush and fingers uncropped."
+    }
+  ],
+  "right_wide_edit": "Edit this transparent Korean minhwa Gwaneum right hand and brush sprite. WIDEN THE CANVAS TO A 3:1 LANDSCAPE FORMAT by extending ONLY the forearm and flowing sage/ivory/gold sleeve much further to the RIGHT. Preserve the existing brush, exact hand grip, five fingers, colors and brushwork. Keep the brush at the LEFT end; tip near 6% canvas width and 94% canvas height. Brush top near 20% width and 7% height. The hand and brush should occupy roughly the left third of the finished image; a very long horizontal forearm and connected draped robe sleeve fills the remaining right two-thirds and reaches the right canvas edge. This must allow the right arm to enter the game screen from its right edge while the brush tip is near screen centre-left. Do not add a torso or face. Transparent background around the connected silhouette, no added haze, shadows, paper, scene, writing or objects. Same painting, just a much longer arm/sleeve and wider canvas.",
+  "right_brush_tip": [
+    71,
+    712
+  ],
+  "runtime_right_image": "right_brush_wide.png"
+}

@@ -1,0 +1,16 @@
+{
+  "tool": "built-in image_gen",
+  "jobs": [
+    {
+      "file": "impostor_kick.png",
+      "prompt": "Edit target: the referenced character sheet. Create a NEW transparent game animation sprite sheet, exactly 4 frames in a 2 by 2 equal cell grid. Preserve the same Korean Joseon scholar impostor identity: broad straw hat, small moustache, muted sage grey robe, cream trousers, dark sash, cloth shoes and thin rat tail. Korean ink and muted mineral watercolor minhwa painted cutout, same detail as reference. All four full body figures face screen LEFT three-quarter view, consistent scale and baseline inside each cell, at least 12 percent transparent padding on every side, no overlap between cells. Reading order: 1 winds up with knee raised and arms counterbalanced; 2 extends leftward leg sharply in a strong forward kick, sole aimed left and slightly downward; 3 fully extended followthrough kick with body leaning back; 4 retracts leg to standing recovery. Exaggerate clearly distinct leg silhouettes. No effects, no ground, no text, no border, no background. Real alpha transparency. This is a 4-frame kick animation, not a standing animation.",
+      "referenced_image_paths": [
+        "C:/Users/0620f/OneDrive/Desktop/Team5/TopOfYeon/stages/5-손톱/손톱먹은쥐.png"
+      ]
+    },
+    {
+      "file": "bridge_kick_impact.png",
+      "prompt": "Create a transparent game VFX sprite sheet, exactly FOUR frames arranged 2 by 2 equal square cells. Korean Joseon minhwa ink brush and mineral watercolor style matching hand-painted pine trees on hanji. A strong FOOT KICK IMPACT against a paper pine-wood bridge, effect only with no person or foot or bridge: angular dark brown ink shock strokes, warm ochre dust puffs, tiny green pine needles and cream torn paper flecks. Read left to right top to bottom: 1 compact sharp impact star; 2 large explosive ochre ink burst and paper splinters; 3 expanding curling dust clouds and scattering needles; 4 thin fading curls and sparse debris. Each effect centered within its cell with at least 14 percent fully transparent margin, absolutely isolated from adjacent frames. Energetic and highly readable in a small game view. No text, no letters, no frames, no background, true alpha transparent. No fire or modern comic typography."
+    }
+  ]
+}

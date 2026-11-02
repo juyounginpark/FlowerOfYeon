@@ -1,0 +1,18 @@
+{
+  "generator": "built-in image_gen",
+  "assets": [
+    {
+      "asset": "ink_clip_mask.png",
+      "prompt": "Production grayscale clipping mask texture for a Korean ink-water game transition. Square 1024x1024, opaque pure black background. One large WHITE fluid ink-wash silhouette in center, plump rounded droplet / gently irregular ink pool, broad rounded bottom and softly tapered upper tip. Center must be pure white and occupy most of canvas. Gradual feathered GRAY watercolor absorption edge fading smoothly to pure black over about 80 pixels. Very subtle organic irregularity, fine paper-fiber diffusion near edges, no hard outline. White core about 65 percent width and 75 percent height, almost black margin about 8 percent at all canvas edges. Only black, gray and white, no color. This is an alpha/luminance MASK, not an illustration of an object: no shading or highlights inside white core, no paper background, no text, no checkerboard, no decorative splashes outside shape. Soft organic watery perimeter suitable for compositing an image into antique hanji."
+    },
+    {
+      "asset": "writing_hand_reference.png",
+      "reference": "user supplied 붓손2.jpg (grip only)",
+      "prompt": "Create a NEW transparent game illustration using the attached photograph ONLY as reference for the HAND GRIP, anatomy, and camera angle. One large graceful hand and long forearm of Gwaneum, Korean Buddhist bodhisattva, holding a traditional pointed bamboo calligraphy brush in exactly the reference's natural grip: back of the hand visible, fingers and thumb curled around a diagonal brush shaft, brush extends from lower RIGHT toward upper LEFT, brush TIP points UPPER LEFT. Replace the flat modern paintbrush with traditional long tapered dark ink bristles. Warm light ochre skin with delicate dark ink contour, ivory flowing Buddhist robe cuff and long muted jade/gold sleeve continuing toward lower RIGHT. Korean minhwa and Buddhist mineral-pigment painting style, fine paper texture, refined natural anatomy, exactly five fingers. Full brush, entire hand, wrist and long forearm shown. Large clear brush-tip contact at about 16 percent width, 18 percent height. Hand centered, forearm extends down-right to canvas edge. Transparent alpha outside hand/brush/sleeve. Do not reproduce the photo, its background, lettering, stock markings or branding; this is an original painting with new robe and calligraphy brush. No book or paper, no text, no symbols, no other objects, no cast shadow, no aura. Landscape 3:2. This sprite will be large on an antique book, with the tip following vertical Korean writing."
+    }
+  ],
+  "writing_tip_uv": [
+    0.047,
+    0.044
+  ]
+}

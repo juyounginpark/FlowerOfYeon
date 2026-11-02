@@ -1,0 +1,50 @@
+{
+  "generator": "built-in image_gen",
+  "reference": {
+    "artwork": "Shin Yun-bok, Miindo (Portrait of a Beauty)",
+    "image": "references/miindo.jpg",
+    "source": "https://bestofkorea.com/giants-of-joseon-art-3-korean-artists-you-must-know/",
+    "use": "Style reference inspected; new game illustrations generated. No historical costume-accuracy claim."
+  },
+  "assets": [
+    {
+      "asset": "fairy_back_v2.png",
+      "prompt": "Simple unpretentious late Joseon Korean painting inspired by Shin Yun-bok's Miindo: extremely fine sparse dark ink contour lines, flat pale ivory and dusty blue-gray washes, restrained pigment, large undecorated surfaces, minimal folds, humble countryside feeling. NOT photorealistic, NOT ornate, no flowers, no jewelry, no gold, no rich embroidery, no gradients or glow, no cast shadow, no text or backdrop. Fully transparent PNG background, clear generous transparent margins. One adult Korean fairy woman SEEN FROM BEHIND, seated chest-deep in a small flattened oval of quiet pale jade water. She wears a simple opaque ivory bathing gown covering shoulders, back and torso, loose plain sleeves just above water. Her upper body is HALF SUBMERGED: only head, shoulders and upper half of back above the waterline. Simple single black hair bun tied with a small dark ribbon, face hidden, no looking at camera. Calm modest pose with hands resting just at water surface. Small compact water ellipse of only 3 thin ink ripple lines, not a large dramatic splash. Head and shoulders readable and unobstructed. Design for a tiny game sprite."
+    },
+    {
+      "asset": "robe_rock_v2.png",
+      "prompt": "Simple unpretentious late Joseon Korean painting inspired by Shin Yun-bok's Miindo: extremely fine sparse dark ink contour lines, flat pale ivory and dusty blue-gray washes, restrained pigment, large undecorated surfaces, minimal folds, humble countryside feeling. NOT photorealistic, NOT ornate, no flowers, no jewelry, no gold, no rich embroidery, no gradients or glow, no cast shadow, no text or backdrop. Fully transparent PNG background, clear generous transparent margins. One low broad rounded ordinary river boulder with a plain ivory and faded blue-gray Korean robe draped over its top and down front. Humble plain garment, no patterns, no jewels. Stone is simple warm gray with 5 sparse ink creases and two muted moss strokes, no holes, no scholar-rock ornamentation. A single continuous silhouette. Front three-quarter view. Entire rock fills center 75 percent of canvas, horizontal 3:2 composition. Very sparse brushwork, game prop."
+    },
+    {
+      "asset": "woodcutter_idle_v2.png",
+      "prompt": "Simple unpretentious late Joseon Korean painting inspired by Shin Yun-bok's Miindo: extremely fine sparse dark ink contour lines, flat pale ivory and dusty blue-gray washes, restrained pigment, large undecorated surfaces, minimal folds, humble countryside feeling. NOT photorealistic, NOT ornate, no flowers, no jewelry, no gold, no rich embroidery, no gradients or glow, no cast shadow, no text or backdrop. Fully transparent PNG background, clear generous transparent margins. FOUR animation frames in an exact 2x2 grid, equal cells, no drawn grid. Same humble adult Korean woodcutter, simple ivory jeogori with plain dark tie, faded slate-blue baggy trousers, straw shoes, black topknot with plain cloth headband, simple small face without elaborate features. Full body facing three-quarter LEFT. Holds a small woodcutting axe pointed safely down beside him. Four subtle idle/weight-shift poses, no swing. Same character height, body center and sole baseline each cell. Every figure including axe stays within inner 65 percent of its own cell, wide empty gutters at both midlines; no overlap, no frame labels."
+    },
+    {
+      "asset": "bare_rock_v2.png",
+      "prompt": "Edit this game prop by removing ONLY the draped robe entirely and revealing the plain rounded river stone underneath. Preserve EXACT stone base contour, base position, center, size, perspective, color, sparse ink creases and two moss marks. Fill the hidden top with the same simple gray stone. Keep identical canvas size and framing. No garments or cloth, no new objects, no background. Transparent PNG. Keep the simple low-detail Joseon ink-and-wash aesthetic."
+    },
+    {
+      "asset": "robe_v2.png",
+      "prompt": "Simple unpretentious late Joseon Korean painting inspired by Shin Yun-bok's Miindo: extremely fine sparse dark ink contour lines, flat pale ivory and dusty blue-gray washes, restrained pigment, large undecorated surfaces, minimal folds, humble countryside feeling. NOT photorealistic, NOT ornate, no flowers, no jewelry, no gold, no rich embroidery, no gradients or glow, no cast shadow, no text or backdrop. Fully transparent PNG background, clear generous transparent margins. Single simple folded ivory Korean robe with faded slate-blue collar and long sash, loose plain sleeves arranged in a compact pile, no wearer, no rock. Match humble Joseon clothing. Thick opaque cloth with only 6 fine ink fold lines. Entire garment centered with 15 percent transparent padding."
+    },
+    {
+      "asset": "fairy_swim_v2.png",
+      "prompt": "Simple unpretentious late Joseon Korean painting inspired by Shin Yun-bok's Miindo: extremely fine sparse dark ink contour lines, flat pale ivory and dusty blue-gray washes, restrained pigment, large undecorated surfaces, minimal folds, humble countryside feeling. NOT photorealistic, NOT ornate, no flowers, no jewelry, no gold, no rich embroidery, no gradients or glow, no cast shadow, no text or backdrop. Fully transparent PNG background, clear generous transparent margins. FOUR FRAME exact 2x2 sprite animation. Same adult Korean woman with one simple black hair bun and black ribbon, seen FROM BEHIND three-quarter angle moving LEFT away from viewer. Wearing a plain opaque ivory bathing gown covering shoulders back and torso. Swimming chest-deep in pale blue-green water, only head shoulders upper back and sleeved arms visible. Four alternate gentle arm paddling poses, compact water ripple ellipse drawn with 3 sparse ink lines in each cell. No face turned to viewer. Same head size and waterline height, each entire pose and ripple inside inner 65 percent of its equal cell, wide transparent center gutters. No frame lines or letters."
+    },
+    {
+      "asset": "woodcutter_run_v2.png",
+      "prompt": "Simple unpretentious late Joseon Korean painting inspired by Shin Yun-bok's Miindo: extremely fine sparse dark ink contour lines, flat pale ivory and dusty blue-gray washes, restrained pigment, large undecorated surfaces, minimal folds, humble countryside feeling. NOT photorealistic, NOT ornate, no flowers, no jewelry, no gold, no rich embroidery, no gradients or glow, no cast shadow, no text or backdrop. Fully transparent PNG background, clear generous transparent margins. Create a new FOUR FRAME animation sprite sheet in exact 2x2 equal cells using the attached woodcutter as the CHARACTER DESIGN REFERENCE. Same plain ivory jacket with dark tie, faded slate-blue baggy trousers, ivory headband, small topknot, straw shoes and simple face. He is running LEFT carrying a plain ivory and blue-gray folded robe in both hands, no axe. Four distinct running-cycle leg poses. Identical body scale and sole baseline; each entire character and robe stays within inner 65 percent of its cell, wide transparent gutters and no labels or drawn grid."
+    },
+    {
+      "asset": "woodcutter_push_v2.png",
+      "prompt": "Simple unpretentious late Joseon Korean painting inspired by Shin Yun-bok's Miindo: extremely fine sparse dark ink contour lines, flat pale ivory and dusty blue-gray washes, restrained pigment, large undecorated surfaces, minimal folds, humble countryside feeling. NOT photorealistic, NOT ornate, no flowers, no jewelry, no gold, no rich embroidery, no gradients or glow, no cast shadow, no text or backdrop. Fully transparent PNG background, clear generous transparent margins. Create a new THREE FRAME animation sprite sheet in ONE ROW of THREE equal square cells using attached woodcutter as CHARACTER DESIGN REFERENCE. Same plain ivory jacket dark tie, faded slate-blue baggy trousers, ivory headband, small topknot, straw shoes. Empty hands, facing RIGHT: frame 1 pulls open palms back and bends knees, frame 2 steps forward and extends palms in a shove, frame 3 follows through. No other person, no injury. Same figure height and sole baseline. Entire figures including fingertips stay within inner 65 percent of each cell with wide blank transparent gutters, no labels or panel borders."
+    }
+  ],
+  "integration": {
+    "fairy_scale": 0.6,
+    "rock_crossfade_seconds": 0.65,
+    "foreground_exception": "Latest explicit user request: detached Stage2 robe paper renders above terrain and water, while retaining real RigidBody2D gravity and collision.",
+    "frames": "Independent per-cell images cached by art.gd; alpha gutters checked without running the game.",
+    "validation": "CPU syntax/reference checks and static code/asset inspection only."
+  }
+}

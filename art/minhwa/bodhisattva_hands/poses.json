@@ -1,0 +1,18 @@
+{
+  "open": {
+    "texture": "res://art/minhwa/bodhisattva_hands/left_open.png",
+    "pivot": [
+      810,
+      990
+    ],
+    "scale": 0.72
+  },
+  "cupped": {
+    "texture": "res://art/minhwa/bodhisattva_hands/left_cupped.png",
+    "pivot": [
+      785,
+      875
+    ],
+    "scale": 0.72
+  }
+}

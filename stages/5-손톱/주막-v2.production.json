@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "asset": "주막-v2.png",
+  "original_preserved": "주막.png",
+  "final_generation_output": "exec-17d8ac46-05a6-4f70-82cd-54bafbd2f16f.png",
+  "source_dimensions": [
+    1536,
+    1024
+  ],
+  "interactive_gulbi_rect_xywh": [
+    250,
+    505,
+    180,
+    289
+  ],
+  "references": [
+    "주막.png",
+    "user supplied Stage5 screenshot",
+    "user supplied hanging gulbi painting"
+  ],
+  "initial_prompt": "Use case: precise-object-edit. Create an updated transparent PNG sprite of the Korean thatched tavern in image 1. Image 1 is the EDIT TARGET for architectural identity and angle. Image 2 is ONLY a STYLE AND PALETTE reference: muted charcoal ink mountains, soft warm gray, parchment ivory, subdued pale ochre, Korean minhwa printmaking and dry-brush ink; do not reproduce the scene or game UI. Image 3 is ONLY a reference for a tied string of dried croaker fish (gulbi). REQUIRED: keep one large elegant thatched roof and ONLY its slender supporting wooden posts and a narrow structural horizontal beam. REMOVE THE ENTIRE FLOOR, earth patch, foundation, paving, stone footings, walls, counters, benches, tables, bowls, jars, bottles, utensils and furnishings. No solid building box: all space under the roof must be transparent except the posts and the hanging fish. Roof and posts should be desaturated gray-brown ink with subdued ivory ochre thatch, matching image 2 without orange saturation, soft watercolor wash and fine woodcut lines. Add ONE clearly legible bunch of THREE dried croaker fish tied on a short straw rope hanging under the LEFT EAVE, just to the right of the leftmost post. The entire rope and fish bunch must be isolated against transparency with generous clearance from every post, so the game can cut and drag it. Leave the left bay open: no post or diagonal beam behind the fish, and do not overlap the fish with the roof. Composition: full pavilion visible, roof occupies approximately the upper 45 percent of canvas, posts run down to approximately 90 percent. Fish and rope occupy a separate region approximately x=18-33 percent, y=48-76 percent of canvas. No writing, no person, no cat, no landscape, no cast shadow, no surrounding halo, no colored/checkerboard background, genuine alpha transparency. Preserve the existing slight three-quarter/isometric game sprite angle. This is a game-ready architecture cutout, not a scenic illustration.",
+  "final_edit_prompt": "Precise-object-edit of IMAGE 1; IMAGE 2 is only a palette reference. KEEP the exact pavilion, post positions, perspective, three tied fish, rope and silhouette of image 1. TWO CHANGES ONLY. (1) Completely REMOVE ALL soft brown haze, colored glow and shadow around the object and between the posts. Every gap between the posts and every area outside the roof, posts, crossbeam and fish MUST be genuinely alpha-transparent, not brown-tinted. No filled wall planes. No ground. Sharp clean cutout edges without a fog border. (2) Recolor the architecture into the restrained ink palette of image 2: primarily cool warm-gray and charcoal dry-brush lines, faded ivory thatch and only faint pale ochre accents. Remove most of the orange/yellow saturation. Keep the hand-painted traditional Korean woodcut/minhwa look; preserve texture and detail. The hanging fish remain legible dark silver-gray and the rope pale straw. Do not add anything or alter layout. Full building still visible in the source sprite. No background or checkerboard."
+}

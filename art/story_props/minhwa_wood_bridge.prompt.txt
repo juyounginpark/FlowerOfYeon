@@ -1,0 +1,8 @@
+Generator: built-in image_gen
+Transparent background: true
+Prompt:
+Use case: illustration-story. Asset type: game bridge deck texture. Create a single humble wooden footbridge deck in restrained Joseon-era Korean minhwa folk painting style, matte hand-brushed ink outlines on hanji with very subtle paper grain, faded warm tan timber and subdued dark brown joints. Strict orthographic TOP-DOWN view, no perspective: a straight long rectangular bridge pointing vertically, width one third of its length. About twelve simple broad transverse wooden planks fitted tightly together, two modest longitudinal wooden edges; no handrails, no posts, no ropes, no decoration, no flowers. The deck is flat, solid and visually continuous with subtle irregular handmade plank edges, not broken. Entire rectangular walkable deck visible with very small transparent margin, centered in portrait canvas. No background, no landscape, no people, no shadow beyond silhouette, no text. Transparent background. This image will be mapped directly onto a rectangular 3D bridge collision surface so the visible deck must fill its rectangular silhouette nearly edge to edge. Sober, plain, utilitarian rural wooden bridge, not ornate.
+
+Original image: minhwa_wood_bridge.png, 1024 x 1536, alpha preserved.
+Deck UV region: x=246, y=16, width=534, height=1503 pixels.
+The image is mapped continuously across all three existing bridge collision boxes.

@@ -1,0 +1,24 @@
+{
+  "tool": "built-in image_gen",
+  "normal_source": "kkwangcheol_mane_8frames_v2.png",
+  "normal_restored_native": "kkwangcheol_mane_restored_native.png",
+  "normal_final": "kkwangcheol_mane_hires.png",
+  "native_resolution": [
+    1774,
+    887
+  ],
+  "export_resolution": [
+    3548,
+    1774
+  ],
+  "export_method": "2x CPU Lanczos resampling of imagegen-restored native output; no claim of native 3840px model output.",
+  "normal_prompt": "High-resolution restoration and faithful upscale of this EXACT Korean minhwa dragon game sprite sheet. Output target 3840 by 1920 pixels, exact 4-column 2-row grid of square cells, eight frames in the same order. Preserve precisely all eight full-body coiled dragon poses, their size RELATIVE TO EACH CELL, alignment, silhouettes, number of limbs, faces, green mane and whisker wind phases, vivid blue scales, coral belly and red-orange dorsal flames. Restore fine crisp ink lines, individual scales and silk-like green mane strands at higher resolution, without changing character design or composition. Do NOT merely blur, invent extra motifs, rearrange cells, enlarge dragons within cells, change pose, or crop a single tip. Real transparent alpha around the sprites and between cells, never a background, labels or checkerboard. An enlarged detailed version of the supplied sheet, keeping the exact same 4x2 layout.",
+  "transition_prompt": "Generate a game animation SPRITE SHEET of exactly EIGHT progressive keyframes, left-to-right top row then bottom row, in an exact FOUR COLUMNS by TWO ROWS grid of identical square cells; target canvas 3840x1920. Reference image 1 is the STARTING CHARACTER and normal coiled soaring pose (eight green-mane wind variants of the same dragon). Reference image 2 is the EXACT END POSE: same Korean blue dragon becomes exhausted under rain, uncoils, head and neck droop horizontally LEFT, the RIGHT torso bends over a ledge like a tired inverted L / Korean ㄱ, tail hanging straight DOWN on the RIGHT. Create a smooth non-looping eight-frame transformation from the reference-1 upright coiled dragon to reference-2 sagging L-shaped dragon. Frame1 = coiled normal; frames2-3 neck/head begin relaxing and coils loosen; frames4-5 body unfolds and right elbow begins to bend; frames6-7 head droops farther left, limbs dangle, tail sinks down; frame8 = reference2 closely matched. Preserve the original intricate Korean minhwa ink lines, primary blue/red/green palette, coral belly, horns, whiskers, exact face identity and 4 legs. Fixed overall scale, consistent character identity throughout; position the final elbow bend around normalized (0.80,0.34) of each square cell so it can rest on a map corner. All eight COMPLETE dragons fit within their cells with 6% or more transparent padding. Every cell must have a distinct progressive deformation, not eight copies. TRANSPARENT background throughout, including every hole between coils, whiskers and limbs. No actual ledge, map, rain, background, shadows, grid, numbers or text; draw ONLY eight isolated dragons. The posture should feel limp and heavy, not attacking or flying upward. End pose must be a single elbow-like bend and a long drooping tail, matching reference 2.",
+  "padding_prompt": "Fix ONLY packing/alignment of this existing EIGHT-frame dragon weakening animation sprite sheet. Preserve the exact eight chronological dragon poses from coiled at cell1 to exhausted upside-down-L at cell8, same blue/red/green Korean minhwa design. Keep exact FOUR columns TWO rows of SQUARE cells and transparent alpha. Each whole dragon, INCLUDING every white whisker tip and green tail tassel, must fit FULLY inside its OWN cell: shrink and recenter individual dragons to leave at least 12% CLEAR TRANSPARENT margin on ALL FOUR sides. No cell/image boundary may crop a single whisker or tail. No neighboring dragons touch or cross rows. For later L-shaped frames, retain a long DOWNWARD tail and a relaxed horizontal head/neck to LEFT; match the supplied end-pose reference. Across all frames the overall painted height should be very similar and never jump in size. Do not add any new objects, scenery, map, text, grid or checkerboard. Real transparent background including all gaps. This is a one-time eight-keyframe posture transition, not a looping flight cycle.",
+  "transition_final": "kkwangcheol_weakening_8frames_v2.png",
+  "final_pose_master": "kkwangcheol_sag_reference.png",
+  "runtime_transition": "8 frames over 1.6 seconds; final frame uses the provided pose master. Cropped frame bounds normalize apparent scale.",
+  "edge_anchor": "Right map edge at (map max x, roof height, z=-1.0); supplied pose elbow UV (0.80,0.34) contacts edge.",
+  "retry": "Uncut fire impact waits for actual fall. Retry 1->1, 2->1, 3->2, including dialogue. Preserve cut props/deliveries/map collapse.",
+  "validation": "Static GDScript syntax and resource paths only; no game, engine compilation or CUDA/GPU validation."
+}

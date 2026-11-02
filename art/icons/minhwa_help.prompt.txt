@@ -1,0 +1,6 @@
+Generator: built-in image_gen
+Transparent background: true
+Prompt:
+Use case: logo-brand. Asset type: small help button icon for a Korean Joseon folklore game. A single large perfectly legible dark charcoal brush-painted question mark '?' centered on a small softly irregular round ivory hanji paper medallion. A restrained thin faded cinnabar red ink outline and two tiny muted jade leaf strokes at its lower edge, modest Joseon minhwa folk-painting character. Flat frontal UI illustration, broad simple shapes readable at 48 pixels, no perspective. The question mark is the only text. One icon only. Transparent background outside the round paper medallion, no surrounding shadow, no scenery, no watermark. Square canvas with narrow transparent margins.
+
+Output: minhwa_help.png, original generated image, alpha preserved.

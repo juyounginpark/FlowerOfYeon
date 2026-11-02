@@ -1,0 +1,23 @@
+Stage6 minhwa revision
+
+Built-in image_gen assets: tiger_run.png (five frames), tiger_eat.png
+(three frames), tiger_sleep.png, tiger_climb.png, tiger_fall.png,
+rice_basket.png, mother.png and knockback_impact.png.
+Prompts: minhwa-revision-production.json and minhwa-revision-corrections.json.
+Reference: user-supplied Joseon minhwa tiger, Downloads/호랑이.jpg.
+
+Behavior: the tiger wakes at 85% of the initial ascent. The cut interval
+is 2.4 world units long, with the original three-second deadline.
+Rope vibration pivots around its fixed ceiling anchor; picking follows it.
+Siblings render ahead of the rope with normal terrain depth testing.
+After cutting, they keep climbing until all four artwork corners are above
+the viewport plus a 32-pixel margin, then the shared clear transition begins.
+Severed rope and tiger retain RigidBody3D gravity and terrain collisions.
+
+The head basket regrows after three seconds through Stage5's existing
+regrowth code. Detached pieces and feeding progress remain intact.
+The tree directly above the mother's head was removed.
+Knockback produces a 0.45-second expanding/fading ink impact sprite.
+
+Validation: CPU PNG alpha/frame-boundary audit and Godot check-only parsing.
+No game, simulation, renderer or GPU validation was performed for this revision.

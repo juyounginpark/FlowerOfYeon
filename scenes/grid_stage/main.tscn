@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://6e23rvuhgy5m"]
+[ext_resource type="Script" path="res://scripts/stage1/world.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/stage3/world.gd" id="2_stage3"]
+
+[node name="StageOne" type="Node3D" unique_id=2079148072]
+script = ExtResource("1")
+stage_number = 5
+woodcutter_fps = 8.0
+fairy_position_ratio = Vector2(0.819896, 0.448195)
+fairy_visible_width_ratio = 0.236243
+rock_position_ratio = Vector2(0.572234, 0.797753)
+rock_visible_width_ratio = 0.243657
+
+[node name="Stage3Features" type="Node" parent="."]
+script = ExtResource("2_stage3")

@@ -1,0 +1,17 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "file": "long_nose_v2.png",
+      "prompt": "Use case: illustration-story. Reference image is STYLE and SKIN COLOR ONLY: the Korean traveler character's delicate warm ivory peach nose and dark brown thin ink contours. Generate a NEW isolated elongated magical human nose sprite for that character. One extremely long straight HORIZONTAL nose pointing RIGHT, narrow nearly parallel flesh-colored bridge from a flat open attachment edge on the far LEFT to a small recognizably human gently rounded nose tip with a tiny nostril at the far RIGHT. Delicate Joseon Korean minhwa ink and watercolor, matte warm peach skin matching the man's face, subtle handmade paper grain and soft contour shading. NOT wood, NOT bamboo, NOT a stick. Shape should span 92 percent of wide 3:1 canvas and occupy only central 10 percent of canvas height: a very long slender nose strip. The shaft should be consistent thickness so a game can reveal progressively longer crops while keeping the tip. No face, no head, no person, no text, no background, no cast shadow, no blood. Genuine transparent background, crisp silhouette.",
+      "references": [
+        "C:/Users/medici/Desktop/Team5/TopOfYeon/art/minhwa/fan_story/red_fanning.png"
+      ]
+    },
+    {
+      "file": "lightning_coil_v2.png",
+      "prompt": "Use case: illustration-story. Transparent game VFX sprite: a single crackling lightning coil wrapping around an INVISIBLE long thin HORIZONTAL cylinder, axis from left to right, three clearly separated helical turns with diagonal front strands and curved back arcs. Empty transparent gaps between arcs reveal the invisible cylinder's silhouette. Yellow-white luminous lightning with restrained gold edges, tiny branching sparks concentrated at the central severing ring. Hand-painted Joseon Korean minhwa ink and watercolor texture, expressive angular strokes. Wide 3:1 canvas, centered full coil inside generous transparent margins. NO cylinder or nose drawn, NO cloud, NO person, NO scenery, NO text, NO opaque glow rectangle. Truly transparent background. The coil will wrap around a narrow flesh-colored magical nose and visibly sever it; the rings must read as encircling a tube, not a straight single bolt.",
+      "references": null
+    }
+  ]
+}

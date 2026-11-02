@@ -1,0 +1,36 @@
+{
+  "generator": "built-in image_gen",
+  "style": "Korean minhwa, lotus painting",
+  "assets": [
+    {
+      "asset": "fairy_front.png",
+      "prompt": "Transparent PNG game character asset: FRONT VIEW of an adult Korean fairy princess wearing a fully opaque ivory and pale pink hanbok, long sleeves and high closed neckline, standing waist deep in stylized jade water with an oval ring of ripples. Clearly visible face, black Joseon updo with flower pin. Traditional Korean minhwa folk painting, fine brown ink outlines, flat mineral colors, ivory pink jade palette, subtle hanji texture within painted shapes, delicate lotus-painting aesthetic. Complete character and water ring inside canvas with generous transparent margins. No text, no backdrop."
+    },
+    {
+      "asset": "robe_rock.png",
+      "prompt": "One transparent PNG game prop: a broad low gray jade scholar rock with a folded ivory and pale pink Korean heavenly robe draped across its top and front. Thin brown ink contours, Korean minhwa folk painting, mineral pigment washes, fine hanji paper texture only inside shapes, delicate lotus motifs on fabric. Rock and garment form ONE continuous silhouette with no floating parts, wide horizontal composition with 12 percent clear margin, flat front three-quarter view. No person, no lettering, no scenery, no rectangular background. Match a traditional pink lotus painting."
+    },
+    {
+      "asset": "robe.png",
+      "prompt": "Transparent PNG inventory sprite of one loose folded Korean heavenly hanbok robe, ivory cloth with pale pink hems, small lotus flowers and jade leaves, two sleeves and loosely folded skirt, compact horizontal bundle ready to pick up. Traditional Korean minhwa, delicate warm ink outlines, flat mineral pigment and subtle hanji texture within shapes. No rock, no person, no scenery, no glow, no text, clear generous transparent margin. Same robe as a lotus-painted fairy robe."
+    },
+    {
+      "asset": "woodcutter_run.png",
+      "prompt": "A FOUR FRAME animation sprite sheet, exact 2x2 equal cells, transparent background. Same adult Joseon Korean woodcutter in each cell, beige jacket, dark brown trousers, black topknot and headband, straw shoes, running LEFT while clutching a folded ivory pink lotus-pattern robe in both arms. Four distinct running cycle poses in reading order, same body scale and ground baseline in every cell. Full body including feet and robe fits in inner 70 percent of EACH cell, wide completely transparent gutters at center axes, no frames touching, no panel lines, no letters. Korean minhwa folktale painting, fine warm ink, flat mineral washes and hanji texture inside shapes."
+    },
+    {
+      "asset": "fairy_swim.png",
+      "prompt": "FOUR FRAME animation sprite sheet, exact 2x2 equal cells on transparent background. Same adult Korean fairy princess, black Joseon updo lotus hairpin, wearing opaque ivory pink long-sleeved high-neck hanbok. Swimming LEFT in jade water, only head shoulders arms above water, remaining clothed body submerged. Four different alternating swimming arm strokes, face visible three-quarter left, small oval ripples around each pose. Korean minhwa fine warm ink contours, flat jade ivory pink mineral colors, hanji texture inside shapes. Identical size, center and waterline in each cell. Entire pose AND ripples inside inner 70 percent of each cell; wide empty transparent gutters; no text, no grid lines."
+    },
+    {
+      "asset": "woodcutter_push.png",
+      "prompt": "THREE FRAME sprite animation in ONE horizontal row of THREE equal square cells, transparent background. Same adult Korean Joseon woodcutter beige jacket dark brown trousers black topknot headband straw shoes, full body facing RIGHT, empty hands. Frame 1 bends knees and draws palms back; frame 2 steps forward with both open palms thrust forward in a shove; frame 3 follows through arms extended. No other person, no weapon, no injury. Korean minhwa fine warm ink mineral wash hanji texture. Identical character height and foot baseline. Each entire figure contained in inner 65 percent of cell with wide clear gutters, especially extended fingers. No panel borders, no text."
+    },
+    {
+      "asset": "push_impact.png",
+      "prompt": "Single transparent PNG game effect: small stylized Korean minhwa impact puff, ivory ink cloud with ochre gold pointed short burst strokes spreading to the right, a few jade brush curls. Friendly theatrical shove impact, no characters, no text, no violence or injury, no backdrop. Fine warm brown ink, hand-painted mineral pigment, subtle hanji texture only inside paint. Fully contained with broad transparent margin."
+    }
+  ],
+  "frame_isolation": "frames.json records equal-cell crops and alpha>127 painted bounds; each cell is copied into a standalone ImageTexture once and cached.",
+  "validation": "CPU asset inspection and Godot --check-only only. No game execution."
+}

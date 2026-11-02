@@ -1,0 +1,63 @@
+{
+  "release": "1cac38a195cfdd73",
+  "site_bytes": 460948624,
+  "assets": [
+    {
+      "name": "analytics.js",
+      "bytes": 5505,
+      "gzip_estimate_bytes": 2343,
+      "sha256": "842cfd09d6245e714726db1c32c7faea459450b6a40039606e8c1d8890d77fa6"
+    },
+    {
+      "name": "index.apple-touch-icon.png",
+      "bytes": 53140,
+      "gzip_estimate_bytes": 53169,
+      "sha256": "559ef14da1372b792157724f363d450eeb1702643d4ed1f69c9ed54213d28981"
+    },
+    {
+      "name": "index.audio.position.worklet.js",
+      "bytes": 2973,
+      "gzip_estimate_bytes": 1167,
+      "sha256": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8"
+    },
+    {
+      "name": "index.audio.worklet.js",
+      "bytes": 7298,
+      "gzip_estimate_bytes": 2204,
+      "sha256": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3"
+    },
+    {
+      "name": "index.icon.png",
+      "bytes": 2016778,
+      "gzip_estimate_bytes": 2015593,
+      "sha256": "70795cb2fdac64fbbed35923b35d89f6afe666f06db83688b6a8b7123dddf160"
+    },
+    {
+      "name": "index.js",
+      "bytes": 279815,
+      "gzip_estimate_bytes": 68740,
+      "sha256": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba"
+    },
+    {
+      "name": "index.pck",
+      "bytes": 419039584,
+      "gzip_estimate_bytes": 415710501,
+      "sha256": "daa832b8cc689ca00fa5f202e2b5c4963e2ba86ce9fae463109e06c0cbeba330"
+    },
+    {
+      "name": "index.png",
+      "bytes": 21443,
+      "gzip_estimate_bytes": 19338,
+      "sha256": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e"
+    },
+    {
+      "name": "index.wasm",
+      "bytes": 39514754,
+      "gzip_estimate_bytes": 10114291,
+      "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+    }
+  ],
+  "estimated_gzip_bytes": 427987346,
+  "actual_browser_transfer_bytes": null,
+  "runtime_verified": false
+}

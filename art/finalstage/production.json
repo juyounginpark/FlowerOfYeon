@@ -1,0 +1,22 @@
+{
+  "source": "kkwangcheol_reference.png",
+  "sprite_sheet": "kkwangcheol_mane_8frames_v2.png",
+  "frame_metadata": "kkwangcheol-frames.json",
+  "generation_prompt": "Use the provided Korean minhwa blue dragon EXACTLY as the character design for an 8-frame animated game sprite sheet. EXACT 4 columns by 2 rows of equally sized SQUARE cells, overall landscape canvas 3072 x 1536 (2:1 aspect). Each cell contains the complete SAME LARGE dragon in the same coiled soaring pose, head pointing LEFT toward the player. Lock the entire body, head, eyes, mouth, horns, claws, blue scale pattern, coral-pink belly and bright orange-red dorsal flames in place with the same size and central alignment. Preserve the vivid unmuddied original primary colors and intricate traditional brush/line style. ANIMATE ONLY the flowing long GREEN mane around the head and neck and fine WHITE whiskers: 8 distinct subtle wind phases in a seamless loop, the tips billowing backward to the right and relaxing. Small trailing green tail tassel may follow the same wind. NO flying translation or big body changes, no palette changes, no added limbs. Full body, every whisker tip, mane strand and tail are completely INSIDE each cell with at least 6 percent transparent padding on ALL sides. Exactly eight separate full-body dragon drawings; never touch or overlap neighboring cells. Real transparent RGBA around dragons, no checkerboard baked in, no sky, no clouds, scenery, shadows, labels, text, border or cell grid. This is the mythical Korean kkwangcheori serpent-dragon in the supplied reference, not a generic Western dragon. Original master composition remains recognizable in all eight frames.",
+  "padding_edit_prompt": "Edit this existing 4 by 2 dragon animation sheet only to fix sprite packing and cropped tips. Keep exactly the SAME eight blue/red/green Korean dragon drawings and their individual mane poses, same chronological 4-column 2-row layout, actual transparent background. SHRINK EACH COMPLETE DRAGON to occupy at most 72 percent of its square cell width AND height, and CENTER it within its own cell, leaving a clearly empty 14 percent alpha margin on ALL FOUR sides of every cell. Restore any whisker, dorsal fin or tail tip that was clipped by the old cell/image borders, matching its reference dragon. No part may touch a cell edge or another dragon. Do not add any new motion, do not change colors, face, body design, number of limbs or frame order. Exactly eight whole dragons in a landscape 2:1 sprite sheet with a very visible transparent gutter between all cells. No words, frame numbers or grid lines. Preserve the subtle eight-frame GREEN mane/WHITE whisker wind cycle.",
+  "frames": 8,
+  "fps": 6,
+  "placement": {
+    "center": [
+      0.74,
+      0.375
+    ],
+    "visible_height_fraction": 0.68
+  },
+  "hover": {
+    "amplitude": 0.14,
+    "period_seconds": 4.8
+  },
+  "scope": "Final stage visual placement, mane animation and vertical hovering only",
+  "verification": "Static GDScript parsing only. No game execution, engine compilation or CUDA/GPU validation."
+}

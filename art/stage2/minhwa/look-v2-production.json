@@ -1,0 +1,8 @@
+{
+  "asset": "fairy_look_v2.png",
+  "prompt": "Create a transparent PNG game sprite animation, exactly FIVE equal cells in ONE horizontal row. A humble adult Joseon Korean woman chest deep in a small pale gray-jade water oval, wearing an opaque plain ivory bathing wrap. Black hair in a simple rounded Joseon bun, small dark ribbon. Five poses: back, glance left, further left, glance right, back. Body remains stationary. Aesthetic inspired by Shin Yun-bok's Miindo: delicate sparse hairline ink contours, subdued almost flat ivory and pale blue-gray washes, simple stylized tiny facial features, large unpainted plain surfaces, restrained late Joseon folk painting. NOT photorealistic, no intricate hair strands, no shading gradients, no flower patterns, no gold, no elaborate decoration. Use only a few thin curves for water, no foamy splashes. Same body scale and top of head and waterline in all five frames. Entire person AND ripple safely inside central 65 percent of each cell with completely transparent wide gutters. No grid lines, labels, writing, backdrop or glow.",
+  "frames": 5,
+  "scale_relative_to_previous": 0.7,
+  "anchor": "Painted crown remains at ramp midpoint",
+  "validation": "CPU check-only; game not run"
+}

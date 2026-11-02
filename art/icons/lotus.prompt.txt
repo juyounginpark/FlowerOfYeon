@@ -1,0 +1,7 @@
+Generator: built-in image_gen
+Transparent background: true
+Prompt:
+Use case: logo-brand. Create a polished game application icon for a Korean folklore paper-art game: a single blooming lotus flower, elegant layered pink and ivory petals, small warm golden center, subtle muted jade green sepals. Hand-painted minhwa-inspired cut-paper illustration with bold clean silhouette and restrained detail readable at 32 pixels. Centered square composition, flower fills 85 percent of frame, balanced almost symmetrical front three-quarter view. Truly transparent background. No text, no letters, no frame, no scenery, no shadow outside silhouette, no watermark. Deliver one icon only.
+
+lotus.png: original generated image, preserved with transparency.
+lotus.ico: Windows icon container, PNG frames at 16, 24, 32, 48, 64, 128 and 256 pixels.

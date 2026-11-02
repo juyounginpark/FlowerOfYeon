@@ -1,0 +1,18 @@
+{
+  "tool": "built-in image_gen",
+  "prompts": {
+    "tiger_run": "Use case: illustration-story. Production game sprite sheet, transparent background. Korean Joseon minhwa tiger, ochre orange, black ink stripes, cream muzzle, whimsical fierce face, delicate traditional brush textures matching a Korean ink mountain collage game. EXACTLY FIVE full-body animation poses of the SAME tiger running/pouncing toward the RIGHT. Grid is EXACTLY 3 columns x 2 rows equal cells: top row poses 1,2,3; bottom row poses 4,5; bottom right cell completely EMPTY transparent. Wide landscape canvas 1536x1024. Each tiger stays completely inside its own 512x512 cell with at least 55 pixels clear padding on every side, tails never cross cell borders. Same body scale and feet baseline in every cell. Five distinct sequential run-cycle poses: crouch anticipation, push-off, extended airborne, forepaw landing, hindleg recovery. No scenery, no floor, no shadows outside animals, no grid lines, no labels, no text.",
+    "rope": "Use case: illustration-story. Transparent game sprite. A single long straight strong golden straw braided Korean heavenly rope hanging vertically, front view, beautifully detailed traditional Joseon minhwa ink and ochre brushwork. Narrow vertical rope centered in portrait canvas, continuous braid from near top to near bottom, blunt frayed bottom, no knot no loop no people no scenery no text. Generous transparent side margins. Intact reliable heavenly rope, not rotten.",
+    "rice": "Use case: illustration-story. Transparent game sprite. A single small appetizing Korean honey rice cake, ivory slightly golden songpyeon with a subtle dab of honey, traditional Joseon minhwa watercolor and delicate brown ink contours. Centered isolated object, large clear transparent padding, no plate no background no words no photo realism. Readable at small size.",
+    "tiger_sleep": "Use case: illustration-story. Transparent game sprite. Full body Korean Joseon minhwa tiger sleeping peacefully curled on its belly, head resting on front paws, closed eyes, curled tail, facing right. Ochre orange fur, black ink stripes, cream muzzle, whimsical traditional folk painting face, delicate ink brush texture. Centered isolated entire tiger with generous transparent padding all sides, no scenery no lettering no Z symbols no floor.",
+    "tiger_climb": "Use case: illustration-story. Transparent game sprite. Full body Korean Joseon minhwa tiger climbing upward, long vertical pose, both front paws reaching up and clasping an invisible thin vertical rope, hind paws braced lower, looking up eagerly. DO NOT DRAW THE ROPE; it is drawn separately by game. Ochre orange black ink stripes cream muzzle whimsical traditional folk painting face, delicate brush texture. Entire body and tail fully inside portrait canvas with generous transparent margins. No scenery no text.",
+    "tiger_fall": "Use case: illustration-story. Transparent game sprite. Full body Korean Joseon minhwa tiger tumbling downward, belly visible in three-quarter view, paws spread and tail curling upward, surprised wide eyes, a playful storybook fall without injury. Ochre orange black ink stripes cream muzzle whimsical traditional folk painting face and delicate ink brushwork. Centered entire tiger with generous transparent padding, no rope no scenery no text no motion lines."
+  },
+  "run_sheet": {
+    "columns": 3,
+    "rows": 2,
+    "frames": 5,
+    "empty_cell": 5,
+    "decode": "Separate ImageTexture per cell; no shared atlas filtering."
+  }
+}

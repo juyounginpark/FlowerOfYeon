@@ -1,0 +1,17 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "file": "red_folding_v2.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent PNG sprite for a Korean minhwa paper-collage game. One fully opened RED traditional Korean folding fan (jeopseon), frontal orthographic view, broad semicircular scalloped paper leaf, clear radiating bamboo ribs converging at one small pivot at bottom center. Warm cinnabar red watercolor over aged hanji, restrained charcoal ink contours and subtle bamboo detail. Hand painted Joseon genre painting aesthetic of Kim Hong-do and Shin Yun-bok, understated folk craft, flat delicate washes, not photorealistic. Single complete object centered, fan spans 85% of square canvas, no crop. No people, no background, no cord, no tassel, no text, no seal, no baked shadow or sticker border. Genuine transparent background."
+    },
+    {
+      "file": "blue_folding_v2.png",
+      "prompt": "Use case: illustration-story. Asset type: transparent PNG sprite for a Korean minhwa paper-collage game. One fully opened BLUE traditional Korean folding fan (jeopseon), frontal orthographic view, broad semicircular scalloped paper leaf, clear radiating bamboo ribs converging at one small pivot at bottom center. Muted indigo and mineral blue watercolor over aged hanji, restrained charcoal ink contours and subtle bamboo detail. Hand painted Joseon genre painting aesthetic of Kim Hong-do and Shin Yun-bok, understated folk craft, flat delicate washes, not photorealistic. Single complete object centered, fan spans 85% of square canvas, no crop. No people, no background, no cord, no tassel, no text, no seal, no baked shadow or sticker border. Genuine transparent background."
+    },
+    {
+      "file": "cord_v2.png",
+      "prompt": "A clean isolated 2D game sprite of ONE long thin vertical hemp rope, hand drawn with brown ink and flat pale ochre watercolor in traditional Korean minhwa style, Kim Hong-do / Shin Yun-bok delicate brushwork. From top to bottom a continuous straight twisted cord, tiny bottom knot. Flat cel-like cutout with sharp edges, ONLY the narrow rope itself. Truly transparent empty background, alpha exactly zero outside the rope. NO brown haze, NO glow, NO shadow, NO gradient, NO atmosphere, NO lighting effects, NO background color, NO surrounding decoration. Tall image. Keep the entire thin rope within the central 6% of the image width, extending 96% of height. This sprite will hang a paper folding fan in a game."
+    }
+  ]
+}

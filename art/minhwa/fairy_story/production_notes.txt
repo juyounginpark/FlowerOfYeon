@@ -1,0 +1,21 @@
+Stage 2: 선녀와 나무꾼
+Image generation mode: built-in image_gen, transparent output.
+Original assets and PDF preserved in stages/2-선녀와나무꾼.
+PDF's '3번 사진을 그어서 3,5번으로 분리' interpreted as clothed rock 2.png to bare rock 3.png and robe 5.png.
+
+Final prompts:
+fairy_bathing.png
+Redraw the adult Korean fairy in this reference as ONE isolated bathing game sprite, rear three-quarter view, long dark hair half tied with a tiny cream flower. Modest opaque ivory bathing wrap covers chest and torso, lower body underwater; small ellipse of ripples. Match muted Korean minhwa ink painting and antique faded watercolor: thin brown strokes, dusty sage and blue gray water, warm cream skin, softer less saturated colors. Natural relaxed pose. Use entire image for ONLY ONE fairy, no other poses. Transparent alpha background. No gradient, no glow, no paper rectangle, no checkerboard. Entire ripple outline and hair fully inside image with 15% empty transparent margins. This will sit in a Korean wave collage.
+
+fairy_flight.png
+Create a 2 by 2 animation sprite atlas of ONE adult Korean fairy. Four equal cells, generous 20% empty transparent margins INSIDE EVERY cell; NO part crosses cell boundary, all four poses fully isolated. Row1col1: standing rear three-quarter view. Row1col2: lift-off angled left. Row2col1: flying left gently with extended hand. Row2col2: flying left, alternate sleeve/ribbon motion. Same full body scale/face/costume each frame. Redraw reference in soft understated Korean minhwa ink and antique watercolor; muted dusty sage green hanbok, narrow ivory-gold edging, faded dusty rose ribbon, long dark hair and tiny cream floral pin. Natural human anatomy, no anime, no saturated neon. Flying ribbons short enough to fit safely inside each cell. Transparent background, no background colors/glow/text/grid. High resolution. A precisely spaced 2x2 grid with all figures centered in their own quarter.
+
+couple_ascent.png
+Create transparent game animation atlas: exactly 2 columns and 2 rows, four isolated frames showing the same adult Korean fairy and woodcutter pair ascending gently together viewed from behind. Preserve cultural clothing from reference: fairy sage teal hanbok ivory gold edges dusty rose sash long dark half-up hair tiny flower pin; woodcutter brown vest sage shirt ivory trousers white headband and downward axe. Muted traditional Korean minhwa ink with fine brown outlines, subtle antique watercolor. Four subtle rising/walking in air poses in row major order. EACH pair entirely inside its own quarter with 20% empty margin on all sides, no touching other frames, consistent scale and baseline. Transparent alpha, no colored halos/background/grid/text. Refined natural anatomy, softer desaturated colors.
+
+woodcutter_swing.png
+Redraw this adult Korean woodcutter as a clean transparent game sprite atlas: EXACT 2x2 grid of four equal cells. Row1col1 axe down idle; row1col2 arm lifting axe to side; row2col1 axe raised forward across body; row2col2 axe lowering. Same man at identical scale and same sole baseline each cell. Sage shirt brown vest ivory pants white headband straw shoes, same stylized shadow face. Fine brown ink Korean minhwa watercolor, slightly muted colors. ONE figure per cell, every axe/body fits with 15% clear margin within own cell. Absolutely NO brown/black gradient background. Genuinely transparent alpha behind every character, including between legs and beneath arms. No glow, no drop shadows, no labels/grids.
+
+robe_rock.png
+Create a production transparent game prop sprite atlas based on two reference pictures of a flat Korean rock with folded fairy garment and bare rock, plus standalone garment reference. EXACT three equal square cells in one horizontal row. Cell1: flat gray beige ink-wash rock with folded muted jade-sage teal fairy robe and dusty rose sash on top; Cell2: EXACT SAME rock shape/view/size/position but garment removed; Cell3: isolated same robe, loosely folded and cascading, alone no rock. Match restrained Korean minhwa watercolor, fine sepia contour, warm ivory/gold narrow trim, desaturated colors. Entire subjects fit within each cell with 10% transparent margins, rock baselines identical. Remove original dark glow/backdrops. Genuinely transparent alpha background, no grid no text no extra objects. These are layered interactive game sprites.
+

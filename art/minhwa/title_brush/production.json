@@ -1,0 +1,13 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "id": "brush",
+      "prompt": "Transparent PNG game UI sprite, ONE traditional Korean calligraphy brush illustrated in elegant Korean minhwa style with delicate hand-painted ink outlines and muted watercolor. Slender warm bamboo handle with a small dark hanging loop at TOP, soft tapered charcoal-black bristles ending in a pointed ink tip at BOTTOM. Entire brush perfectly straight VERTICAL on the centre axis, top to bottom, broad generous transparent margins. Natural bamboo nodes and subtle worn patina, restrained ochre and sepia palette. No hand, no writing, no ink splash, no cast shadow, no backdrop, no glow, no paper rectangle. Genuine alpha transparency. High quality painterly 2D isolated prop, not photorealistic and not 3D. Tip reaches about 90% image height, handle begins about 10%."
+    },
+    {
+      "id": "stroke",
+      "prompt": "Transparent PNG title backdrop asset for an elegant Korean minhwa folktale game. ONE light horizontal sweep of a broad calligraphy brush, long and graceful, left to right. Muted charcoal gray watercolor and dry ink, a softly filled quiet central strip for cream-colored Korean lettering, thin feathered bristle tracks at top and bottom, softly tapered ends with a few delicate drybrush gaps. Airy restrained painterly brushstroke, NOT a thick black ink puddle, NOT splattered, NOT fuzzy or smoky. The visible stroke has roughly 6:1 width-to-height ratio, centered in a wide canvas with generous transparent margins above and below. A single stroke only. No brush object, no text, no characters, no paper backdrop, no shadow or glow. True transparent alpha background."
+    }
+  ]
+}

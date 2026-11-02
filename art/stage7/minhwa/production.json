@@ -1,0 +1,40 @@
+{
+  "generator": "built-in image_gen",
+  "style": "수수한 조선 민화, 절제된 먹선과 옅은 흙빛 채색",
+  "files": [
+    {
+      "file": "objects.png",
+      "prompt": "Use case: illustration-story. Production game sprite atlas, restrained humble Joseon Korean minhwa folk painting, delicate irregular ink outlines, pale ochre and muted sage washes, no glossy digital shading. TRANSPARENT background. Exactly 4 columns by 2 rows equal cells with large clear gutters, no borders or text. Eight isolated full objects in row-major order: 1 a traditional Korean tiled-roof hanok house three-quarter view; 2 same house collapsed into timber and roof rubble; 3 one pale cream round bottle gourd with short curved stem, no face or symbols; 4 the same gourd split into two open shell halves resting together; 5 a black translucent Joseon gat hat; 6 rustic wooden plank footbridge viewed from above; 7 poor Heungbu man standing full body in plain ivory patched hanbok; 8 wealthy Nolbu man standing full body in muted brown hanbok and black gat. All figures entirely within own cells, no overlap or ground scenery. Authentic modest hand painted Korean folktale game cutouts, no letters, no labels. 2048x1024 landscape."
+    },
+    {
+      "file": "swallows.png",
+      "prompt": "Use case illustration-story. Transparent production sprite sheet for Korean minhwa folktale game. Humble restrained Joseon ink and watercolor, faded indigo, warm ivory, muted russet. Exactly 3 rows and 5 equal columns, fifteen complete isolated flying swallows. One bird identity per row: row1 ink-black back ivory breast and small russet throat; row2 muted blue-indigo back cream breast; row3 warm grey-brown back white breast. Each row is a FIVE FRAME loop of same swallow facing RIGHT: wings high, wings half down, wings low, wings halfway up, wings high preparing return. Each bird has same body size, eye and beak coordinate in its cell; bill centered at 75% cell width and 50% cell height. No gourds, no props. Short beak, long forked tail, graceful Korean swallow, realistic small bird proportions. Each full wing and tail strictly inside own cell with at least 12 percent empty transparent margins on all sides, no crossing frame boundaries. NO grid lines, text, shadows or background. Wide landscape 2500x1500. Do not draw extra birds."
+    },
+    {
+      "file": "dokkaebi.png",
+      "prompt": "Use case illustration-story. Transparent sprite animation sheet exactly FIVE frames arranged in one horizontal row, five equal square cells. A mischievous Korean dokkaebi folklore goblin running LEFT with a wooden club. Joseon minhwa humble folk-painting, irregular ink brush outlines and restrained muted earthy ochre, grey green skin and faded brown hemp clothes. Kindly comical ferocious face, two little horns, shaggy brows, bare feet, squat sturdy body; Korean folktale, not Japanese oni armor. Same exact character face clothes club and scale in all five frames. Frames form running loop: left foot forward, passing pose, right foot forward, airborne stride, passing return. Clear pose changes. Feet same baseline. Entire head horns club and feet within each cell with generous 15% transparent padding on EVERY side, no overlap between frames. NO labels, borders, grid, lettering, scenery, ground or cast shadow. Landscape strip 2500x500."
+    },
+    {
+      "file": "people.png",
+      "prompt": "Use case illustration-story. Production transparent sprite atlas for Joseon Korean minhwa folktale game, modest ink brush drawing and pale warm earth watercolor, quiet unsaturated colors. Exactly 4 columns x 2 rows, eight isolated complete characters in EQUAL cells, 12 percent transparent gutter within each cell, no overlap. Row-major order: cell1 kind Heungbu standing dressed in plain light beige noble hanbok WITHOUT hat, hair topknot; cell2 exact same man and same clothes standing WITH black translucent gat; cell3 stout Nolbu in brown hanbok black gat lying face down flat stretched full body, viewed directly from ABOVE, feet at top head at bottom; cell4 cell5 cell6 cell7 cell8 are FIVE consecutive run cycle frames of SAME stout brown hanbok Nolbu fleeing LEFT in his black gat, scared expression, arms flailing, alternating legs and airborne strides. Uniform scale and baseline for all running frames. Whole hat arms and feet visible inside their cells. No props or additional people or background, no labels numbers borders or shadows. Clear handmade Korean traditional folk art rather than modern cartoon. 2048x1024."
+    },
+    {
+      "file": "effects.png",
+      "prompt": "Use case illustration-story. Transparent game effects sprite atlas, simple modest Korean Joseon minhwa ink-and-wash, muted brown grey earthy colors, humorous and non-graphic. Exactly 3 columns x 3 rows EQUAL CELLS with wide transparent margins, NO grid or text. TOP ROW: three different cartoon animal dung piles, one small rounded coil, one irregular lumpy heap, one flatter soft mound; all brown, no face, no surrounding debris. MIDDLE ROW: exactly three consecutive animation frames of ONE same tiny housefly facing right viewed slightly from above: wings fully spread, wings half raised, wings up, same body at same location and scale, thin six legs and translucent wings. BOTTOM ROW: in the LEFT cell ONLY a small horizontal ivory hanji paper sticker with slightly torn edges and a vivid red horizontal dashed cut line across center, a tiny red scissors silhouette at its left end; leave remaining bottom cells entirely transparent. Do not add insects to dung. Complete isolated sprites, every object contained within its cell with 15% transparent padding all sides, no cast shadows. 1536x1536."
+    }
+  ],
+  "frame_regions": "scripts/grid_stage/heungbu_minhwa.gd: explicit opaque bounding rectangles, 640x640 padded frames aligned at beak/feet; generated grids are not assumed uniform",
+  "behavior": {
+    "gourd_drop_distance": 1.8,
+    "random_bad_gourds": 1,
+    "swallow_variants": 3,
+    "swallow_frames_each": 5,
+    "goblin_frames": 5,
+    "dung_variants": 3,
+    "dung_count": 24,
+    "fly_count": 7,
+    "fly_frames": 3,
+    "restart_delay": 5.5
+  },
+  "validation": "Static and CPU check-only only; game not executed."
+}

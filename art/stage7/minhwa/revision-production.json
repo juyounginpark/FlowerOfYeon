@@ -1,0 +1,17 @@
+{
+  "generator": "built-in image_gen",
+  "files": [
+    {
+      "file": "round_gourd.png",
+      "reference": "User photo 박.jpg: round pale green bak, no bottle waist",
+      "prompt": "Transparent game sprite, one single Korean round bak gourd, using the user's attached photo as shape reference: broad round pear-like pale green fruit, widest in lower half, gently pointed shoulders meeting a long slender curved dark green stem. NOT a bottle gourd, NO narrow waist, NO upper bulb. Humble traditional Joseon minhwa painting, subtle ink brush contours and muted sage watercolor, handmade paper texture inside fruit only. Whole fruit and long stem fully visible with generous transparent padding. No photograph look, no faces, no labels, no dotted lines, no scenery, no cast shadow. One fruit only, upright stem at top."
+    },
+    {
+      "file": "house_overhead.png",
+      "prompt": "Transparent game environment cutout of a traditional Korean Joseon giwa tiled roof courtyard house, viewed clearly from HIGH ABOVE at a steep 60 degree downward angle, roof surfaces and inner courtyard dominate, visible roof ridges and overlapping grey tiles, modest timber and cream plaster walls visible only a little below eaves. Broad readable isometric top-down game building, entire house silhouette fully visible, generous empty transparent margin. Restrained humble minhwa Korean folk ink and watercolor painting, muted grey warm brown ivory, fine hand drawn lines, not ornate palace, not front elevation. No people, no ground rectangle, no landscape or background, no captions, no cast shadow outside building. One complete tiled house."
+    }
+  ],
+  "placement": "Choose randomized non-overlapping screen rectangles entirely within upper two thirds, above real terrace interiors. Drop on real terrain; lock horizontal rigid-body axes.",
+  "cut_indicator": "Ivory silhouette border on the actual beak and stem, no dotted label. Landed gourds use the shared paper-cut silhouette border.",
+  "validation": "CPU --check-only parsing, static flow review; no gameplay or simulation executed."
+}

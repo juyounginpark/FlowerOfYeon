@@ -1,0 +1,3 @@
+Generator: built-in image_gen tool, transparent_background=true.
+Final prompt:
+Create one isolated red heart game sprite, front view, centered filling 80% of a square canvas. Traditional Korean minhwa watercolor and vermilion ink painted on hanji texture within the heart, softly irregular dark red outline, warm rosy red fill, small pale pink highlight. Simple immediately readable heart silhouette for an overhead affection icon in a Korean folktale game. No lettering, no other objects, no ground shadow, no background paper, no frame. True transparent background outside the single heart. Save generated asset for game use.

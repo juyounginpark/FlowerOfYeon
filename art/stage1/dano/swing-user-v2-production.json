@@ -1,0 +1,50 @@
+{
+  "source": "swing_woman_user_v2.png",
+  "original_user_png_preserved": true,
+  "frames": 8,
+  "fps": 4,
+  "period_seconds": 2.0,
+  "frame_offsets": [
+    [
+      0,
+      18
+    ],
+    [
+      71,
+      13
+    ],
+    [
+      100,
+      0
+    ],
+    [
+      71,
+      -13
+    ],
+    [
+      0,
+      -18
+    ],
+    [
+      -71,
+      -13
+    ],
+    [
+      -100,
+      0
+    ],
+    [
+      -71,
+      13
+    ]
+  ],
+  "frame_generation": "8 native AtlasTexture margins sharing the exact user PNG; no AI redraw",
+  "rope_extensions": "Branch pixels (1040,124), (1110,148) to source rope top pixels (325,0), (576,0); hidden on cut/fall",
+  "wave_scale": 2.1,
+  "wave_surge_pixels": 5,
+  "tree_cutting": "Existing shared _cut_results with live proxy pose sync and tree input ownership; wood drag priority retained",
+  "validation": "CPU static parsing, paths, hashes, frame bounds and alpha anchors only",
+  "godot_compile": "NOT_RUN",
+  "game_runtime": "NOT_RUN",
+  "cuda_gpu": "NOT_RUN"
+}

@@ -1,0 +1,17 @@
+{
+  "mode": "built-in image_gen",
+  "assets": [
+    {
+      "file": "gyeonwu_walk.png",
+      "prompt": "Use case: illustration-story. Production game sprite sheet, transparent background. Reference image is Gyeonwu identity/clothing/style reference. Generate exactly FOUR full-body walking poses of this same young Korean man in teal vest, ivory hanbok trousers, ochre sash, topknot and straw shoes, holding his wooden staff. Korean minhwa watercolor and fine ink same as reference. All face RIGHT, gentle side/three-quarter walking, four distinct successive walk cycle steps (left foot forward, passing, right foot forward, passing). Layout exact 2 by 2 equal cells, portrait overall 1024x1536 aspect 2:3; each cell portrait2:3. Same character size, head height and foot baseline in every cell, centered horizontally, head at 5% cell height, feet at 96%, entire staff fits. No scenery, no shadow or glow around figure, no text, no labels, no grid lines. True transparent alpha."
+    },
+    {
+      "file": "jiknyeo_walk.png",
+      "prompt": "Use case: illustration-story. Production game sprite sheet, transparent background. Reference image is Jiknyeo identity/clothing/style reference. Generate exactly FOUR full-body walking poses of this same young Korean woman in ivory jeogori with teal embroidered cuffs and dusty rose chima, floral shoes, black braided bun with gold pin, holding her small wooden weaving shuttle. Korean minhwa watercolor and fine ink same as reference. All face LEFT, gentle side/three-quarter walking, four distinct successive walk cycle steps (left foot forward, passing, right foot forward, passing); visible different foot positions and skirt movement. Layout exact 2 by 2 equal cells, portrait overall 1024x1536 aspect 2:3; each cell portrait2:3. Same character size, head height and foot baseline in every cell, centered horizontally, head at 5% cell height, feet at 96%. No scenery, no shadow or glow around figure, no text, no labels, no grid lines. True transparent alpha."
+    },
+    {
+      "file": "couple_embrace.png",
+      "prompt": "Use case: illustration-story. Game NPC sprite. Input1 Gyeonwu identity/outfit reference; input2 Jiknyeo identity/outfit reference. Generate ONE full body image of these two young Korean lovers joyfully reunited and tenderly embracing each other, man's arms around woman's shoulders and waist, woman's arms around man's back, cheeks close, gentle happy faces. Man on left in teal vest ivory hanbok ochre sash black topknot straw shoes; woman on right ivory jeogori teal cuffs dusty rose chima floral shoes braided black bun gold hairpin. Preserve exact identities and Korean minhwa watercolor fine ink style of references. Show complete heads and feet, unified couple centered in portrait2:3 canvas, head at5% and feet96%. No staff or shuttle in hands so embrace is clear, no other people, no scenery, no bridge, no birds, no hearts, no text, no labels, no drop shadow or surrounding glow. Genuine transparent alpha background."
+    }
+  ]
+}

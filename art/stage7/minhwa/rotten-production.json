@@ -1,0 +1,17 @@
+{
+  "generator": "built-in image_gen",
+  "file": "rotten_gourd.png",
+  "prompt": "Transparent game sprite of ONE rotten Korean round bak gourd, broad round pear-like fruit, no bottle waist, long curved stem leaning left. Same modest Joseon minhwa ink and muted watercolor as traditional Korean folktale game. Withered brown-green skin, dark brown soft rotten patches, small cracks, sagging dried stem. Entire fruit visible, generous transparent padding. Upright stem at top. No flies, no text, no dotted lines, no ground, no shadows or background. Clearly spoiled but non-graphic. Wide round base rather than a bottle gourd.",
+  "behavior": {
+    "entry": "after hand release/transition unlock; screen X=25% and 75%, facing center, third carrier waits for left slot",
+    "scale": "2x previously resolved bird and gourd illustration dimensions",
+    "stem_border_radius": 10.8,
+    "idle": "vertical sine bob, gourd follows exact opaque stem anchor",
+    "first_attempt": "opening 1 wins, opening 2 loses",
+    "later_attempts": "independent 30 percent loss on each opening",
+    "after_two_wins": "remaining gourds spoil and fall automatically, 2 flies each",
+    "cut": "finite stroke splits actual alpha silhouette, upper stem stays on beak, lower cut contour uses rigid-body gravity then same contour in shared paper cutter",
+    "render": "explicit requested foreground override for all gourds and cut pieces"
+  },
+  "validation": "check-only CPU parsing; no gameplay or simulation executed"
+}

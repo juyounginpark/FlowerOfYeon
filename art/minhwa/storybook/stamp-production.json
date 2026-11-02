@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "C:/Users/medici/Downloads/도장.jpg",
+  "assets": [
+    {
+      "file": "emperor_seal.png",
+      "prompt": "Use case: logo-brand. Asset type: transparent game UI seal impression PNG. Create one traditional Korean imperial square red ink seal, based on the square vermilion seal impression in the reference photograph (reference only, not edit target). Exact Korean Hangul text, four syllables in a 2x2 grid: top row \"옥황\", bottom row \"상제\". Read left to right on each row. Spell exactly 옥 황 상 제; no other lettering. Bold hand-carved geometric Hangul, all strokes clearly legible, enclosed by a thick square vermilion border. Red positive ink strokes and red border, transparent negative spaces and transparent background. Slight authentic uneven ink grain and tiny worn areas, deep cinnabar red. FRONT ON perfectly square, UNROTATED upright master asset (game will rotate it exactly 45 degrees). Centered with small transparent margin, tightly framed. No paper, no hand, no physical stamp, no shadow, no backdrop, no decorative motifs, no watermark. Reference photograph is for seal craftsmanship only; replace its lettering with the specified exact Hangul."
+    },
+    {
+      "file": "emperor_stamp_hand.png",
+      "prompt": "Use case: illustration-story. Asset type: isolated game animation sprite on genuinely transparent background. Create a Korean celestial emperor right hand gripping and pressing a golden imperial seal. Input 1 is reference for the GOLDEN DRAGON seal object: square gold base, sculptural coiled dragon handle, attached short gold tassel. Input 2 is STYLE AND SLEEVE reference: delicate warm hand-drawn minhwa ink outlines and aged watercolor pigment, skin, teal robe cuff with gold embroidery and cream inner sleeve. Create a NEW pose, do NOT include a brush. Slightly overhead oblique view. Hand grips the dragon handle firmly, with anatomically correct curled fingers, a visible thumb, wrist and ornate sleeve extending diagonally down-right and off right/bottom frame edge. Golden square stamp base sits near upper-left quadrant, center of the base at approximately 28% canvas width and 30% canvas height. Base makes a diamond-like 45-degree orientation on the imagined page; horizontal page contact plane, downward stamping action. Dragon still visible above base around fingers. Entire stamp base fully visible and isolated. Frame all fingers, sleeve can exit lower-right. Soft finely detailed painted illustration matching the existing brush hand reference. Only hand, sleeve, golden dragon stamp, short tassel. No paper, no background wash, no glow, no shadow outside object, no text, no ink impression, no watermark. Transparent negative space. Landscape canvas."
+    }
+  ]
+}

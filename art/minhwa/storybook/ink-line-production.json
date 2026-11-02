@@ -1,0 +1,5 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Create a single horizontal thin ink divider line as a transparent PNG game UI asset for an antique Korean minhwa storybook. One long nearly straight hand-drawn warm dark sepia ink stroke, fine delicate brush fibers and subtly uneven natural edges, lightly faded ink, tapered endpoints. Centered horizontally across 90 percent of a wide canvas, with very little vertical deviation. Thin line only, no ornaments, no text, no brush, no paper, no shadows, no frame. Genuine transparent background. Wide landscape composition. This will be repeated as understated separators between horizontal Korean text lines.",
+  "asset": "ink_line_divider.png"
+}
