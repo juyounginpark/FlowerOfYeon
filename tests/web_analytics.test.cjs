@@ -3,10 +3,10 @@ const assert = require('node:assert/strict');
 const vm = require('node:vm');
 const fs = require('node:fs');
 const source = fs.readFileSync('web/analytics.js', 'utf8');
-function setup(id = '') {
+function setup(id = '', savedConsent = null) {
   const listeners = {}, scripts = [];
   const context = {window: {}, performance: {now: () => 100}, location: {origin: 'https://example.test', pathname: '/FlowerOfYeon/'},
-    localStorage: {setItem() {}, getItem() {return null;}},
+    localStorage: {setItem() {}, getItem() {return savedConsent;}},
     document: {cookie: '', referrer: '', head: {appendChild: s => scripts.push(s)}, createElement: () => ({})},
     addEventListener: (name, cb) => {listeners[name] = cb;}};
   context.window.FLOWER_GA4_ID = id;
@@ -39,4 +39,19 @@ test('Google script errors do not escape to game', () => {
   const {api, scripts} = setup('G-EXAMPLE123');
   api.consent(true); scripts[0].onerror();
   assert.doesNotThrow(() => api.event('level_complete', {duration_seconds: 12}));
+});
+test('saved opt-in captures loading before DOMContentLoaded', () => {
+  const {api, scripts, context} = setup('G-EXAMPLE123', 'yes');
+  assert.equal(scripts.length, 1);
+  api.mark('game_load_start');
+  assert.equal(context.window.dataLayer.filter(a => a[0] === 'event' && a[1] === 'game_load_start').length, 1);
+});
+test('page exit immediately after checkpoint does not count the same minute twice', () => {
+  const {api, context, listeners} = setup('G-EXAMPLE123', 'yes');
+  api.event('game_start');
+  api.snapshot({play_seconds: 60, play_delta_seconds: 60, level_number: 4});
+  api.event('playtime_checkpoint', {play_seconds: 60, play_delta_seconds: 60, level_number: 4});
+  listeners.pagehide({persisted: false});
+  const end = context.window.dataLayer.find(a => a[0] === 'event' && a[1] === 'game_end');
+  assert.equal(end[2].play_delta_seconds, 0);
 });

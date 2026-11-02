@@ -1,12 +1,12 @@
 {
-  "release": "1cac38a195cfdd73",
-  "site_bytes": 460948624,
+  "release": "b3f65d1cf87cd31f",
+  "site_bytes": 460949008,
   "assets": [
     {
       "name": "analytics.js",
-      "bytes": 5505,
-      "gzip_estimate_bytes": 2343,
-      "sha256": "842cfd09d6245e714726db1c32c7faea459450b6a40039606e8c1d8890d77fa6"
+      "bytes": 5889,
+      "gzip_estimate_bytes": 2439,
+      "sha256": "6620ea15074137006aa0d34bd4b8fd63d55169d612193261394ff51abca51dae"
     },
     {
       "name": "index.apple-touch-icon.png",
@@ -41,8 +41,8 @@
     {
       "name": "index.pck",
       "bytes": 419039584,
-      "gzip_estimate_bytes": 415710501,
-      "sha256": "daa832b8cc689ca00fa5f202e2b5c4963e2ba86ce9fae463109e06c0cbeba330"
+      "gzip_estimate_bytes": 415711709,
+      "sha256": "f0b4d8f00c9e06fc48374cb7f35afd23611e9d68ebd4d18962a76697ce2b2ae6"
     },
     {
       "name": "index.png",
@@ -57,7 +57,7 @@
       "sha256": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
     }
   ],
-  "estimated_gzip_bytes": 427987346,
+  "estimated_gzip_bytes": 427988650,
   "actual_browser_transfer_bytes": null,
   "runtime_verified": false
 }

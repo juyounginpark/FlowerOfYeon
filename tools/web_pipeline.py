@@ -8,6 +8,7 @@ import json
 import os
 import re
 import shutil
+import struct
 
 ROOT = Path(__file__).resolve().parents[1]
 BUILD = ROOT / 'build'
@@ -39,7 +40,7 @@ def prepare():
     text = preset.read_text(encoding='utf-8-sig')
     index = text.index('[preset.2]')
     text = text[:index] + re.sub(r'^exclude_filter="[^"]*"',
-        'exclude_filter="' + ','.join(['output/*', 'artifacts/*', 'tests/*', 'tools/*', 'build/*', 'web/*', '하이라이트/*'] + sorted(excluded)) + '"',
+        'exclude_filter="' + ','.join(['output/*', 'artifacts/*', 'tests/*', 'tools/*', 'build/*', 'web/*', 'docs/*', '하이라이트/*'] + sorted(excluded)) + '"',
         text[index:], count=1, flags=re.M)
     preset.write_text(text, encoding='utf-8')
     BUILD.mkdir(exist_ok=True)
@@ -48,8 +49,17 @@ def prepare():
         if p.suffix in {'.png', '.mp3'}:
             duplicates[hashlib.sha256(p.read_bytes()).hexdigest()].append(p.relative_to(ROOT).as_posix())
     top = sorted(files, key=lambda p: p.stat().st_size, reverse=True)[:30]
+    oversized = []
+    for p in files:
+        if p.suffix.lower() != '.png': continue
+        with p.open('rb') as stream: header = stream.read(24)
+        if header[:8] == b'\x89PNG\r\n\x1a\n':
+            width, height = struct.unpack('>II', header[16:24])
+            if max(width, height) > 4096:
+                oversized.append({'path': p.relative_to(ROOT).as_posix(), 'width': width, 'height': height})
     report = {
         'source_bytes': sum(p.stat().st_size for p in files),
+        'textures_over_4096': oversized,
         'largest_30': [{'path': p.relative_to(ROOT).as_posix(), 'bytes': p.stat().st_size} for p in top],
         'over_100_mib': [p.relative_to(ROOT).as_posix() for p in files if p.stat().st_size >= 100 * 1024**2],
         'excluded_from_web_only': sorted(excluded),

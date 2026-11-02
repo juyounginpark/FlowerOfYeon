@@ -23,6 +23,9 @@
       if (['engine', 'features', 'network'].includes(params.error_type)) clean.error_type = params.error_type;
       if (name === 'game_start') ended = false;
       if (name === 'game_end') { if (ended) return; ended = true; }
+      if (name === 'playtime_checkpoint' && snapshot) {
+        snapshot = {play_seconds: clean.play_seconds, play_delta_seconds: 0, level_number: clean.level_number};
+      }
       window.gtag('event', name, {...clean, transport_type: 'beacon'});
     } catch (_) { /* Telemetry never blocks the game. */ }
   }
@@ -70,6 +73,10 @@
     snapshot: value => { snapshot = value; },
     consent
   };
+  // Restore prior opt-in before the HTML loader starts, not after DOMContentLoaded.
+  if (valid) {
+    try { if (localStorage.getItem('flower_analytics_consent') === 'yes') consent(true); } catch (_) {}
+  }
   addEventListener('pagehide', e => {
     if (!e.persisted && snapshot) event('game_end', snapshot);
   });
