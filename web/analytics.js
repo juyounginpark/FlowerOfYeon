@@ -1,4 +1,4 @@
-/* Optional GA4, basic consent mode: no Google request before explicit opt-in. */
+/* GA4 starts automatically when configured; saved opt-out remains respected. */
 (() => {
   'use strict';
   if (window.FlowerAnalytics) return;
@@ -34,9 +34,9 @@
     once.add(name);
     event(name, params);
   }
-  function consent(value) {
+  function consent(value, remember = true) {
     enabled = valid && value;
-    try { localStorage.setItem('flower_analytics_consent', value ? 'yes' : 'no'); } catch (_) {}
+    if (remember) { try { localStorage.setItem('flower_analytics_consent', value ? 'yes' : 'no'); } catch (_) {} }
     window['ga-disable-' + id] = !enabled;
     if (!enabled) {
       if (configured) window.gtag('consent', 'update', {analytics_storage: 'denied'});
@@ -73,9 +73,11 @@
     snapshot: value => { snapshot = value; },
     consent
   };
-  // Restore prior opt-in before the HTML loader starts, not after DOMContentLoaded.
+  // Start before the loader. Automatic activation is not recorded as explicit consent.
   if (valid) {
-    try { if (localStorage.getItem('flower_analytics_consent') === 'yes') consent(true); } catch (_) {}
+    let optedOut = false;
+    try { optedOut = localStorage.getItem('flower_analytics_consent') === 'no'; } catch (_) {}
+    consent(!optedOut, false);
   }
   addEventListener('pagehide', e => {
     if (!e.persisted && snapshot) event('game_end', snapshot);
@@ -85,24 +87,20 @@
     const panel = document.createElement('aside');
     panel.id = 'analytics-consent';
     panel.style.cssText = 'position:fixed;bottom:8px;left:8px;z-index:100;color:#39372d;background:#f3e7ce;padding:8px 12px;border-radius:6px;font:13px sans-serif;max-width:340px';
-    panel.append('선택적 방문·플레이 통계(Google Analytics). 동의 전에는 수집하지 않습니다. ');
-    const accept = document.createElement('button'); accept.textContent = '동의';
-    const reject = document.createElement('button'); reject.textContent = '거부';
-    const settings = document.createElement('button'); settings.textContent = '분석 설정';
+    panel.append('방문·플레이 통계는 자동 수집됩니다. ');
+    const accept = document.createElement('button'); accept.textContent = '수집 켜기';
+    const reject = document.createElement('button'); reject.textContent = '수집 끄기';
+    const settings = document.createElement('button'); settings.textContent = '방문 통계 · 설정';
     const description = panel.firstChild;
     const collapse = () => { description.textContent = ''; accept.hidden = reject.hidden = true; settings.hidden = false; };
     accept.onclick = () => { consent(true); collapse(); };
     reject.onclick = () => { consent(false); collapse(); };
     settings.onclick = () => {
-      description.textContent = '방문·기기·지역·참여시간·게임 이벤트가 Google로 전달될 수 있습니다. 동의를 철회하려면 거부를 선택하세요. ';
+      description.textContent = '방문·기기·지역·참여시간·게임 이벤트가 Google로 전달될 수 있습니다. 자동 수집을 중단하려면 수집 끄기를 선택하세요. ';
       accept.hidden = reject.hidden = false; settings.hidden = true;
     };
     settings.hidden = true;
     panel.append(accept, reject, settings); document.body.appendChild(panel);
-    try {
-      const saved = localStorage.getItem('flower_analytics_consent');
-      if (saved === 'yes') { consent(true); collapse(); }
-      else if (saved === 'no') collapse();
-    } catch (_) {}
+    collapse();
   });
 })();

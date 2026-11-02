@@ -20,9 +20,9 @@ test('absent or malformed measurement IDs never load Google', () => {
     assert.equal(scripts.length, 0); assert.equal(context.window.gtag, undefined);
   }
 });
-test('explicit consent, fixed parameter allowlist, duplicate completion and withdrawal', () => {
+test('automatic startup, fixed parameter allowlist, duplicate completion and withdrawal', () => {
   const {api, scripts, context, listeners} = setup('G-EXAMPLE123');
-  api.event('game_start'); assert.equal(scripts.length, 0);
+  api.event('game_start'); assert.equal(scripts.length, 1);
   api.consent(true); api.consent(true); assert.equal(scripts.length, 1);
   api.mark('game_load_complete'); api.mark('game_load_complete');
   api.event('game_start', {game_mode: 'story', email: 'never@example.test'});
@@ -54,4 +54,15 @@ test('page exit immediately after checkpoint does not count the same minute twic
   listeners.pagehide({persisted: false});
   const end = context.window.dataLayer.find(a => a[0] === 'event' && a[1] === 'game_end');
   assert.equal(end[2].play_delta_seconds, 0);
+});
+
+test('new visitor starts automatically but saved opt-out prevents requests', () => {
+  const fresh = setup('G-EXAMPLE123');
+  assert.equal(fresh.scripts.length, 1);
+  fresh.api.mark('game_load_start');
+  assert.equal(fresh.context.window.dataLayer.filter(a => a[0] === 'event' && a[1] === 'game_load_start').length, 1);
+  const declined = setup('G-EXAMPLE123', 'no');
+  assert.equal(declined.scripts.length, 0);
+  declined.api.event('game_start');
+  assert.equal(declined.context.window.gtag, undefined);
 });
